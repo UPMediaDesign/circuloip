@@ -1,0 +1,972 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"b",
+				"block"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ske",
+				"skew-skin"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"margn",
+				"margin-top"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"tex",
+				"text-invite"
+			],
+			[
+				"skew",
+				"skew-recomend"
+			],
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"logo",
+				"logo-banmedica"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"nav",
+				"navbar-collapse"
+			],
+			[
+				"medi",
+				"medic-ask"
+			],
+			[
+				"em",
+				"empty"
+			],
+			[
+				"list-",
+				"list-style"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"content",
+				"content-coment"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"testimo",
+				"testimonios"
+			],
+			[
+				"line-gree",
+				"line-green-1"
+			],
+			[
+				"max",
+				"maxSlides"
+			],
+			[
+				"min",
+				"minSlides"
+			],
+			[
+				"enfo",
+				"endforeach"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"line",
+				"line-green-0"
+			],
+			[
+				"navbar",
+				"navbar-toggle"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"slides",
+				"slides-pagination"
+			],
+			[
+				"vide",
+				"videos-ctrl"
+			],
+			[
+				"fi",
+				"figure"
+			],
+			[
+				"videos",
+				"videos-area"
+			],
+			[
+				"blo",
+				"bloginfo"
+			],
+			[
+				"helvetica",
+				"helveticaNeue"
+			],
+			[
+				"slide",
+				"slides-pagination"
+			],
+			[
+				"menu",
+				"menu"
+			],
+			[
+				"pdd",
+				"padding-top"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"tr",
+				"treatments"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"gr",
+				"green-nav"
+			],
+			[
+				"fff",
+				"ffffff"
+			],
+			[
+				"center",
+				"centered"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"s",
+				"sugerences"
+			],
+			[
+				"fig",
+				"figcaption"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"conten",
+				"contenedor-footer"
+			],
+			[
+				"blue",
+				"blue-timing"
+			],
+			[
+				"form",
+				"form-container"
+			],
+			[
+				"op",
+				"open_sansregular"
+			],
+			[
+				"backgrou",
+				"background-image"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"hoe",
+				"hover"
+			],
+			[
+				"pa",
+				"panel-body"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"f",
+				"font-family"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"MARGIN",
+				"margin-top"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"col",
+				"colBig"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/upmedia/GitHub/Landing IMC/sobrepeso.html",
+			"settings":
+			{
+				"buffer_size": 17738,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/upmedia/GitHub/Landing IMC/obesidad.html",
+			"settings":
+			{
+				"buffer_size": 17677,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/upmedia/GitHub/Landing IMC/normopeso.html",
+			"settings":
+			{
+				"buffer_size": 17191,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/upmedia/GitHub/Landing IMC/bajopeso.html",
+			"settings":
+			{
+				"buffer_size": 17607,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/upmedia/GitHub/Landing IMC/landing.css",
+			"settings":
+			{
+				"buffer_size": 18220,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 387.0,
+		"selected_items":
+		[
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/upmedia/GitHub/Landing IMC/obesidad.html",
+		"/Users/upmedia/GitHub/Landing IMC/index.php",
+		"/Users/upmedia/GitHub/Landing IMC/bajopeso.html",
+		"/Users/upmedia/GitHub/Landing IMC/_index.php",
+		"/Volumes/ipchile/repo_cambios_ipchile/cambios_20150714/wp-content/themes/ipchile_2013/header.php",
+		"/Users/upmedia/GitHub/IMC/index.html",
+		"/Users/upmedia/GitHub/latitud90/wp-content/themes/latitud90/functions.php",
+		"/Users/upmedia/GitHub/latitud90/wp-content/themes/latitud90/js/timelinr.js",
+		"/Users/upmedia/GitHub/brandofcontents/index.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/js/superslides.js",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/footer.php",
+		"/Users/upmedia/GitHub/santodomingo/category.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/js/jquery.highlight-5.js",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/page-165.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/bootstrap/css/bootstrap.min.css",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/alo-doctor-b.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/js/jquery.bxslider.js",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/beneficiadas.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/functions.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/css/jquery.bxslider.css",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/header.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/index.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/page-6.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/jfunctions.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/fndc/functions.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/wp_bootstrap_navwalker.php",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-content/themes/mujer/bootstrap/css/bootstrap-theme.min.css",
+		"/Users/upmedia/GitHub/mujer_descubre_wp/wp-includes/comment-template.php",
+		"/Users/upmedia/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/upmedia/GitHub/banmedica-descubre/beneficiadas.html",
+		"/Users/upmedia/Dropbox/Super Team/@Descubre tus Piernas/02-Front/index.html",
+		"/Users/upmedia/GitHub/banmedica-descubre/index.html",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/formulario/php/enviar-landing.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/formulario/php/enviar_admision.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/style.css",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/tpl_admision.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/.htaccess",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/tpl_admision_2.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/tpl_egresados_inicio.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/single.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/tpl_acreditacion.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/header.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/footer.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/header-egresados.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/error_log",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/.htaccess-bak",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/archive.php",
+		"/Users/upmedia/GitHub/IPChile/landing.html",
+		"/Users/upmedia/Dropbox/Super Team/@ipchile/Landing/IPChile/index.html",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile_capacita/__db__/promo.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/assets/js/bootstrap.js",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/assets/js/app.js",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/archive-jurisprudencia.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/page-17.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/page-linea-investigacion.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/single-eventos.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/single-directorio.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/search.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/header.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/__archive-publicaciones.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/archive-directores.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/comments.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/page.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/page-directores.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/fullpage.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/category.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/category-noticias.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/index.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/functions.php",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/js/jquery.bxslider.js",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/js/jquery.easing.1.3.js",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/bootstrap/css/bootstrap-theme.min.css",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/bootstrap/css/bootstrap-theme.css.map",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/functions.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/index.html",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page_banners.php",
+		"/Users/upmedia/Desktop/SITIOS/UPMEDIA/public_html/regcom/wp-content/themes/front/page-actividades.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/style.css",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/footer.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/header.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/search.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config-sample.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/functions.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/author.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/superfish.js",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/theme_trust.js",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/options-interface.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/mr-meta-box.js",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/mr-meta-box.min.js",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/mod_jacontentslider.css",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/layout.css",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/k2.css",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/component.css",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/.htaccess",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/index.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/index-one.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/ajax.json",
+		"/Users/upmedia/Desktop/house/index.html",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/style7.css",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-fullwidth.png",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/OAuth.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/twitteroauth.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/uservoice.html",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-servicios.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-equipo.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-archives.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/part-post.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/archive.php",
+		"/Users/upmedia/Desktop/paid.json",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/dato20130830093548.log",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/dato20130830094427.log",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/dato20130830094500.log",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-contacto.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/header 3.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/header 2.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/tinynav.min.js",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-home.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/single-servicios.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/jquery.fittext.js",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/sidebar.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/part-pagination.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/links.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/options.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/taxonomy-skill.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/options-custom.js",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/single.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Users/upmedia/GitHub/santodomingo"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"revisa",
+			".logo-banmedicalanding",
+			"loader",
+			"30px",
+			"mobile",
+			"loader",
+			"a",
+			"display-on-mobile",
+			"hide-on-desktop",
+			"hide-on",
+			"slides",
+			".loader",
+			"loader",
+			"transition",
+			".border",
+			"border",
+			"Aló Doctor",
+			"substr",
+			"container white videos pdbottom30",
+			"Beneficiadas",
+			"post",
+			"qSlider",
+			"vide",
+			"video",
+			"line-green",
+			"logged",
+			"chat",
+			"logged-in-as",
+			"panel-group",
+			"border",
+			"tratamiento",
+			"trata",
+			"tratanientos",
+			"navbar-collapse",
+			"navbar-collapse.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse",
+			"navbar-collapse",
+			"container",
+			";}",
+			"@media",
+			"navbar-toggle",
+			"ins",
+			"aranci",
+			"row",
+			"col-md-esp",
+			"body",
+			"primary",
+			"bxslider",
+			"panel-body",
+			".panel-group .panel-heading+.panel-collapse .panel-body",
+			"panel-collapse",
+			"panel-default",
+			"panel-heading",
+			".panel-heading",
+			"00aeef",
+			"#00aeef",
+			"panel-default",
+			".panel-default",
+			".panel-default>.panel-heading",
+			" }",
+			"comment",
+			"helvetica",
+			"helvetica,",
+			"bolder",
+			"bold",
+			"bolder",
+			"bold",
+			".beneficiadas",
+			".jumbotron.h1",
+			"jumbotron.h1",
+			"bigcarousel",
+			"$menu_class",
+			"ul",
+			"media=\"all\"\n@media screen and (min-width: 769px",
+			".about",
+			".col-md-esp",
+			".row",
+			"header",
+			"background",
+			"@",
+			"modernizr",
+			"hornbg-student",
+			"horn",
+			"background-image: url",
+			"background.image: url",
+			"ipchile",
+			"ipcchile",
+			"error",
+			"id",
+			"errorSede",
+			"$origen",
+			"enviado",
+			"enviado desde",
+			"btn-chat",
+			"wp_paginate",
+			"row marginTop3 marginBottom3",
+			"google",
+			"menu-jurisprudencia",
+			"nav-eventos",
+			"box-base",
+			"wp_nav_menu",
+			"menu-menu-1",
+			"wp_nav_menu",
+			".panel-default>.panel-heading",
+			"data-parent",
+			"data-parent=",
+			"data-parent=\"accordion\"",
+			"collapse",
+			"caracteristicas_cancer",
+			"accordion",
+			"url(",
+			"url()",
+			".panel-default>.panel-heading",
+			".panel-default>",
+			".panel-default>.panel-heading",
+			".panel-heading",
+			".panel-default>.panel-heading",
+			".panel-body",
+			"panel-group",
+			"col-md-6",
+			"button",
+			" span.amount",
+			"#top",
+			"h1.page-title",
+			"tbag",
+			"input[type=text], input.input-text, textarea, input.txt, input[type=tel], input[type=email]",
+			"#header .nav-toggle",
+			"ul.products li.product img",
+			"navigation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/upmedia/GitHub/Landing IMC/sobrepeso.html",
+					"settings":
+					{
+						"buffer_size": 17738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11447,
+								11447
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3519.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/upmedia/GitHub/Landing IMC/obesidad.html",
+					"settings":
+					{
+						"buffer_size": 17677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/upmedia/GitHub/Landing IMC/normopeso.html",
+					"settings":
+					{
+						"buffer_size": 17191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/upmedia/GitHub/Landing IMC/bajopeso.html",
+					"settings":
+					{
+						"buffer_size": 17607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "/Users/upmedia/GitHub/Landing IMC/landing.css",
+					"settings":
+					{
+						"buffer_size": 18220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6012,
+								6012
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1873.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.497870559115,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 203.0,
+	"status_bar_visible": true
+}
