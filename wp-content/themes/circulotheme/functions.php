@@ -1,7 +1,22 @@
 <?php if ( function_exists('add_theme_support') ) {
 add_theme_support('post-thumbnails');
-// add_image_size('head', 1920, 800, true );
-
+add_image_size('slider', 1200, 440, true);
+add_image_size('homeconvenio', 124, 135, true);
+add_image_size('homenoticias', 320, 171, true);
+add_image_size('homeactividades', 320, 241, true);
+add_image_size('homesocial', 320, 252, true);
+add_image_size('encabportadilla', 1200, 440, true);
+add_image_size('somosdown', 1200, 357, true);
+add_image_size('actidestacado', 491, 241, true);
+add_image_size('actilista', 200, 180, true);
+add_image_size('activideo', 249, 200, true);
+add_image_size('testimonio', 300, 300, true);
+add_image_size('convenios', 124, 135, true);
+add_image_size('perftab', 325, 221, true);
+add_image_size('singleautor', 48, 48, true);
+add_image_size('singleenc', 1200, 510, true);
+add_image_size('singleimg', 660, 390, true);
+add_image_size('singledestacado', 320, 171, true);
 }
 /* 
 add_filter('image_size_names_choose', 'my_image_sizes');
@@ -13,7 +28,7 @@ add_filter('image_size_names_choose', 'my_image_sizes');
 	return $newsizes;
 }
 */
-add_post_type_support('page', 'excerpt');
+add_post_type_support('page', 'excerpt', 'excerpt', 'thumbnail');
 ;?>
 <?php 
 /* Add support for wp_nav_menu() */
@@ -26,39 +41,49 @@ add_action( 'init', 'register_my_menu' );
 <?php 
 function call_scripts() {
 	wp_deregister_script('jquery');
-	//wp_register_script('jquery', 'http://code.jquery.com/jquery-1.10.0.min.js');
-    //wp_register_script('core', get_template_directory_uri() . '/js/core.js');
-
-    wp_enqueue_script('jquery' , 'http://code.jquery.com/jquery-1.10.0.min.js' , array() , '1.10' , true);
-    wp_enqueue_script('core' , get_template_directory_uri() . '/js/core.js' , array() , '1.0' , true);
-}    
- 
+  wp_enqueue_script('jquery' , 'http://code.jquery.com/jquery-1.10.0.min.js' , array() , '1.10' , true);
+  wp_enqueue_script('core' , get_template_directory_uri() . '/js/core.js' , array() , '1.0' , true);
+} 
 add_action('wp_enqueue_scripts', 'call_scripts');
 ?>
 <?php
 //Post type register
-
-/*add_action('init', 'viajes_de_estudio_register');
-function viajes_de_estudio_register() {
+add_action('init', 'actividades_register');
+function actividades_register() {
     $args = array(
-        'label' => 'Viajes de estudio',
-        'singular_label' => 'Viaje',
+        'label' => 'Actividades',
+        'singular_label' => 'Actividad',
         'public' => true,
-		'menu_position' => 5, 
+		    'menu_position' => 5, 
         '_builtin' => false,
         'capability_type' => 'post',
-		'has_archive' => false,
+		    'has_archive' => false,
         'hierarchical' => false,
-        'rewrite' => array( 'slug' => 'viajes-de-estudio'),
+        'rewrite' => array( 'slug' => 'actividad'),
         'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
     );
-    register_post_type('viajes-de-estudio', $args);
+    register_post_type('actividades', $args);
     flush_rewrite_rules();
 }
 
-register_taxonomy("destino", array('viajes-de-estudio'), array("hierarchical" => true, "label" => "Destinos", "singular_label" => "Destino", "rewrite" => true));*/
-
-
+add_action('init', 'vida_social_register');
+function vida_social_register() {
+    $args = array(
+        'label' => 'Vida Social',
+        'singular_label' => 'Vida Social',
+        'public' => true,
+        'menu_position' => 6, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+        'has_archive' => false,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'vida-social'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
+    );
+    register_post_type('vida-social', $args);
+    flush_rewrite_rules();
+}
+/*register_taxonomy("destino", array('viajes-de-estudio'), array("hierarchical" => true, "label" => "Destinos", "singular_label" => "Destino", "rewrite" => true));*/
 ?>
 <?php //register sidebars
 
