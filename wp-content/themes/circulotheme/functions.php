@@ -1,19 +1,15 @@
 <?php if ( function_exists('add_theme_support') ) {
 add_theme_support('post-thumbnails');
 add_image_size('slider', 1200, 440, true);
-add_image_size('homeconvenio', 124, 135, true);
-add_image_size('homenoticias', 320, 171, true);
-add_image_size('homeactividades', 320, 241, true);
 add_image_size('homesocial', 320, 252, true);
 add_image_size('encabportadilla', 1200, 440, true);
 add_image_size('somosdown', 1200, 357, true);
 add_image_size('actidestacado', 491, 241, true);
 add_image_size('actilista', 200, 180, true);
-add_image_size('activideo', 249, 200, true);
 add_image_size('testimonio', 300, 300, true);
 add_image_size('convenios', 124, 135, true);
 add_image_size('perftab', 325, 221, true);
-add_image_size('singleautor', 48, 48, true);
+add_image_size('singleautor', 96, 96, true);
 add_image_size('singleenc', 1200, 510, true);
 add_image_size('singleimg', 660, 390, true);
 add_image_size('singledestacado', 320, 171, true);
@@ -83,7 +79,61 @@ function vida_social_register() {
     register_post_type('vida-social', $args);
     flush_rewrite_rules();
 }
-/*register_taxonomy("destino", array('viajes-de-estudio'), array("hierarchical" => true, "label" => "Destinos", "singular_label" => "Destino", "rewrite" => true));*/
+
+add_action('init', 'oferta_laboral_register');
+function oferta_laboral_register() {
+    $args = array(
+        'label' => 'Oferta Laboral',
+        'singular_label' => 'Oferta Laboral',
+        'public' => true,
+        'menu_position' => 6, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+        'has_archive' => false,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'oferta-laboral'),
+        'supports' => array('title', 'editor' , 'excerpt' )
+    );
+    register_post_type('oferta-laboral', $args);
+    flush_rewrite_rules();
+}
+
+add_action('init', 'tips_laborales_register');
+function tips_laborales_register() {
+    $args = array(
+        'label' => 'Tips Laborales',
+        'singular_label' => 'Tip Laboral',
+        'public' => true,
+        'menu_position' => 6, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+        'has_archive' => false,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'tip-laboral'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
+    );
+    register_post_type('tip-laboral', $args);
+    flush_rewrite_rules();
+}
+
+add_action('init', 'convenios_register');
+function convenios_register() {
+    $args = array(
+        'label' => 'Convenios',
+        'singular_label' => 'Convenio',
+        'public' => true,
+        'menu_position' => 7, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+        'has_archive' => false,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'convenio'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
+    );
+    register_post_type('convenio', $args);
+    flush_rewrite_rules();
+}
+register_taxonomy('ofertas', array('trabajos'), array("hierarchical" => true, "label" => "Ofertas", "singular_label" => "Trabajo", "rewrite" => 'hierarchical'));
 ?>
 <?php //register sidebars
 

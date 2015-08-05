@@ -3,10 +3,10 @@
 	<div class="megacontainer">
 		<div class="row">
             
-            <div class="col-xs-12 col-md-7 col-md-offset-7">
-            	<div>
+            <div class="col-xs-12 col-md-5 col-md-offset-7">
+            	<div class="controller">
                     
-                    <div class="socials col-sm-3 col-sm-offset-1 skw ">
+                    <div class="socials col-sm-6 skw">
                     	<div class="inskw">
                             <ul>
                                 <li><a href="#"><span class="fa fa-paper-plane fa-fw"></span></a></li>

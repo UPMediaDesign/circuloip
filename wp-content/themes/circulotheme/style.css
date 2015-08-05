@@ -73,7 +73,7 @@ blockquote li {list-style-position: inside !important;}
 
   
 
-h1, h2 , h3{  font-family: 'proxima_nova_ltsemibold';, helvetica, arial, sans-serif; text-transform:uppercase}
+h1, h2 , h3{  font-family: 'proxima_nova_ltsemibold';, helvetica, arial, sans-serif; text-transform:capitalize;}
 h3{ font-weight:700; color:#155980}
 h4{  font-family: 'proxima_nova_ltsemibold' , helvetica, arial , sans-serif}
 h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}
@@ -181,14 +181,11 @@ h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}
 /*******************************************************************************************/
 /*************************************supersized********************************************/
 /*******************************************************************************************/
-
 #supersized-loader { position:absolute; top:50%; left:50%; z-index:10; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background-color:#111; background:rgba(0,0,0,0.8) url(../img/progress.gif) no-repeat center center; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; display: none;}
-    
 #supersized { position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; background: #000;}
 #supersized img{ position:relative; display:none; outline:none; border:none; }
-#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }   /*Speed*/
-#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }           /*Quality*/
-
+#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }/*Speed*/
+#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }/*Quality*/
 #supersized a { z-index:-30; position:absolute; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#000;}
 #supersized a.prevslide { z-index:-20; }
 #supersized a.activeslide { z-index:-10; }
@@ -201,8 +198,10 @@ h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}
 /* Login Bar */
 .outlogged.nav{width: 19.95%;; margin: 0; padding-right: 0; float: right; display: block; background:#10325c; border-top:3px solid #1598ed;}
 .outlogged span{text-align: center; display: block; font-size: 12px; color: #ffffff; padding-top:25px;}
+
 a.acc{text-align: center; display: table; color: #fff; background: #ff9900; margin: 10px auto 15px; padding: 5px 15px; border-radius: 5px; font-size: 18px; font-family: 'proxima_nova_rgbold', helvetica, arial, sans-serif; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
-a.acc:hover{background:#b36b00;}
+a.acc:hover{background:#b36b00; text-decoration: none;}
+
 .outlogged p{font-size:12px; font-family: 'proxima_nova_ltsemibold', helvetica, arial, sans-serif; text-align:center; color:#ffffff;}
 .outlogged p a{font-size: 12px; font-family: 'proxima_nova_ltsemibold'; text-decoration: underline; color: #ffffff;}
 .outlogged p a:hover{background: none; padding:0;}
@@ -210,8 +209,10 @@ a.acc:hover{background:#b36b00;}
 .navbar-nav{margin-left:10%; padding-top: 45px;}
 .navbar-nav ul{display:block;}
 .navbar-nav li{float:left;}
+
 .navbar-default .navbar-nav>li>a{color:#fff; font-size: 13px; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
-.navbar-default .navbar-nav>li>a:hover{color:#ff9900; }
+.navbar-default .navbar-nav>li>a:hover{color:#ff9900;}
+.navbar-default{border-color: transparent; position: absolute;}
 
 /* For Home node */
 li#menu-item-26 {color: #fff; background: #10325c; border-radius: 50%; width: 22px; height: 22px; padding: 3px 4.7px; margin-top: 14px; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
@@ -220,14 +221,95 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 .navbar-default .navbar-nav>li.current_page_item>a {font-family: 'proxima_nova_rgbold'; color: #ff9900; }
 
 /* Search Bar */
-.searchandsocial.navbar-fixed-top {top: 132px; }
+.col-xs-12.col-md-5.col-md-offset-7{padding-right: 0; padding-left: 0;}
+.controller{margin-left: -4.74%;}
+.searchandsocial.navbar-fixed-top {top: 132px; position:absolute;}
+
 .skw {-moz-transform: skewX(-15deg); -webkit-transform: skewX(-15deg); -o-transform: skewX(-15deg); -ms-transform: skewX(-15deg); transform: skewX(-15deg); }
+
 .inskw {-moz-transform: skewX(15deg); -webkit-transform: skewX(15deg); -o-transform: skewX(15deg); -ms-transform: skewX(15deg); transform: skewX(15deg); }
 .inskw:after{-moz-transform: skewX(0deg); -webkit-transform: skewX(0deg); -o-transform: skewX(0deg); -ms-transform: skewX(0deg); transform: skewX(0deg); }
+
 .inskw ul {margin-top: 0; margin-bottom: 0; }
 .inskw li {float: left; list-style: none; padding: 7px 5px 7px; }
 .inskw li a{color: #fff; background: #45bdff; width: 30px; height: 30px; display: block; padding: 7px 5px; font-size: 15px; border-radius: 50%;}
-.socials {background: #10325c; border-left: 15px solid #45bdff; }
-.searchh{background:#1598ed; padding: 8.5px 5px 10px;}
+
+.socials {background: #10325c; border-left: 10px solid #45bdff; position: relative; z-index: 32; left: 100px; }
+
+.searchh{background:#1598ed; padding: 8.5px 5px 10px; position: relative; z-index: 33; }
 .searchh span.fa.fa-search{color: #fff; font-size: 20px; padding: 0 6px 0 3px; }
-.searchh input{ background: none; border-top: 0; border-left: 0; border-right: 0; width: 55%;}
+.searchh input {background: none; border-top: 0; border-left: 0; border-right: 0; width: 74%; }
+
+/*******************************************************************************************/
+/************************************* Slider ********************************************/
+/*******************************************************************************************/
+.carousel-inner>.item {-webkit-transition: -webkit-transform .6s ease-in-out; -o-transition: -o-transform .6s ease-in-out; transition: transform .6s ease-in-out; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000px; perspective: 1000px; height: 440px; margin-top: 133px; width: 100%; background-size:cover; }
+
+.antiskw{-moz-transform: skewX(-15deg); -webkit-transform: skewX(-15deg); -o-transform: skewX(-15deg); -ms-transform: skewX(-15deg); transform: skewX(-15deg); }
+.antinskw{-moz-transform: skewX(15deg); -webkit-transform: skewX(15deg); -o-transform: skewX(15deg); -ms-transform: skewX(15deg); transform: skewX(15deg); }
+.antinskw:after{-moz-transform: skewX(0deg); -webkit-transform: skewX(0deg); -o-transform: skewX(0deg); -ms-transform: skewX(0deg); transform: skewX(0deg); }
+
+.clr-1.base {background: #1598ed; margin-top: 120px; position: relative; left: -20px; border-right: 10px solid #45BDFF;}
+.inside.col-lg-11.col-md-offset-2.skw {margin-left: 12%; }
+
+.inside a {color: #fff; font-size: 40px; text-transform: none; line-height: 1.1em; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.inside a:hover {color: #D4D4D4; text-decoration: none; }
+.inside p {color: #fff; font-size: 14px; line-height: 1.3em;}
+
+.carousel-indicators {width: 2%; left: 123%; bottom: 175px; }
+.carousel-indicators li {padding: 10px; margin: 5px 14px;  width: 20px; height: 20px; background-color: rgba(255,255,255,0.5); border:none;}
+.carousel-indicators .active {width: 12px; height: 12px; margin: 5px 14px; background-color: #ff9900;
+}
+
+/* OFERTAS LABORALES */
+.offer, .tips {padding-top: 35px; }
+.offer h2{font-size:45px; font-family:'proxima_nova_rgbold';color:#0067b1; text-align:left; margin-bottom: 40px; text-transform: capitalize;}
+.offer h2 img{padding-right: 15px;}
+.offer a.acc {float: left; margin-top: 25px; margin-bottom: 35px; }
+
+.offer-element.side{float:left; margin-left: 10px; margin-top: 0;     padding-bottom: 20px;}
+.offer-element span strong {font-size: 20px; display: block; margin: 0 auto; padding-top: 20px; } 
+.offer-element span {text-align: center; background: #45bdff; border-radius: 50%; width: 75px; height: 75px; font-family: 'proxima_nova_ltsemibold'; color: #fff; font-size: 15px; clear: both; display: block; line-height: 1.3em; float: left; }
+.offer-element h3{margin-top:0; margin-bottom:0;}
+.offer-element h3 a{color:#1598ed; font-size: 23px; font-family: 'proxima_nova_rgbold'; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: capitalize; margin-bottom: 0;}
+.offer-element h3 a:hover{color:#0067b1; text-decoration: none;}
+.offer-element p{color:#45bdff; font-family: 'proxima_nova_ltsemibold'; font-size: 15px; margin-bottom: 3px;}
+.offer-element a{color:#ff9900; font-family: 'proxima_nova_rgbold'; font-size: 18px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.offer-element a:hover{color:#b36b00;  text-decoration: none;}
+.offer-element a i {color: #ff9900; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-decoration: none; background: none; width: 5px; height: 5px; }
+.offer-element a:hover i{color:#b36b00;}
+
+/* TIPS LABORALES */
+.tips h2{font-size: 30px; color:#10325c; font-family: 'proxima_nova_rgbold'; text-align: left; margin-bottom:30px; border-top:1px solid #343838; border-bottom:1px solid #343838; border-left:1px solid #343838; padding: 10px; text-transform: capitalize;}
+.tips h2 i {font-size:20px; color:#343838; margin-left:48%; }
+.tips a.acc {float: left; margin-top: 50px; margin-bottom: 35px; }
+
+.tip-element h3{margin-bottom:0; margin-top: 25px;}
+.tip-element h3 a{color:#1598ed; font-family: 'proxima_nova_ltsemibold'; font-size: 19px; text-align:left; line-height: 1.3em; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: capitalize;}
+.tip-element h3 a:hover{color:#0067b1; text-decoration: none;}
+.tip-element p{color:#a2a2a2; font-family: 'proxima_nova_ltsemibold'; line-height: 1.4em; text-align: left; font-size: 14px; margin-bottom: 5px;}
+.tip-element a{color:#ff9900; font-family: 'proxima_nova_rgbold'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.tip-element a:hover{color:#b36b00;  text-decoration: none;}
+
+/* CONVENIOS */
+.bg-convenios{background:url(images/bg-convenios.png); background-repeat: no-repeat; background-size: cover; border-bottom:10px solid #45bdff;}
+
+.convenios h2{font-size: 45px; color:#fff;text-transform: capitalize; font-family: 'proxima_nova_rgbold'; text-align:left; line-height:1em; margin-top:40px;}
+.convenios h2 img{float: left; margin-right: 10px;}
+.convenios p {color: #dddddd; font-size: 16px; line-height: 1.3em; margin-bottom: 25px;}
+.convenios a.acc {float: left; margin-bottom: 35px;}
+
+.convenio-element.side {background: #ffffff; padding: 5px 15px; margin-bottom: 25px; float: left; display: block; width: 70%; height: 135px; }
+.convenio-element img{float: left;}
+.convenio-element h3{text-align: left; line-height: 1.3em; font-size: 20px; margin-top: 5px; height: 45px;}
+.convenio-element h3 a{color:#1598ed; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-size: 20px;}
+.convenio-element h3 a:hover{color: #0067b1; text-decoration: none; font-size: 20px;}
+.convenio-element p{color:#a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0;}
+.convenio-element a{color:#ff9900; font-family: 'proxima_nova_rgbold'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.convenio-element a:hover{color:#b36b00; text-decoration: none;}
+
+
+
+
+
+
