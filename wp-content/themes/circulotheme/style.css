@@ -35,8 +35,8 @@ small{font-size:10px;}
 .microseparator{padding-bottom:5px;}
 .border { border-bottom: 1px solid #ccc; padding: 15px 15px 0 15px; margin-bottom: 15px;}
 
-body{font-family: 'proxima_nova_ltsemibold', helvetica, arial, sans-serif , sans-serif; ;}
-p {  font-family: 'proxima_nova_ltsemibold', helvetica, arial , sans-serif;  color:#323232;}
+body{font-family: 'proxima_nova_ltsemibold', helvetica, arial, sans-serif , sans-serif; font-size: :13px;}
+p {font-family: 'proxima_nova_ltsemibold', helvetica, arial , sans-serif;  color:#323232; }
 
 main .container p , main .megacontainer p , .recorrido p{ font-family: 'proxima_nova_ltsemibold', helvetica, arial, sans-serif; font-size:16px; line-height:160%; color:#5d5d5d; padding-bottom: 20px}
 
@@ -307,6 +307,66 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 .convenio-element p{color:#a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0;}
 .convenio-element a{color:#ff9900; font-family: 'proxima_nova_rgbold'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .convenio-element a:hover{color:#b36b00; text-decoration: none;}
+
+/* NOTICIAS */
+#noticias{background:#f6f6f6; padding-bottom: 50px; padding-top: 25px;}
+#noticias h3{color:#0067b1; font-size: 40px; text-align: left; font-family: 'proxima_nova_rgbold'; padding-left:15px; padding-bottom: 25px;}
+#noticias h4 a{color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima_nova_ltsemibold'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}
+#noticias h4 a:hover{color: #0067b1; text-decoration: none;}
+
+figure.principal.col-md-4 img{max-width:360px; height: auto; width:100%;}
+.principal a.heading{float:none;}
+.principal figcaption{background:#fff; padding: 13px 10px;}
+.principal a, .secundario a{color:#ff9900; text-align:left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: right;}
+.principal a:hover, .secundario a:hover{color: #b36b00; text-decoration: none;}
+.principal p{color:#a2a2a2; font-size: 14px; font-family: 'proxima_nova_ltsemibold';}
+.principal span{font-style: italic; color:#a2a2a2;}
+
+article>.secundario{ padding: 10px; margin-right: 0; margin-left: 0;}
+article .noticias{ background-color: #fff; margin-bottom:10px;}
+.secundario h4 a{color:#1598ed; font-size: 16px !important; text-align: left; font-family: 'proxima_nova_ltsemibold'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 3px;}
+.secundario h4 a:hover{color: #0067b1; text-decoration: none;}
+
+p.sede {float: left; color:#ff9900; margin-bottom: 0;}
+.sede span{color:#1598ed; font-size: 20px; font-style: normal !important;}
+
+/* ACTIVIDADES */
+.actividades{background: #ececec; padding-bottom: 60px; padding-top: 25px;}
+.actividades h3{font-size: 45px; color:#0067b1;text-transform: capitalize; font-family: 'proxima_nova_rgbold'; text-align:left; line-height:1em; margin-top:40px; padding-left: 15px; padding-bottom: 25px;}
+.actividades h4 a{color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima_nova_ltsemibold'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}
+.actividades h4 a:hover{color: #0067b1; text-decoration: none;}
+
+.line{border-bottom:1px solid #a2a2a2;}
+
+.no-bg>.secundario{background:transparent;}
+article.secundario.activity-date{padding: 10px 0;}
+.secundario a.activity-date{float: left;}
+.secundario.activity-date h4{margin: 0; min-height: 36px;} 
+.secundario.activity-date h4 a {height: 42px; }
+.secundario.activity-date p{margin-bottom: 0; line-height: 1.2em; color:#939393; clear:both;}
+
+.date{text-align:center; color:#1598ed; font-family: 'proxima_nova_rgbold'; border-right:5px dotted #a2a2a2; padding-left: 0;}
+
+span.day{clear:both; display: block; font-size: 45px; line-height: 0.5em; padding-top: 15px;}
+span.month {clear: both; display: block; text-transform: uppercase; font-size: 30px; }
+
+/* VIDA SOCIAL */
+#vidasocial{background: #1598ed; padding-bottom: 40px; padding-top: 25px;}
+#vidasocial h3{font-size: 45px; color:#fff;text-transform: capitalize; font-family: 'proxima_nova_rgbold'; text-align:left; line-height:1em; margin-top:40px; padding-left:15px; padding-bottom: 25px;}
+
+.vidasocial figure.principal{max-height: 320px; }
+.vidasocial figure.principal a{float:none;}
+.vidasocial figure.principal figcaption{background: rgba(52, 56, 56, .8); color: #fff; position: relative; bottom: 95px; }
+.vidasocial figure.principal figcaption h4 a{float: right; color: #fff; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 40px; margin-bottom: 10px;}
+.vidasocial figure.principal figcaption h4 a:hover{text-decoration:none; color:#f2f2f2;}
+.vidasocial figure.principal figcaption a.vermas{float:right;color:#ff9900; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.vidasocial figure.principal figcaption a.vermas:hover{color:#b36b00;}
+
+
+
+
+
+
 
 
 

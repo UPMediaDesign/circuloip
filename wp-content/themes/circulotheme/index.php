@@ -130,46 +130,133 @@
 </section>
 
 <!-- Noticias -->
-<section class="container noticias">
-    <div class="row">
-        <h3>Noticias</h3>
-        <div class="col-md-12">
-            <div class="row">
-                
-                <?php $posts = get_posts(array('category' => 'noticias' , 'numberposts' => 6 , 'post__not_in'))?>
-                <?php $count = 0?>
-                <?php foreach($posts as $post):?>
-                <?php $count++?>
-                
-                <?php if($count == 1){?>
-                    <figure class="principal col-md-4">
-                        <a href="<?php echo get_permalink($post->ID)?>"><?php echo get_the_post_thumbnail($post->ID , 'singledestacado' , array('class' => 'img-responsive'))?></a>
-                        <figcaption class="">
-                            <h4><?php echo $post->post_title?></h4>
-                            <p class="sede"><?php echo get_field('sede',$post->ID); ?></p>
-                            <a href="<?php echo get_permalink($post->ID)?>" class="morelink">Ver Info<i class="fa fa-arrow-right"></i></a>
-                        </figcaption>
-                    </figure>
+<section id="noticias">
+    <div class="container">
+        <div class="row">
 
-                        <?php }else{?>
-                            <article class="secundario col-md-4">
-                                <h4><?php echo $post->post_title?></h4>
-                                <p class="sede"><?php echo get_field('sede',$post->ID); ?></p>
-                                <a href="<?php echo get_permalink($post->ID)?>" class="morelink">Ver Info <i class="fa fa-arrow-right"></i></a>
-                            </article>
-                        <?php }?>
+            <h3>Noticias</h3>
+            <div class="col-md-12">
+                <div class="row">
                     
-                
-                
-                <?php endforeach;?>                
+                    <?php $posts = get_posts(array('category' => 'noticias' , 'numberposts' => 6 , 'post__not_in'))?>
+                    <?php $count = 0?>
+                    <?php foreach($posts as $post):?>
+                    <?php $count++?>
+                    
+                    <?php if($count == 1){?>
+                        <figure class="principal col-md-4">
+                            <a class="heading" href="<?php echo get_permalink($post->ID)?>"><?php echo get_the_post_thumbnail($post->ID , 'singledestacado' , array('class' => 'img-responsive'))?></a>
+                            <figcaption>
+                                <h4><a href="<?php echo get_permalink($post->ID)?>"><?php echo $post->post_title?></a></h4>
+                                <div class="clear"></div>
+                                <p class="sede"><span class="fa fa-map-marker"></span> <?php echo get_field('sede',$post->ID); ?></p>
+                                <a href="<?php echo get_permalink($post->ID)?>" class="morelink">Ver Info <i class="fa fa-arrow-right"></i></a>
+                                <div class="clear"></div>
+                            </figcaption>
+                        </figure>
 
+                            <?php }else{?>
+                                <article class="col-md-4">
+                                    <div class="secundario noticias">
+                                        <h4><a href="<?php echo get_permalink($post->ID)?>"><?php echo $post->post_title?></a></h4>
+                                        <div class="clear"></div>
+                                        <p class="sede"><span class="fa fa-map-marker"></span> <?php echo get_field('sede',$post->ID); ?></p>
+                                        <a href="<?php echo get_permalink($post->ID)?>" class="morelink">Ver Info <i class="fa fa-arrow-right"></i></a>
+                                        <div class="clear"></div>
+                                    </div>
+                                </article>
+                            <?php }?>
+                    
+                    <?php endforeach;?>                
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Calendario Actividades -->
+<section class="actividades">
+    <div class="container">
+        <div class="row">
+            <h3>Calendario Actividades</h3>
+            <div class="col-md-12">
+                <div class="row">
+                     <?php $actividades = get_posts(array('post_type' => 'actividades', 'numberposts' => 8 , 'post__not_in')) ?>
+                    <?php $countactividades = 0?>
+                    <?php foreach($actividades as $actividad):?>
+                    <?php $countactividades++?>
+                    
+                    <?php if($countactividades == 1){?>
+                        <figure class="principal col-md-4">
+                            <a class="heading" href="<?php echo get_permalink($actividad->ID)?>"><?php echo get_the_post_thumbnail($actividad->ID , 'homesocial' , array('class' => 'img-responsive'))?></a>
+                            <figcaption>
+                                <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
+                                <p><?php echo substr($actividad->post_content , 0, 65)?>...</p>
+                                <span>
+                                    <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
+                                </span>
+                                <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                            </figcaption>
+                        </figure>
+
+                            <?php }else{?>
+                                <article class="col-md-4">
+                                    <div class="secundario activity-date line row">
+                                        <div class="date col-xs-3">
+                                            <span class="day"><?php echo the_time('d')?></span>
+                                            <span class="month"><?php echo the_time('M')?></span>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
+                                            <p><?php echo substr($convenio->post_content , 0, 64)?>...</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </article>
+                            <?php }?>
+                    
+                    <?php endforeach;?>                
+
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Vida Social -->
+<section id="vidasocial">
+    <div class="container">
+        <div class="row">
+            <h3>Vida Social</h3>
+            <div class="col-md-12 vidasocial">
+                <div class="row">
+                     <?php $sociales = get_posts(array('post_type' => 'vida-social', 'numberposts' => 6 )); ?>
+                    <?php $countsociales = 0?>
+                    <?php foreach($sociales as $social):?>
+                    <?php $countsociales++?>
+                    
+                        <figure class="principal col-md-4">
+                            <a href="<?php echo get_permalink($social->ID)?>"><?php echo get_the_post_thumbnail($social->ID , 'homesocial' , array('class' => 'img-responsive'))?></a>
+                            <figcaption>
+                                <h4><a href="<?php echo get_permalink($social->ID)?>" ><?php echo $social->post_title?></a></h4>
+                                <span>
+                                    <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
+                                </span>
+                                <a class="vermas" href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                            </figcaption>
+                        </figure>
+                    
+                    <?php endforeach;?>                
 
-<?php //get_footer()?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php get_footer()?>
 
 
 

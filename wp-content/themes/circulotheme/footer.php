@@ -1,4 +1,4 @@
-<footer <?php if(is_home() || is_page(15) || is_page(17) || is_page(19) || is_page(23) || is_404()){?>class="navbar-fixed-bottom"<?php }?>>
+<footer class="">
 	<div class="container">
     	<div class="row">
         
@@ -27,19 +27,10 @@
 </footer>
 
 
-<div id="filis" style="display:none">
-	<?php /* <div class="clsss pull-right"><span class="fa fa-close fa-fw fa-2x" style="color:#000"></span></div> */?>
-    <div class="clear"></div>
-	<?php $filiales = get_post(11)?>
-    <h5><?php echo $filiales->post_title;?></h5>
-    
-    <?php echo apply_filters('the_content', $filiales->post_content)?>
-</div>
+
 
 </body>
 <?php wp_footer()?>
-
-
 
 <!-- scripts -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -89,56 +80,6 @@ jQuery(document).ready(function() {
 												]
 				}); 
 		    });
-</script>
-<?php }?>
-
-<?php if(is_page(19)){ //bigvideo?>
-<script>
-	jQuery(function() {
-		var BV = new $.BigVideo();
-		BV.init();
-		  BV.show('<?php echo get_field('video_loop' , 19)?>',{doLoop:true});
-	});
-</script>
-<?php }?>
-
-<?php /* if(is_page(502)){ //bigvideo?>
-<script>
-	jQuery(function() {
-		var BV = new $.BigVideo();
-		BV.init();
-		  BV.show('<?php echo get_field('video_loop' , 502)?>',{doLoop:true});
-	});
-</script>
-<?php } */?>
-
-<script>
-jQuery(function(){
-    $("#menu-item-1281 a").popover({
-        html : true, 
-        placement: 'top',
-        content: function() {
-          return $('#filis').html();
-        }
-    });
-
-	 $('.clsss').click(function(event) {
-		 $('#menu-item-1281 a').popover('hide');
-	}); 
-
-});
-
-/* jQuery(function () {
-  $('[data-toggle="popover"]').popover();
-}) */
-
-	  
-/*jQuery('.popover').on('shown.bs.popover', function () {
-  	var pcon = $('#filis').html();
-	  console.log(pcon);
-	  $('.popover-content').html(pcon);
-})	  
-*/
 </script>
 
 </html>
