@@ -4,12 +4,64 @@
 		"selected_items":
 		[
 			[
-				"text",
-				"text-decoration"
+				"font",
+				"font-family"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"proxim",
+				"proxima_nova_ltsemibold"
+			],
+			[
+				"act",
+				"activity-date"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"pro",
+				"proxima_nova_rgbold"
+			],
+			[
+				"FONT",
+				"font-style"
+			],
+			[
+				"paddin",
+				"padding-top"
 			],
 			[
 				"padding",
-				"padding-top"
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"text",
+				"text-decoration"
 			],
 			[
 				"convenio",
@@ -28,32 +80,16 @@
 				"convenio-element"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"proxima",
 				"proxima_nova_rgbold"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"tip",
 				"tip-element"
 			],
 			[
-				"pro",
-				"proxima_nova_ltsemibold"
-			],
-			[
 				"offer",
 				"offer-element"
-			],
-			[
-				"text-",
-				"text-decoration"
 			],
 			[
 				"navbar",
@@ -68,16 +104,8 @@
 				"padding-left"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"ske",
 				"skew-skin"
-			],
-			[
-				"paddin",
-				"padding-bottom"
 			],
 			[
 				"margn",
@@ -86,10 +114,6 @@
 			[
 				"li",
 				"line-height"
-			],
-			[
-				"tex",
-				"text-invite"
 			],
 			[
 				"skew",
@@ -104,10 +128,6 @@
 				"background-image"
 			],
 			[
-				"ba",
-				"background-image"
-			],
-			[
 				"paddi",
 				"padding-top"
 			],
@@ -118,10 +138,6 @@
 			[
 				"re",
 				"relative"
-			],
-			[
-				"border",
-				"border-bottom"
 			],
 			[
 				"nav",
@@ -226,10 +242,6 @@
 			[
 				"pdd",
 				"padding-top"
-			],
-			[
-				"font-",
-				"font-size"
 			],
 			[
 				"margi",
@@ -407,7 +419,23 @@
 			"file": "wp-content/themes/circulotheme/index.php",
 			"settings":
 			{
-				"buffer_size": 7957,
+				"buffer_size": 12832,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/footer.php",
+			"settings":
+			{
+				"buffer_size": 4719,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/header.php",
+			"settings":
+			{
+				"buffer_size": 2622,
 				"line_ending": "Unix"
 			}
 		},
@@ -415,7 +443,7 @@
 			"file": "wp-content/themes/circulotheme/functions.php",
 			"settings":
 			{
-				"buffer_size": 9265,
+				"buffer_size": 9322,
 				"line_ending": "Unix"
 			}
 		},
@@ -423,7 +451,7 @@
 			"file": "wp-content/themes/circulotheme/style.css",
 			"settings":
 			{
-				"buffer_size": 19260,
+				"buffer_size": 25962,
 				"line_ending": "Windows"
 			}
 		}
@@ -744,7 +772,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -752,15 +780,15 @@
 					"file": "wp-content/themes/circulotheme/index.php",
 					"settings":
 					{
-						"buffer_size": 7957,
+						"buffer_size": 12832,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7296,
-								7296
+								4586,
+								4632
 							]
 						],
 						"settings":
@@ -774,31 +802,55 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1989.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/circulotheme/functions.php",
+					"file": "wp-content/themes/circulotheme/footer.php",
 					"settings":
 					{
-						"buffer_size": 9265,
+						"buffer_size": 4719,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4855,
-								4855
+								682,
+								682
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/circulotheme/header.php",
+					"settings":
+					{
+						"buffer_size": 2622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1541,
+								1541
 							]
 						],
 						"settings":
@@ -812,25 +864,63 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1645.0,
+						"translation.y": 175.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
-					"buffer": 2,
-					"file": "wp-content/themes/circulotheme/style.css",
+					"buffer": 3,
+					"file": "wp-content/themes/circulotheme/functions.php",
 					"settings":
 					{
-						"buffer_size": 19260,
+						"buffer_size": 9322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18469,
-								18469
+								1210,
+								1210
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 64.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/circulotheme/style.css",
+					"settings":
+					{
+						"buffer_size": 25962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25094,
+								25094
 							]
 						],
 						"settings":
@@ -844,7 +934,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4990.0,
+						"translation.y": 6867.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

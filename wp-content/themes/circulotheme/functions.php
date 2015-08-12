@@ -31,6 +31,7 @@ add_post_type_support('page', 'excerpt', 'excerpt', 'thumbnail');
 function register_my_menu() {
 	register_nav_menu( 'primary', 'Menú principal');
 	register_nav_menu( 'secondary', 'Menú footer');
+    register_nav_menu( 'third', 'Menú footer inferior');
 }
 add_action( 'init', 'register_my_menu' );
 ?>

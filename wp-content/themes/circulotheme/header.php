@@ -43,7 +43,7 @@
       	<div class="row">
       	
             <div class="navbar-header">
-            	<a class="navbar-brand logo" href="<?php bloginfo('url')?>"><img src="<?php bloginfo('template_directory')?>/images/logo_circulo.png" alt="" width="150" /></a>
+            	<a class="navbar-brand logo" href="<?php bloginfo('url')?>" title="Circulo de Egresados IPCHILE" rel="nofollow"><img src="<?php bloginfo('template_directory')?>/images/logo_circulo.png" alt="" width="150" /></a>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>

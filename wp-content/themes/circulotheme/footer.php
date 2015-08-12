@@ -1,36 +1,38 @@
-<footer class="">
+<footer class="bg-lowblue">
 	<div class="container">
     	<div class="row">
+
+    		<div class="col-md-3 logo-footer">
+    			<a href="<?php bloginfo('url')?>" title="Circulo de Egresados IPCHILE" rel="nofollow">
+    				<img src="<?php bloginfo('template_directory')?>/images/logo_circulo.png" alt="">
+    			</a>
+    		</div>
         
-        	<?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'footer-nav fl' , 'theme_location' => 'secondary' ) ); ?>
 			
-                       
-            
-            <div class="clear miniseparator hidden-sm hidden-md hidden-lg"></div>
-            <div class="sociales fl">
-            	<ul>
+			<?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'footer-nav fl col-md-9 row service border-nav' , 'theme_location' => 'secondary' ) ); ?>
+			<?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'footer-nav fl col-md-6 row service' , 'theme_location' => 'third' ) ); ?>
+            <ul class="col-md-3 col-xs-6 websoc">
+            	<div class="box-soc">
+            		<h4>Redes Sociales IPCHILE</h4>
+            		<span>Buscanos en:</span>
                     <li><a href="<?php echo get_field('facebook','options')?>"><span class="fa fa-fw fa-facebook"></span></a></li>
                     <li><a href="<?php echo get_field('youtube','options')?>"><span class="fa fa-fw fa-youtube"></span></a></li>
-            	</ul>
-            </div>
-            <div class="otras-empresas fl">
-                <ul>
-                	<?php $esas = get_field('otras_empresas' , 'options');?>
-                    <?php foreach($esas as $esa):?>
-                	<li><a href="<?php echo $esa['link']?>" alt="<?php echo $esa['empresa']?>"><img src="<?php echo $esa['logo']?>" alt=""></a></li>
-                    <?php endforeach?>
-                </ul>
-            </div>
-            
+            	</div>
+            </ul>
+
         </div>
     </div>
 </footer>
-
+<div class="bg-highblue">
+        <span class="credit-footer">IPCHILE - Todos los Derechos Reservados ©</span>
+</div>
 
 
 
 </body>
 <?php wp_footer()?>
+
+
 
 <!-- scripts -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -80,6 +82,56 @@ jQuery(document).ready(function() {
 												]
 				}); 
 		    });
+</script>
+<?php }?>
+
+<?php if(is_page(19)){ //bigvideo?>
+<script>
+	jQuery(function() {
+		var BV = new $.BigVideo();
+		BV.init();
+		  BV.show('<?php echo get_field('video_loop' , 19)?>',{doLoop:true});
+	});
+</script>
+<?php }?>
+
+<?php /* if(is_page(502)){ //bigvideo?>
+<script>
+	jQuery(function() {
+		var BV = new $.BigVideo();
+		BV.init();
+		  BV.show('<?php echo get_field('video_loop' , 502)?>',{doLoop:true});
+	});
+</script>
+<?php } */?>
+
+<script>
+jQuery(function(){
+    $("#menu-item-1281 a").popover({
+        html : true, 
+        placement: 'top',
+        content: function() {
+          return $('#filis').html();
+        }
+    });
+
+	 $('.clsss').click(function(event) {
+		 $('#menu-item-1281 a').popover('hide');
+	}); 
+
+});
+
+/* jQuery(function () {
+  $('[data-toggle="popover"]').popover();
+}) */
+
+	  
+/*jQuery('.popover').on('shown.bs.popover', function () {
+  	var pcon = $('#filis').html();
+	  console.log(pcon);
+	  $('.popover-content').html(pcon);
+})	  
+*/
 </script>
 
 </html>

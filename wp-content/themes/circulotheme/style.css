@@ -362,7 +362,44 @@ span.month {clear: both; display: block; text-transform: uppercase; font-size: 3
 .vidasocial figure.principal figcaption a.vermas{float:right;color:#ff9900; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .vidasocial figure.principal figcaption a.vermas:hover{color:#b36b00;}
 
+/* FOOTER */
+.logo-footer img {margin: 20px auto; display: block; max-width: 130px; width: 100%; height: auto; }
 
+.border-nav{margin-bottom:0;}
+
+li.service{list-style: none; border-left: 1px solid #fff; padding-bottom: 30px; padding-top:25px;border-bottom: 1px solid #fff;}
+li.service a{font-size: 18px; font-family: 'proxima_nova_rgbold'; color:#fff; list-style: none;}
+li.service a:hover{text-decoration: none;}
+#menu-second-footer {padding-right: 6px; margin-bottom:0;}
+#menu-second-footer li.service{border-bottom: none; padding-bottom: 90px;}
+
+
+li.hit{list-style: none;}
+li.hit a{list-style: none; color:#fff; font-size: 14px; font-family: 'proxima_nova_ltsemibold' !important; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+li.hit a:hover{color:#f2f2f2;}
+
+/*Redes Sociales Footer*/
+.websoc{padding-left: 9px; margin-bottom: 0;}
+.websoc h4{font-size: 18px; font-family: 'proxima_nova_rgbold'; color:#fff; list-style: none; padding-top: 25px; margin-bottom: 5px;}
+.websoc span{font-size: 14px; color:#fff;}
+.websoc span.fa{color: #45bdff; font-size: 15px; background: #fff; border-radius: 50%; padding: 7px 10px; text-align: left; float: left; margin-right: 10px; width: 30px; height: 30px; margin-top: 5px;}
+.websoc li{list-style: none;}
+.box-soc{border-left:1px solid #fff; padding: 0 15px; height: 180px;}
+
+span.credit-footer{text-align: center; margin: 0 auto; display: block;font-size: 16px; font-family: 'proxima_nova_ltsemibold'; color:#fff; padding:5px 0;}
+
+
+
+/*******************************************************************************************/
+/************************************* Interiores ******************************************/
+/*******************************************************************************************/
+
+/* QUIENES SOMOS */
+/* TESTIMONIOS */
+/* NOTICIAS */
+/* VIDA SOCIAL */
+/* PREGUNTAS FRECUENTES */
+/* PERFECCIONAMIENTO */
 
 
 
