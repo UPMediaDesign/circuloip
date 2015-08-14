@@ -65,18 +65,7 @@ Template Name: Testimonios
                 </div>
               </div>
             </div>
-        <script>
-		    jQuery(document).ready(function($) {
-		    jQuery('#modal-v-<?php echo $modal->ID?> .close').on('click', function() {
-		        //$('#popup-youtube-player').stopVideo();
-		      jQuery('#modal-v-<?php echo $modal->ID?> .player')[0].contentWindow.postMessage('{"event":"command","func":"' +'stopVideo' + '","args":""}', '*');    
-		    });
-		    jQuery('#modal-v-<?php echo $modal->ID?>').on('click', function() {
-		        //$('#popup-youtube-player').stopVideo();
-		      jQuery('#modal-v-<?php echo $modal->ID?> .player')[0].contentWindow.postMessage('{"event":"command","func":"' +'stopVideo' + '","args":""}', '*');    
-		    });
-		    });
-		</script> 
+        
     	<?php endforeach ?>
 
         <div class="pagination">
@@ -104,3 +93,19 @@ Template Name: Testimonios
 </section>
 
 <?php get_footer(); ?>
+
+        <?php foreach ($testimonios as $script): ?>
+            <script>
+                jQuery(document).ready(function($) {
+                jQuery('#modal-v-<?php echo $script->ID?> .close').on('click', function() {
+                    //$('#popup-youtube-player').stopVideo();
+                  jQuery('#modal-v-<?php echo $script->ID?> .player')[0].contentWindow.postMessage('{"event":"command","func":"' +'stopVideo' + '","args":""}', '*');    
+                });
+                jQuery('#modal-v-<?php echo $script->ID?>').on('click', function() {
+                    //$('#popup-youtube-player').stopVideo();
+                  jQuery('#modal-v-<?php echo $script->ID?> .player')[0].contentWindow.postMessage('{"event":"command","func":"' +'stopVideo' + '","args":""}', '*');    
+                });
+                });
+            </script> 
+
+        <?php endforeach ?>
