@@ -16,7 +16,7 @@
             		<h4>Redes Sociales IPCHILE</h4>
             		<span>Buscanos en:</span>
                     <li><a href="<?php echo get_field('facebook','options')?>"><span class="fa fa-fw fa-facebook"></span></a></li>
-                    <li><a href="<?php echo get_field('youtube','options')?>"><span class="fa fa-fw fa-youtube"></span></a></li>
+                    <li><a href="<?php echo get_field('youtube','options')?>"><span class="fa fa-fw fa-youtube-play"></span></a></li>
             	</div>
             </ul>
 
@@ -26,8 +26,6 @@
 <div class="bg-highblue">
         <span class="credit-footer">IPCHILE - Todos los Derechos Reservados ©</span>
 </div>
-
-
 
 </body>
 <?php wp_footer()?>

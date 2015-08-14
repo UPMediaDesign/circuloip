@@ -128,6 +128,7 @@ h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}
 .clr-10,.breadcrumb{color:#5d5d5d}
 
 /* Colores Background */
+.bg-orange         {background-color:#ff9900}
 .bg-trialblack     {background-color:#343838}
 .bg-deepblue       {background-color:#10325c}
 .bg-titleblue      {background-color:#0067b1}
@@ -382,7 +383,7 @@ li.hit a:hover{color:#f2f2f2;}
 .websoc{padding-left: 9px; margin-bottom: 0;}
 .websoc h4{font-size: 18px; font-family: 'proxima_nova_rgbold'; color:#fff; list-style: none; padding-top: 25px; margin-bottom: 5px;}
 .websoc span{font-size: 14px; color:#fff;}
-.websoc span.fa{color: #45bdff; font-size: 15px; background: #fff; border-radius: 50%; padding: 7px 10px; text-align: left; float: left; margin-right: 10px; width: 30px; height: 30px; margin-top: 5px;}
+.websoc span.fa{color: #45bdff; font-size: 15px; background: #fff; border-radius: 50%; padding: 7px; text-align: center; float: left; margin-right: 10px; width: 30px; height: 30px; margin-top: 5px;}
 .websoc li{list-style: none;}
 .box-soc{border-left:1px solid #fff; padding: 0 15px; height: 180px;}
 
@@ -394,12 +395,63 @@ span.credit-footer{text-align: center; margin: 0 auto; display: block;font-size:
 /************************************* Interiores ******************************************/
 /*******************************************************************************************/
 
+
+/* Para cabeceras de Portadillas */
+.heading-page{min-height: 320px; height: auto; background-repeat: no-repeat; background-size: cover; margin-top: 130px;}
+.container-fluid.gradient{background: rgba(87,87,87,1); background: -moz-linear-gradient(top, rgba(87,87,87,1) 0%, rgba(138,138,138,0) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(87,87,87,1)), color-stop(100%, rgba(138,138,138,0))); background: -webkit-linear-gradient(top, rgba(87,87,87,1) 0%, rgba(138,138,138,0) 100%); background: -o-linear-gradient(top, rgba(87,87,87,1) 0%, rgba(138,138,138,0) 100%); background: -ms-linear-gradient(top, rgba(87,87,87,1) 0%, rgba(138,138,138,0) 100%); background: linear-gradient(to bottom, rgba(87,87,87,1) 0%, rgba(138,138,138,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575757', endColorstr='#8a8a8a', GradientType=0 );}
+.container-fluid .jumbotron{text-align: center; background:transparent;}
+.container-fluid .jumbotron h2{color:#fff; font-size: 55px; font-family: 'proxima_nova_rgbold'; margin-top: 65px; text-transform: uppercase;}
+
 /* QUIENES SOMOS */
+.who-excerpt p{text-align: center; font-family: 'proxima_nova_ththin'; font-size: 50px; color:#343838; line-height:1.4em; padding:50px 0 80px; font-weight: normal;}
+.who-content .col-md-6{text-align: left; font-size: 18px; color: #808080; font-family: 'proxima_nova_ltsemibold'; line-height: 1.6em; font-weight: normal;}
+.who-content .col-md-6 img{padding-bottom: 20px; width: 100%; height: auto;}
+
+.quienes p{color:#fff; font-family: 'proxima_nova_ththin'; font-size:33px; text-align: center; line-height: 1.4em; font-weight:normal; padding:40px 0;}
+
+.quien-bg{height: 355px; border-bottom:5px solid #b36b00;}
+
+.message p{font-size: 20px; font-family: 'proxima_nova_ltsemibold'; color:#808080; text-align: left; line-height: 1.4em; padding-bottom:20px;}
+.message p strong{font-size: 15px; color:#343838; line-height: 1.3em;}
+
+/* CONVENIOS */
+.page .convenios{padding-top: 70px;}
+.container.instituciones{padding-bottom: 100px;}
+.instituciones h3{font-size:35px; font-family:'proxima_nova_rgbold';color:#fff; text-align:left; line-height: 1.4em; padding-left: 15px; text-transform: none; margin-bottom: 0;}
+.instituciones p{font-size:20px; font-family:'proxima_nova_ltsemibold'; color:#fff; text-align:left; line-height: 1.4em; padding-left: 15px;  }
+
 /* TESTIMONIOS */
+.insider-testimonial{}
+
+.testimonial-excerpt p{margin-top:70px; margin-bottom: 60px; text-align: center; font-family: 'proxima_nova_ththin'; line-height: 1.4em; font-size: 27px; color:#4e4e4e; font-style: italic;}
+
+.testimonial-content{background:url(images/bg-testexcerpt.jpg); background-size:cover; }
+.testimonial-content p{color:#ffffff; font-family: 'proxima_nova_ltsemibold'; font-size: 21px; text-align: left; line-height:1.4em; margin-bottom: 65px;  margin-top:65px; }
+.testimonial-content p em{ font-family: 'proxima_nova_ltsemibold'; line-height:1.4em; font-size: 33px;}
+
+
+.testimonio-element img{width:100%; height:auto;}
+figure.testimonio-element figcaption.testimonio-element a{opacity: 0; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; color:#ffffff; font-size: 0px;}
+figure.testimonio-element:hover figcaption.testimonio-element a{opacity: 1; color:#f2f2f2; text-decoration: none; border:3px solid #ff9900; padding:5px 7px; border-radius:5px; font-size: 18px;}
+figcaption.testimonio-element {position: absolute; left:0; right: 0;padding:30px 15px 20px;bottom: 0; background: rgba(0,0,0,0);
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(5,5,5,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#050505', GradientType=0 );}
+figcaption.testimonio-element h4{color:#fff; font-size:25px; font-family: 'proxima_nova_rgbold'; }
+figcaption.testimonio-element p{margin-bottom: 30px; font-size: 18px; color:#fff; font-family: 'proxima_nova_ltsemibold'; height: 30px; margin-bottom: 30px;}
+
+
+
 /* NOTICIAS */
 /* VIDA SOCIAL */
 /* PREGUNTAS FRECUENTES */
 /* PERFECCIONAMIENTO */
+
+/* Single */
 
 
 
