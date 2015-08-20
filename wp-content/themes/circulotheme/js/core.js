@@ -150,8 +150,7 @@ jQuery(window).scroll(function(){
         if(jQuery('.navbar').data('size') == 'big')
         {
             jQuery('.navbar').data('size','small');
-			
-            jQuery('.logo img').stop().animate({ width:'120px'},600);
+            
 			jQuery('#menu-navegacion').stop().animate({marginTop:'20px'},600);
 			jQuery('.navbar-right li a').stop().animate({paddingBottom:'16px'},600);
 			jQuery('.navbar').stop().css('box-shadow','0px 1px 5px rgba(0,0,0,.7)' );
@@ -162,8 +161,7 @@ jQuery(window).scroll(function(){
         if(jQuery('.navbar').data('size') == 'small')
         {
             jQuery('.navbar').data('size','big');
-			
-            jQuery('.logo img').stop().animate({width:'150px'},600);
+            
 			jQuery('#menu-navegacion').stop().animate({marginTop:'30px'},600);
 			jQuery('.navbar-right li a').stop().animate({paddingBottom:'20px'},600);
 			jQuery('.navbar').stop().css('box-shadow','none' );

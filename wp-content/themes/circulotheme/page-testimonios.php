@@ -61,7 +61,7 @@ Template Name: Testimonios
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-content embed-responsive embed-responsive-16by9" id="yt-player">
-                  <iframe width="560" height="315" class="embed-responsive-item player" src="https://www.youtube.com/embed/<?php echo get_field('embed_video_testimonio' , $modal->ID)?>?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="560" height="560" class="embed-responsive-item player" src="https://www.youtube.com/embed/<?php echo get_field('embed_video_testimonio' , $modal->ID)?>?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div>
               </div>
             </div>

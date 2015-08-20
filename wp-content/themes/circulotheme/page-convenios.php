@@ -11,11 +11,11 @@ Template Name: Convenios
 <?php $bg = wp_get_attachment_image_src( $bgid, 'slider' ); ?>
 
 <div class="heading-page" style="background-image: url(<?php echo $bg[0]?>);">
-    <div class="mega-container gradient">
+    <div class="container-fluid gradient">
         <div class="row">
 
             <div class="jumbotron">
-                <h2>Convenios</h2>
+                <h2><?php echo $post->post_title; ?></h2>
             </div>
         </div>
     </div>
@@ -28,7 +28,10 @@ Template Name: Convenios
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                    <?php $convenios= query_posts(array('post_type' => 'convenio' , 'numberposts' => 10)); ?>
+                    <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+                        
+                    <?php $convenios= query_posts(array('post_type' => 'convenio' , 'numberposts' => 8, 'paged' => $paged)); ?>
+
                     <?php $countconvenios = 0 ?>
                     <?php foreach ($convenios as $convenio): ?>
                     <?php $countconvenios++ ?>
@@ -47,9 +50,14 @@ Template Name: Convenios
                     <?php endforeach?>
                 </div>    
 
-                <?php if (function_exists("pagination")) {
-                    pagination($additional_loop->max_num_pages);
-                } ?>
+                <?php //if (function_exists("pagination")) {
+                    //pagination($additional_loop->max_num_pages);
+                //} ?>
+
+                <?php //wp_paginate();?>
+
+                <?php echo get_next_posts_link( ); ?>
+                <?php echo get_previous_posts_link( ); ?>
 
         </div>
     </div>

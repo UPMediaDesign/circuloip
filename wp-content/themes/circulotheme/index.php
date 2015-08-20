@@ -232,7 +232,7 @@
             <h3>Vida Social</h3>
             <div class="col-md-12 vidasocial">
                 <div class="row">
-                     <?php $sociales = get_posts(array('post_type' => 'vida-social', 'numberposts' => 6 )); ?>
+                    <?php $sociales = get_posts(array('post_type' => 'vida-social', 'numberposts' => 6 )); ?>
                     <?php $countsociales = 0?>
                     <?php foreach($sociales as $social):?>
                     <?php $countsociales++?>

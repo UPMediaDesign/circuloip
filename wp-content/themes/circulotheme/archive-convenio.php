@@ -1,13 +1,8 @@
-<?php
-/*
-Template Name: Convenios
-*/
-?>
 <?php get_header(); ?>
 
 <?php get_template_part('searchbar'); ?>
 
-<?php $bgid = get_post_thumbnail_id($post->ID)?>
+<?php $bgid = get_post_thumbnail_id(165)?>
 <?php $bg = wp_get_attachment_image_src( $bgid, 'slider' ); ?>
 
 <div class="heading-page" style="background-image: url(<?php echo $bg[0]?>);">
@@ -28,9 +23,8 @@ Template Name: Convenios
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                    <?php $convenios= query_posts(array('post_type' => 'convenio' , 'numberposts' => 10)); ?>
                     <?php $countconvenios = 0 ?>
-                    <?php foreach ($convenios as $convenio): ?>
+                    <?php foreach ($posts as $convenio): ?>
                     <?php $countconvenios++ ?>
                     <figure class="convenio-element col-md-6 col-sm-6 col-xs-12"> 
                         <?php echo get_the_post_thumbnail( $convenio->ID , 'convenios', array('class' => 'img-responsive')) ?>
@@ -45,14 +39,11 @@ Template Name: Convenios
                         </figcaption>
                     </figure>       
                     <?php endforeach?>
-                </div>    
-            <!-- Paginador -->
-<!--             <?php $paged //= (get_query_var('paged')) ? get_query_var('paged') : 1;
-            $args //= array('posts_per_page' => 3, 'paged' => $paged );
-            query_posts($args); ?>
- -->
-
-
+                </div> 
+            </div>    
+            <div class="col-md-6">
+                <?php wp_pagenavi(); ?>
+            </div>
         </div>
     </div>
 </section>
@@ -60,10 +51,15 @@ Template Name: Convenios
 <section class="bg-titleblue">
  <div class="container instituciones">
      <div class="row">
-        <?php $instituciones = get_field('convenio_institucion', options)?>
+        <?php $postc = get_post(165); ?>
+        <h3><?php echo $postc->post_excerpt; ?></h3>
+        <p><?php echo $postc->post_content; ?></p>
+        <?php $instituciones = get_field('convenio_institucion' , 165)?>
             <?php foreach($instituciones as $institucion):?>
                 <div class="col-md-2 institucion">
-                    <a href="<?php echo $institucion['link_convenio']?>"><img src="<?php echo $institucion['logo_convenio']?>" alt=""></a>
+                    <a href="<?php echo $institucion['link_convenio']?>">
+                        <img src="<?php echo $institucion['logo_convenio']?>" alt="">
+                    </a>
                 </div>
             <?php endforeach?>
      </div>
