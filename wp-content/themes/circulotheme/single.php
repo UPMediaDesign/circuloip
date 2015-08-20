@@ -53,4 +53,16 @@
 	</div>
 </article>
 
+<aside class="news-recommend">
+	<div class="container row">
+		<?php $posts = get_posts(array('category' => 'noticias' , 'numberposts' => 3 , 'post__not_in'))?>
+           	<?php $count = 0?>
+            <?php foreach($posts as $post):?>
+            <?php $count++?>
+		<div class="col-md-4">
+			
+		</div>
+	</div>
+</aside>
+
 <?php get_footer(); ?>

@@ -10,7 +10,8 @@
         <div class="row">
 
             <div class="jumbotron">
-                <h2>Convenios</h2>
+                <?php $postt = get_post(165); ?>
+                <h2><?php echo $postt->post_title; ?></h2>
             </div>
         </div>
     </div>

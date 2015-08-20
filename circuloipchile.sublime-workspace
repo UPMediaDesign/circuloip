@@ -4,8 +4,24 @@
 		"selected_items":
 		[
 			[
+				"princi",
+				"principales"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
 				"font",
-				"font-size"
+				"font-weight"
+			],
+			[
+				"act",
+				"act-date"
+			],
+			[
+				"secunda",
+				"Secundarios"
 			],
 			[
 				"single",
@@ -72,10 +88,6 @@
 				"padding-bottom"
 			],
 			[
-				"paddi",
-				"padding"
-			],
-			[
 				"proxima",
 				"proxima_nova_rgbold"
 			],
@@ -118,10 +130,6 @@
 			[
 				"proxim",
 				"proxima_nova_ltsemibold"
-			],
-			[
-				"act",
-				"activity-date"
 			],
 			[
 				"ba",
@@ -468,6 +476,46 @@
 	"buffers":
 	[
 		{
+			"file": "wp-content/themes/circulotheme/page-perfeccionamiento.php",
+			"settings":
+			{
+				"buffer_size": 2167,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/preguntas-frecuentes.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/404.php",
+			"settings":
+			{
+				"buffer_size": 389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/style.css",
+			"settings":
+			{
+				"buffer_size": 39743,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/functions.php",
+			"settings":
+			{
+				"buffer_size": 10162,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "wp-content/themes/circulotheme/index.php",
 			"settings":
 			{
@@ -476,10 +524,18 @@
 			}
 		},
 		{
-			"file": "wp-content/themes/circulotheme/header-single.php",
+			"file": "wp-content/themes/circulotheme/js/core.js",
 			"settings":
 			{
-				"buffer_size": 2339,
+				"buffer_size": 179922,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/archive-testimonio.php",
+			"settings":
+			{
+				"buffer_size": 4218,
 				"line_ending": "Unix"
 			}
 		},
@@ -492,71 +548,18 @@
 			}
 		},
 		{
-			"contents": "<?php get_header('single'); ?>\n\n<?php $bgid = get_post_thumbnail_id()?>\n<?php $bg = wp_get_attachment_image_src( $bgid, 'singleenc' ); ?>\n\n<div class=\"heading-single\" style=\"background-image: url(<?php echo $bg[0]?>);\">\n    <div class=\"container-fluid gradient\">\n        <div class=\"row\">\n\n            <div class=\"jumbotron\">\n                <h2><?php echo $post->post_title; ?></h2>\n				<p class=\"single-excerpt\"><?php echo substr($post->post_content , 0, 101)?>...</p>\n            </div>\n        </div>\n    </div>\n</div>\n\n<article class=\"single-content\">\n	<div class=\"container\">\n		<div class=\"row\">\n\n			<div class=\"col-md-10 col-sm-10 col-md-offset-2 col-sm-offset-2\">\n				<div class=\"clear separator\"></div>\n				<?php if ( function_exists('yoast_breadcrumb') ) {\n					yoast_breadcrumb('<p id=\"breadcrumbs\">Usted esta en:','</p>');\n				} ?>\n			</div>\n\n			<div class=\"col-md-1 col-sm-1 col-md-offset-1 col-sm-offset-1 date-single\">\n				<span class=\"first\"><?php echo the_time('j') ?> </span><br/>\n				<span class=\"second\"><?php echo the_time('M')?></span>\n				\n				<div class=\"place\">\n					<p class=\"sede\"><span class=\"fa fa-map-marker\"></span> Sede <?php echo get_field('sede',$post->ID); ?></p>\n				</div>\n			</div>\n\n			<div class=\"col-md-8\">\n				<?php echo apply_filters('the_content' , $post->post_content)?>\n			</div>\n\n			<div class=\"col-md-4 col-sm-4 col-xs-4 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 share-article\">\n\n			    <ul>\n			    	<p>Compartir:</p>\n			        <li><a onclick=\"basicPopup(this.href);return false\" target=\"_blank\" href=\"https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink();?>&title=<?php the_title(); ?>&summary=&source=\"><i class=\"fa fa-linkedin\"></i></a></li>\n			        <li><a onclick=\"basicPopup(this.href);return false\" target=\"_blank\" href=\"http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>\"><i class=\"fa fa-facebook\"></i></a></li>\n			        <li><a onclick=\"basicPopup(this.href);return false\" target=\"_blank\" href=\"http://twitter.com/share?text=<?php echo get_bloginfo('name')?>&nbsp;-&nbsp;<?php echo $post->post_title?>\"><i class=\"fa fa-twitter\"></i></a></li>\n			    </ul>\n			</div>\n\n		</div>\n	</div>\n</article>\n\n<aside class=\"news-recommend\">\n	<div class=\"container row\">\n		<?php $posts = get_posts(array('category' => 'noticias' , 'numberposts' => 3 , 'post__not_in'))?>\n           	<?php $count = 0?>\n            <?php foreach($posts as $post):?>\n            <?php $count++?>\n		<div class=\"col-md-4\">\n			\n		</div>\n	</div>\n</aside>\n\n<?php get_footer(); ?>",
-			"file": "wp-content/themes/circulotheme/single.php",
-			"file_size": 2238,
-			"file_write_time": 1440022538000000,
+			"file": "wp-content/themes/circulotheme/page-convenios.php",
 			"settings":
 			{
-				"buffer_size": 2560,
+				"buffer_size": 3045,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/circulotheme/footer.php",
+			"file": "wp-content/themes/circulotheme/archive-vida-social.php",
 			"settings":
 			{
-				"buffer_size": 4722,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/functions.php",
-			"settings":
-			{
-				"buffer_size": 10173,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/style.css",
-			"settings":
-			{
-				"buffer_size": 36599,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 10 files for \"proxima_nova_ltsemibold\"\n\n/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/style.css:\n   36  .border { border-bottom: 1px solid #ccc; padding: 15px 15px 0 15px; margin-bottom: 15px;}\n   37  \n   38: body{font-family: 'proxima_nova_ltsemibold', helvetica, arial, sans-serif , sans-serif; font-size: :13px;}\n   39: p {font-family: 'proxima_nova_ltsemibold', helvetica, arial , sans-serif;  color:#323232; }\n   40  \n   41: main .container p , main .megacontainer p , .recorrido p{ font-family: 'proxima_nova_ltsemibold', helvetica, arial, sans-serif; font-size:16px; line-height:160%; color:#5d5d5d; padding-bottom: 20px}\n   42  \n   43  .megacontainer {padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;max-width:1250px;}\n   ..\n   76  h1, h2 , h3{  font-family: 'proxima nova';, helvetica, arial, sans-serif; text-transform:capitalize;}\n   77  h3{ font-weight:700; color:#155980}\n   78: h4{  font-family: 'proxima_nova_ltsemibold' , helvetica, arial , sans-serif}\n   79  h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}\n   80  \n   ..\n  216  a.acc:hover{background:#b36b00; text-decoration: none;}\n  217  \n  218: .outlogged p{font-size:12px; font-family: 'proxima_nova_ltsemibold', helvetica, arial, sans-serif; text-align:center; color:#ffffff;}\n  219: .outlogged p a{font-size: 12px; font-family: 'proxima_nova_ltsemibold'; text-decoration: underline; color: #ffffff;}\n  220  .outlogged p a:hover{background: none; padding:0;}\n  221  \n  ...\n  283  .offer-element.side{float:left; margin-left: 10px; margin-top: 0;     padding-bottom: 20px;}\n  284  .offer-element span strong {font-size: 20px; display: block; margin: 0 auto; padding-top: 20px; } \n  285: .offer-element span {text-align: center; background: #45bdff; border-radius: 50%; width: 75px; height: 75px; font-family: 'proxima_nova_ltsemibold'; color: #fff; font-size: 15px; clear: both; display: block; line-height: 1.3em; float: left; }\n  286  .offer-element h3{margin-top:0; margin-bottom:0;}\n  287  .offer-element h3 a{color:#1598ed; font-size: 23px; font-family: 'proxima_nova_rgbold'; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: capitalize; margin-bottom: 0;}\n  288  .offer-element h3 a:hover{color:#0067b1; text-decoration: none;}\n  289: .offer-element p{color:#45bdff; font-family: 'proxima_nova_ltsemibold'; font-size: 15px; margin-bottom: 3px;}\n  290  .offer-element a{color:#ff9900; font-family: 'proxima_nova_rgbold'; font-size: 18px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}\n  291  .offer-element a:hover{color:#b36b00;  text-decoration: none;}\n  ...\n  299  \n  300  .tip-element h3{margin-bottom:0; margin-top: 25px;}\n  301: .tip-element h3 a{color:#1598ed; font-family: 'proxima_nova_ltsemibold'; font-size: 19px; text-align:left; line-height: 1.3em; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: capitalize;}\n  302  .tip-element h3 a:hover{color:#0067b1; text-decoration: none;}\n  303: .tip-element p{color:#a2a2a2; font-family: 'proxima_nova_ltsemibold'; line-height: 1.4em; text-align: left; font-size: 14px; margin-bottom: 5px;}\n  304  .tip-element a{color:#ff9900; font-family: 'proxima_nova_rgbold'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}\n  305  .tip-element a:hover{color:#b36b00;  text-decoration: none;}\n  ...\n  325  #noticias{background:#f6f6f6; padding-bottom: 50px; padding-top: 25px;}\n  326  #noticias h3{color:#0067b1; font-size: 40px; text-align: left; font-family: 'proxima_nova_rgbold'; padding-left:15px; padding-bottom: 25px;}\n  327: #noticias h4 a{color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima_nova_ltsemibold'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}\n  328  #noticias h4 a:hover{color: #0067b1; text-decoration: none;}\n  329  \n  ...\n  333  .principal a, .secundario a{color:#ff9900; text-align:left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: right;}\n  334  .principal a:hover, .secundario a:hover{color: #b36b00; text-decoration: none;}\n  335: .principal p{color:#a2a2a2; font-size: 14px; font-family: 'proxima_nova_ltsemibold';}\n  336  .principal span{font-style: italic; color:#a2a2a2;}\n  337  \n  338  article>.secundario{ padding: 10px; margin-right: 0; margin-left: 0;}\n  339  article .noticias{ background-color: #fff; margin-bottom:10px;}\n  340: .secundario h4 a{color:#1598ed; font-size: 16px !important; text-align: left; font-family: 'proxima_nova_ltsemibold'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 3px;}\n  341  .secundario h4 a:hover{color: #0067b1; text-decoration: none;}\n  342  \n  ...\n  347  .actividades{background: #ececec; padding-bottom: 60px; padding-top: 25px;}\n  348  .actividades h3{font-size: 45px; color:#0067b1;text-transform: capitalize; font-family: 'proxima_nova_rgbold'; text-align:left; line-height:1em; margin-top:40px; padding-left: 15px; padding-bottom: 25px;}\n  349: .actividades h4 a{color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima_nova_ltsemibold'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}\n  350  .actividades h4 a:hover{color: #0067b1; text-decoration: none;}\n  351  \n  ...\n  389  \n  390  li.hit{list-style: none;}\n  391: li.hit a{list-style: none; color:#fff; font-size: 14px; font-family: 'proxima_nova_ltsemibold' !important; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}\n  392  li.hit a:hover{color:#f2f2f2;}\n  393  \n  ...\n  400  .box-soc{border-left:1px solid #fff; padding: 0 15px; height: 180px;}\n  401  \n  402: span.credit-footer{text-align: center; margin: 0 auto; display: block;font-size: 16px; font-family: 'proxima_nova_ltsemibold'; color:#fff; padding:5px 0;}\n  403  \n  404  \n  ...\n  424  /* QUIENES SOMOS */\n  425  .who-excerpt p{text-align: center; font-family: 'proxima_nova_ththin'; font-size: 50px; color:#343838; line-height:1.4em; padding:50px 0 80px; font-weight: normal;}\n  426: .who-content .col-md-6{text-align: left; font-size: 18px; color: #808080; font-family: 'proxima_nova_ltsemibold'; line-height: 1.6em; font-weight: normal;}\n  427  .who-content .col-md-6 img{padding-bottom: 20px; width: 100%; height: auto;}\n  428  \n  ...\n  431  .quien-bg{height: 355px; border-bottom:5px solid #b36b00;}\n  432  \n  433: .message p{font-size: 20px; font-family: 'proxima_nova_ltsemibold'; color:#808080; text-align: left; line-height: 1.4em; padding-bottom:20px;}\n  434  .message p strong{font-size: 15px; color:#343838; line-height: 1.3em;}\n  435  \n  ...\n  438  .container.instituciones{padding-bottom: 100px;}\n  439  .instituciones h3{font-size:35px; font-family:'proxima_nova_rgbold';color:#fff; text-align:left; line-height: 1.4em; padding-left: 15px; text-transform: none; margin-bottom: 0;}\n  440: .instituciones p{font-size:20px; font-family:'proxima_nova_ltsemibold'; color:#fff; text-align:left; line-height: 1.4em; padding-left: 15px;  }\n  441  \n  442  /* TESTIMONIOS */\n  ...\n  446  \n  447  .testimonial-content{background:url(images/bg-testexcerpt.jpg); background-size:cover; }\n  448: .testimonial-content p{color:#ffffff; font-family: 'proxima_nova_ltsemibold'; font-size: 21px; text-align: left; line-height:1.4em; margin-bottom: 65px;  margin-top:65px; }\n  449: .testimonial-content p em{ font-family: 'proxima_nova_ltsemibold'; line-height:1.4em; font-size: 33px;}\n  450  \n  451  .testimonio-element img{width:100%; height:auto;}\n  ...\n  454  figcaption.testimonio-element {position: absolute; left:0; right: 0;padding:30px 15px 20px;bottom: 0; background: rgba(0,0,0,0); background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(5,5,5,1))); background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%); background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%); background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%); background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#050505', GradientType=0 );}\n  455  figcaption.testimonio-element h4{color:#fff; font-size:25px; font-family: 'proxima_nova_rgbold'; }\n  456: figcaption.testimonio-element p{margin-bottom: 30px; font-size: 18px; color:#fff; font-family: 'proxima_nova_ltsemibold'; height: 30px; margin-bottom: 30px;}\n  457  \n  458  /* NOTICIAS */\n\n22 matches in 1 file\n",
-			"settings":
-			{
-				"buffer_size": 9867,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/archive.php",
-			"settings":
-			{
-				"buffer_size": 3263,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/header.php",
-			"settings":
-			{
-				"buffer_size": 2622,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/js/core.js",
-			"settings":
-			{
-				"buffer_size": 179922,
+				"buffer_size": 4207,
 				"line_ending": "Unix"
 			}
 		}
@@ -585,15 +588,21 @@
 	},
 	"file_history":
 	[
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/archive-vida-social.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/footer.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/archive-convenio.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/archive-actividades.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/single.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/header-single.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/category-noticias.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/page-testimonios.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/header.php",
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/archive.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/page-convenios.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/sidebar-noticias_view.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/page-noticias.php",
-		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/archive-convenio.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/taxonomy.php",
-		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/footer.php",
-		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/header.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/page-quienes-somos.php",
-		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/page-testimonios.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/searchbar.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/archive-convenios.php",
 		"/Users/upmedia/GitHub/circuloip/wp-config.php",
@@ -706,13 +715,7 @@
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/twitteroauth.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/uservoice.html",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-servicios.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-equipo.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-archives.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/part-post.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/archive.php",
-		"/Users/upmedia/Desktop/paid.json",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/dato20130830093548.log",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/dato20130830094427.log"
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-equipo.php"
 	],
 	"find":
 	{
@@ -720,7 +723,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"<open files>",
@@ -879,23 +882,23 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/circulotheme/index.php",
+					"file": "wp-content/themes/circulotheme/page-perfeccionamiento.php",
 					"settings":
 					{
-						"buffer_size": 12831,
+						"buffer_size": 2167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6389,
-								6616
+								1211,
+								1211
 							]
 						],
 						"settings":
@@ -904,113 +907,47 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2628.0,
+						"translation.y": 341.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/circulotheme/header-single.php",
+					"file": "wp-content/themes/circulotheme/preguntas-frecuentes.php",
 					"settings":
 					{
-						"buffer_size": 2339,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1287,
-								1287
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 257.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "wp-content/themes/circulotheme/category-noticias.php",
+					"file": "wp-content/themes/circulotheme/404.php",
 					"settings":
 					{
-						"buffer_size": 3806,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2103,
-								2354
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 453.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/circulotheme/single.php",
-					"settings":
-					{
-						"buffer_size": 2560,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2203,
-								2203
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 410.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/circulotheme/footer.php",
-					"settings":
-					{
-						"buffer_size": 4722,
+						"buffer_size": 389,
 						"regions":
 						{
 						},
@@ -1037,55 +974,23 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 7,
 			"sheets":
 			[
 				{
-					"buffer": 5,
-					"file": "wp-content/themes/circulotheme/functions.php",
-					"settings":
-					{
-						"buffer_size": 10173,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1655,
-								1655
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4541.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "wp-content/themes/circulotheme/style.css",
 					"settings":
 					{
-						"buffer_size": 36599,
+						"buffer_size": 39743,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								36484,
-								36484
+								37528,
+								37528
 							]
 						],
 						"settings":
@@ -1094,187 +999,30 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 11953.0,
+						"translation.y": 12214.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 4,
+					"file": "wp-content/themes/circulotheme/functions.php",
 					"settings":
 					{
-						"buffer_size": 9867,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										255,
-										278
-									],
-									[
-										367,
-										390
-									],
-									[
-										529,
-										552
-									],
-									[
-										966,
-										989
-									],
-									[
-										1211,
-										1234
-									],
-									[
-										1355,
-										1378
-									],
-									[
-										1834,
-										1857
-									],
-									[
-										2467,
-										2490
-									],
-									[
-										3010,
-										3033
-									],
-									[
-										3429,
-										3452
-									],
-									[
-										4198,
-										4221
-									],
-									[
-										4987,
-										5010
-									],
-									[
-										5328,
-										5351
-									],
-									[
-										6079,
-										6102
-									],
-									[
-										6565,
-										6588
-									],
-									[
-										7037,
-										7060
-									],
-									[
-										7407,
-										7430
-									],
-									[
-										7696,
-										7719
-									],
-									[
-										8183,
-										8206
-									],
-									[
-										8483,
-										8506
-									],
-									[
-										8652,
-										8675
-									],
-									[
-										9753,
-										9776
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								49,
-								49
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"incomplete_sync": null,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "wp-content/themes/circulotheme/archive.php",
-					"settings":
-					{
-						"buffer_size": 3263,
+						"buffer_size": 10162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2117,
-								2117
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 427.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "wp-content/themes/circulotheme/header.php",
-					"settings":
-					{
-						"buffer_size": 2622,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1227,
-								2622
+								432,
+								439
 							]
 						],
 						"settings":
@@ -1283,17 +1031,50 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 223.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 5,
+					"file": "wp-content/themes/circulotheme/index.php",
+					"settings":
+					{
+						"buffer_size": 12831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8432,
+								8395
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2518.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "wp-content/themes/circulotheme/js/core.js",
 					"settings":
 					{
@@ -1316,7 +1097,133 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2386.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/circulotheme/archive-testimonio.php",
+					"settings":
+					{
+						"buffer_size": 4218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								373,
+								464
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/circulotheme/category-noticias.php",
+					"settings":
+					{
+						"buffer_size": 3806,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2836,
+								2836
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 127.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wp-content/themes/circulotheme/page-convenios.php",
+					"settings":
+					{
+						"buffer_size": 3045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								596,
+								596
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "wp-content/themes/circulotheme/archive-vida-social.php",
+					"settings":
+					{
+						"buffer_size": 4207,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2175,
+								2274
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

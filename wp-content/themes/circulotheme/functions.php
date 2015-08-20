@@ -51,10 +51,10 @@ function actividades_register() {
         'label' => 'Actividades',
         'singular_label' => 'Actividad',
         'public' => true,
-		    'menu_position' => 5, 
+		'menu_position' => 5, 
         '_builtin' => false,
         'capability_type' => 'post',
-		    'has_archive' => false,
+		'has_archive' => true,
         'hierarchical' => false,
         'rewrite' => array( 'slug' => 'actividad'),
         'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
@@ -72,7 +72,7 @@ function vida_social_register() {
         'menu_position' => 6, 
         '_builtin' => false,
         'capability_type' => 'post',
-        'has_archive' => false,
+        'has_archive' => true,
         'hierarchical' => false,
         'rewrite' => array( 'slug' => 'vida-social'),
         'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
@@ -144,7 +144,7 @@ function testimonios_register() {
         'menu_position' => 7, 
         '_builtin' => false,
         'capability_type' => 'post',
-        'has_archive' => false,
+        'has_archive' => true,
         'hierarchical' => false,
         'rewrite' => array( 'slug' => 'testimonios'),
         'supports' => array('title', 'excerpt' , 'thumbnail' )

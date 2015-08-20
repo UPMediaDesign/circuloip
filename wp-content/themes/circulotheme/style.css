@@ -212,7 +212,7 @@ h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}
 .outlogged.nav{width: 19.95%;; margin: 0; padding-right: 0; float: right; display: block; background:#10325c; border-top:3px solid #1598ed;}
 .outlogged span{text-align: center; display: block; font-size: 12px; color: #ffffff; padding-top:25px;}
 
-a.acc{text-align: center; display: table; color: #fff; background: #ff9900; margin: 10px auto 15px; padding: 5px 15px; border-radius: 5px; font-size: 14px; font-family: 'proxima nova', helvetica, arial, sans-serif; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; font-weight: 300;}
+a.acc{text-align: center; display: table; color: #fff; background: #ff9900; margin: 10px auto 15px; padding: 5px 15px; border-radius: 5px; font-size: 16px; font-family: 'proxima nova', helvetica, arial, sans-serif; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; font-weight: 700;}
 a.acc:hover{background:#b36b00; text-decoration: none;}
 
 .outlogged p{font-size:12px; font-family: 'proxima nova', helvetica, arial, sans-serif; text-align:center; color:#ffffff;}
@@ -223,12 +223,12 @@ a.acc:hover{background:#b36b00; text-decoration: none;}
 .navbar-nav ul{display:block;}
 .navbar-nav li{float:left;}
 
-.navbar-default .navbar-nav>li>a{color:#fff; font-size: 13px; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+.navbar-default .navbar-nav>li>a{font-weight: 500;color:#fff; font-size: 13px; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 .navbar-default .navbar-nav>li>a:hover{color:#ff9900;}
 .navbar-default{border-color: transparent; position: absolute;}
 
 /* For Home node */
-li#menu-item-26 {color: #fff; background: #10325c; border-radius: 50%; width: 22px; height: 22px; padding: 3px 4.7px; margin-top: 14px; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+li#menu-item-26 {color: #fff; background: #1598ED; border-radius: 50%; width: 22px; height: 22px; padding: 3px 4.7px; margin-top: 14px; webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 li#menu-item-26:hover{background:#fff; color:#10325c; }
 li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relative; top: -15px; }
 .navbar-default .navbar-nav>li.current_page_item>a {font-family: 'proxima nova'; color: #ff9900; }
@@ -236,7 +236,7 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 /* Search Bar */
 .col-xs-12.col-md-5.col-md-offset-7{padding-right: 0; padding-left: 0;}
 .controller{margin-left: -4.74%;}
-.searchandsocial.navbar-fixed-top {top: 132px; position:absolute;}
+.searchandsocial.navbar-fixed-top {top: 130px; position:absolute;}
 
 .skw {-moz-transform: skewX(-15deg); -webkit-transform: skewX(-15deg); -o-transform: skewX(-15deg); -ms-transform: skewX(-15deg); transform: skewX(-15deg); }
 
@@ -256,7 +256,7 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 /*******************************************************************************************/
 /************************************* Slider ********************************************/
 /*******************************************************************************************/
-.carousel-inner>.item {-webkit-transition: -webkit-transform .6s ease-in-out; -o-transition: -o-transform .6s ease-in-out; transition: transform .6s ease-in-out; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000px; perspective: 1000px; height: 440px; margin-top: 133px; width: 100%; background-size:cover; }
+.carousel-inner>.item {-webkit-transition: -webkit-transform .6s ease-in-out; -o-transition: -o-transform .6s ease-in-out; transition: transform .6s ease-in-out; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000px; perspective: 1000px; height: 440px; margin-top: 130px; width: 100%; background-size:cover; }
 
 .antiskw{-moz-transform: skewX(-15deg); -webkit-transform: skewX(-15deg); -o-transform: skewX(-15deg); -ms-transform: skewX(-15deg); transform: skewX(-15deg); }
 .antinskw{-moz-transform: skewX(15deg); -webkit-transform: skewX(15deg); -o-transform: skewX(15deg); -ms-transform: skewX(15deg); transform: skewX(15deg); }
@@ -276,7 +276,7 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 
 /* OFERTAS LABORALES */
 .offer, .tips {padding-top: 35px; }
-.offer h2{font-size:45px; font-family:'proxima nova';color:#0067b1; text-align:left; margin-bottom: 40px; text-transform: capitalize;}
+.offer h2{font-size:45px; font-family:'proxima nova';color:#0067b1; text-align:left; margin-bottom: 40px; text-transform: capitalize; font-weight: 700;}
 .offer h2 img{padding-right: 15px;}
 .offer a.acc {float: left; margin-top: 25px; margin-bottom: 35px; }
 
@@ -284,10 +284,10 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 .offer-element span strong {font-size: 20px; display: block; margin: 0 auto; padding-top: 20px; } 
 .offer-element span {text-align: center; background: #45bdff; border-radius: 50%; width: 75px; height: 75px; font-family: 'proxima nova'; color: #fff; font-size: 15px; clear: both; display: block; line-height: 1.3em; float: left; }
 .offer-element h3{margin-top:0; margin-bottom:0;}
-.offer-element h3 a{color:#1598ed; font-size: 23px; font-family: 'proxima nova'; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: capitalize; margin-bottom: 0;}
+.offer-element h3 a{font-weight:500;color:#1598ed; font-size: 23px; font-family: 'proxima nova'; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: capitalize; margin-bottom: 0;}
 .offer-element h3 a:hover{color:#0067b1; text-decoration: none;}
 .offer-element p{color:#45bdff; font-family: 'proxima nova'; font-size: 15px; margin-bottom: 3px;}
-.offer-element a{color:#ff9900; font-family: 'proxima nova'; font-size: 18px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.offer-element a{color:#ff9900; font-family: 'proxima nova'; font-size: 18px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-weight: 700;}
 .offer-element a:hover{color:#b36b00;  text-decoration: none;}
 .offer-element a i {color: #ff9900; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-decoration: none; background: none; width: 5px; height: 5px; }
 .offer-element a:hover i{color:#b36b00;}
@@ -298,10 +298,10 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 .tips a.acc {float: left; margin-top: 50px; margin-bottom: 35px; }
 
 .tip-element h3{margin-bottom:0; margin-top: 25px;}
-.tip-element h3 a{color:#1598ed; font-family: 'proxima nova'; font-size: 19px; text-align:left; line-height: 1.3em; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: capitalize;}
+.tip-element h3 a{font-weight:500;color:#1598ed; font-family: 'proxima nova'; font-size: 19px; text-align:left; line-height: 1.3em; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: capitalize;}
 .tip-element h3 a:hover{color:#0067b1; text-decoration: none;}
 .tip-element p{color:#a2a2a2; font-family: 'proxima nova'; line-height: 1.4em; text-align: left; font-size: 14px; margin-bottom: 5px;}
-.tip-element a{color:#ff9900; font-family: 'proxima nova'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.tip-element a{font-weight:500;color:#ff9900; font-family: 'proxima nova'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .tip-element a:hover{color:#b36b00;  text-decoration: none;}
 
 /* CONVENIOS */
@@ -315,22 +315,22 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 .convenio-element.side {background: #ffffff; padding: 5px 15px; margin-bottom: 25px; float: left; display: block; width: 70%; height: 135px; }
 .convenio-element img{float: left;}
 .convenio-element h3{text-align: left; line-height: 1.3em; font-size: 20px; margin-top: 5px; height: 45px;}
-.convenio-element h3 a{color:#1598ed; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-size: 20px;}
+.convenio-element h3 a{font-weight:500;color:#1598ed; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-size: 20px;}
 .convenio-element h3 a:hover{color: #0067b1; text-decoration: none; font-size: 20px;}
 .convenio-element p{color:#a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0;}
-.convenio-element a{color:#ff9900; font-family: 'proxima nova'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.convenio-element a{font-weight: 700;color:#ff9900; font-family: 'proxima nova'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .convenio-element a:hover{color:#b36b00; text-decoration: none;}
 
 /* NOTICIAS */
 #noticias{background:#f6f6f6; padding-bottom: 50px; padding-top: 25px;}
 #noticias h3{color:#0067b1; font-size: 40px; text-align: left; font-family: 'proxima nova'; padding-left:15px; padding-bottom: 25px;}
-#noticias h4 a{color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}
+#noticias h4 a{font-weight:500;color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}
 #noticias h4 a:hover{color: #0067b1; text-decoration: none;}
 
 figure.principal.col-md-4 img{max-width:360px; height: auto; width:100%;}
 .principal a.heading{float:none;}
 .principal figcaption{background:#fff; padding: 13px 10px;}
-.principal a, .secundario a{color:#ff9900; text-align:left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: right;}
+.principal a, .secundario a{font-weight: 700;color:#ff9900; text-align:left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: right;}
 .principal a:hover, .secundario a:hover{color: #b36b00; text-decoration: none;}
 .principal p{color:#a2a2a2; font-size: 14px; font-family: 'proxima nova';}
 .principal span{font-style: italic; color:#a2a2a2;}
@@ -340,13 +340,13 @@ article .noticias{ background-color: #fff; margin-bottom:10px;}
 .secundario h4 a{color:#1598ed; font-size: 16px !important; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 3px;}
 .secundario h4 a:hover{color: #0067b1; text-decoration: none;}
 
-p.sede {float: left; color:#ff9900; margin-bottom: 0;}
+p.sede {float: left; color:#ff9900; margin-bottom: 0; font-weight:500;}
 .sede span{color:#1598ed; font-size: 20px; font-style: normal !important;}
 
 /* ACTIVIDADES */
 .actividades{background: #ececec; padding-bottom: 60px; padding-top: 25px;}
 .actividades h3{font-size: 45px; color:#0067b1;text-transform: capitalize; font-family: 'proxima nova'; text-align:left; line-height:1em; margin-top:40px; padding-left: 15px; padding-bottom: 25px;}
-.actividades h4 a{color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}
+.actividades h4 a{font-weight:500;color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}
 .actividades h4 a:hover{color: #0067b1; text-decoration: none;}
 
 .line{border-bottom:1px solid #a2a2a2;}
@@ -370,7 +370,7 @@ span.month {clear: both; display: block; text-transform: uppercase; font-size: 2
 .vidasocial figure.principal{max-height: 320px; }
 .vidasocial figure.principal a{float:none;}
 .vidasocial figure.principal figcaption{background: rgba(52, 56, 56, .8); color: #fff; position: relative; bottom: 95px; }
-.vidasocial figure.principal figcaption h4 a{float: right; color: #fff; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 40px; margin-bottom: 10px;}
+.vidasocial figure.principal figcaption h4 a{line-height: 1.3em;float: right; color: #fff; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 40px; margin-bottom: 10px; font-weight:500;}
 .vidasocial figure.principal figcaption h4 a:hover{text-decoration:none; color:#f2f2f2;}
 .vidasocial figure.principal figcaption a.vermas{float:right;color:#ff9900; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .vidasocial figure.principal figcaption a.vermas:hover{color:#b36b00;}
@@ -381,13 +381,13 @@ span.month {clear: both; display: block; text-transform: uppercase; font-size: 2
 .border-nav{margin-bottom:0;}
 
 li.service{list-style: none; border-left: 1px solid #fff; padding-bottom: 30px; padding-top:25px;border-bottom: 1px solid #fff;}
-li.service a{font-size: 18px; font-family: 'proxima nova'; color:#fff; list-style: none;}
+li.service a{font-size: 18px; font-family: 'proxima nova'; color:#fff; list-style: none; font-weight: 500;}
 li.service a:hover{text-decoration: none;}
 #menu-second-footer {padding-right: 6px; margin-bottom:0;}
 #menu-second-footer li.service{border-bottom: none; padding-bottom: 90px;}
 
 
-li.hit{list-style: none;}
+li.hit{list-style: none; font-weight:300;}
 li.hit a{list-style: none; color:#fff; font-size: 14px; font-family: 'proxima nova' !important; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 li.hit a:hover{color:#f2f2f2;}
 
@@ -442,7 +442,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', e
 /* TESTIMONIOS */
 .insider-testimonial{}
 
-.testimonial-excerpt p{margin-top:70px; margin-bottom: 60px; text-align: center; font-family: 'proxima_nova_ththin'; line-height: 1.4em; font-size: 27px; color:#4e4e4e; font-style: italic;}
+.testimonial-excerpt p{margin-top:70px; margin-bottom: 60px; text-align: center; font-family: 'proxima nova'; font-weight:300;line-height: 1.4em; font-size: 27px; color:#4e4e4e; font-style: italic;}
 
 .testimonial-content{background:url(images/bg-testexcerpt.jpg); background-size:cover; }
 .testimonial-content p{color:#ffffff; font-family: 'proxima nova'; font-size: 21px; text-align: left; line-height:1.4em; margin-bottom: 65px;  margin-top:65px; }
@@ -501,13 +501,39 @@ a.nextpostslink:hover, a.previouspostslink:hover{color: #0067b1; text-decoration
 figcaption.transparent {background: rgba(52, 56, 56, .8); color: #fff; position: relative; bottom: 95px; }
 .transparent h4 a, .transparent span{color:#fff !important;}
 
+/* ACTIVIDADES + VIDA SOCIAL */
+.act-date{background: rgba(23,152,238,1); background: -moz-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(23,152,238,1)), color-stop(50%, rgba(23,152,238,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(23,152,238,1)), color-stop(51%, rgba(28,154,238,0)), color-stop(100%, rgba(255,255,255,0))); background: -webkit-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -o-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -ms-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: linear-gradient(135deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1798ee', endColorstr='#ffffff', GradientType=1 );  position: relative;
+    padding: 20px 60px 45px 10px; text-align: center; z-index: 3; width: 80px; height: 80px; top: 80px; bottom: 0; clear: both; color:#fff;}
+.act-date .principales span.day,.act-date span.day{font-size: 28px !important; font-weight: 700; padding-top: 0;}
+.act-date .principales span.month, .act-date span.month{font-size: 12px !important; font-weight: 500;}
+/* Columna Iniciales */
+figure.principales {max-height: 440px; }
+.actividades .principales img {width: 100%; }
+.actividades .principales figcaption{background: #fff; padding: 15px 15px 20px;}
+.actividades .principales p {clear: both; }
 
-/* VIDA SOCIAL */
-/* PREGUNTAS FRECUENTES */
+.principales a.heading, .second a.heading {padding: 0; }
+.principales a.vermas {font-weight: 700; color: #ff9900; text-align: left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; margin-top: 10px; clear: both; float: left; }
+.principales a.vermas:hover{color:#b36b00; text-decoration: none;}
+
+.soc-visible{display:block; float:right; margin-bottom: 0; margin-top: 10px;}
+.soc-visible li {float: left; padding: 0 5px; list-style: none; }
+
+/* Columna Secundarios */
+.second figcaption {background: #fff; }
+.second a img {width: 100%; }
+.second p {clear: both; line-height: 1.4em; padding-top: 20px; }
+.second h4 a {padding-top: 20px; }
+figure.second {margin-top: 15px; max-height: 175px;}
+
+.soc-invisible{display:none; visibility: hidden;}
+
 /* PERFECCIONAMIENTO */
 
-/* Single */
+/* PREGUNTAS FRECUENTES */
 
+
+/* Single */
 .single.navbar-default{background:transparent;}
 .single .navbar-brand>img {display: block; width: 100px; }
 .single .navbar-nav {margin-left: 33%; }
@@ -531,7 +557,6 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
 .place {position: relative; top: 50px; left: 15px; text-align: right; }
 
 
-proxima_nova_ththin
 
 
 
