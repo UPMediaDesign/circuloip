@@ -21,10 +21,19 @@ Template Name: Perfeccionamiento
     </div>
 </div>
 
-<section>
+<section class="bg-pearlwhite perf-intro">
 	<div class="container">
 		<div class="row">
+			<h2><?php echo $post->post_excerpt; ?></h2>
+		</div>
+	</div>
+</section>
 
+<section class="perf-tabs">
+	<div class="container">
+		<div class="row">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
 			<?php $tabs = get_field('pestana__perfeccionamiento' , $post->ID)?>
             <?php $ctoabs = 0?>
             <?php foreach( $tabs as $tab):?>
@@ -40,36 +49,41 @@ Template Name: Perfeccionamiento
 	            	$tabcontactive = 'tab-pane fade';
 	            }
             ?>
-			<!-- Nav tabs -->
-			<ul class="nav nav-tabs" role="tablist">
+
 			    <li role="presentation" style="background-image:url(<?php echo $tab['fondo_pestana']?>);" class="<?php echo $tabclass?>">
-			    	<a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+			    	<a href="#tab-<?php echo $ctoabs?>" aria-controls="home" role="tab" data-toggle="tab">
 						<img src="<?php echo $tab['icono_pestana']?>" alt="">
 						<span><?php echo $tab['nombre_pestana']?></span>
 			    	</a>
 			    </li>
-			</ul>
 
+			<?php endforeach;?>
+			</ul>
 			<div class="tab-content">
-			  <div role="tabpanel" class=" <?php echo $tabcontactive ?>" id="home">
-			  	<div class="row">
+			<?php $ctoabs = 0?>
+			<?php foreach ($tabs as $inside):?>
+			<?php $ctoabs++?>
+
+			  <div role="tabpanel" class="tab-pane fade<?php if($ctoabs == 1){echo 'in active';} ?>" id="tab-<?php echo $ctoabs?>">
+			  	<div class="row antirow">
 
 			  		<div class="col-md-4 col-sm-12 col-xs-12 quote">
-			  			<h4><?php echo $tab['cita_perfeccionamiento']?></h4>
+			  			<h4><?php echo $inside['cita_perfeccionamiento']?></h4>
 			  			<div class="profile">
-			  				<img src="<?php echo $tab['foto_perfil'] ?>" alt="">
-			  				<span><?php echo $tab['nombre_perfil']?></span>
+			  				<?php echo get_avatar('perftab'); ?>
+			  				<p class="author">Por: <a class="author" href="<?php echo get_the_author()?>"><?php echo get_the_author()?></a></p>
 			  			</div>
 			  		</div>
 			  		<div class="col-md-8 col-sm-12 col-xs-12 perf-content">
-			  			<p><?php echo $tab['contenido']?></p>
+			  			<p><?php echo $inside['contenido']?></p>
 			  		</div>
 
 			  	</div>
 			  </div>
-			</div>
+			
 
 			<?php endforeach;?>
+			</div>
 
 		</div>
 	</div>

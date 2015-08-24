@@ -43,11 +43,11 @@
                             <figcaption>
                                 <div class="clear"></div>
                                 <p><?php echo substr($post->post_content , 0, 208)?>...</p>
-                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
                                 	<a href="<?php echo get_permalink($post->ID)?>" class="morelink">Ver Info <i class="fa fa-arrow-right"></i></a>
 	                                <p class="sede"><span class="fa fa-map-marker"></span> Sede <?php echo get_field('sede',$post->ID); ?></p>
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 share-article">
+                                <div class="col-md-6 col-sm-6 col-xs-12 share-article">
                                 	<ul>
                                 		<li><a onclick="basicPopup(this.href);return false" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink();?>&title=<?php the_title(); ?>&summary=&source="><i class="fa fa-linkedin"></i></a></li>
                                 		<li><a onclick="basicPopup(this.href);return false" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>"><i class="fa fa-facebook"></i></a></li>

@@ -65,7 +65,7 @@
                         </a>
                     </div>
                 </div> 
-                <div class="clear separator"></div>                        
+                <div class="clear separator hide-on-mobile"></div>                        
                 <?php endforeach?>
                 
                 <a class="acc" href="http://www.ipchile.trabajando.com/index.cfm">Ver Ofertas Laborales</a>
@@ -103,7 +103,7 @@
         <div class="row">
             <div class="col-md-10">
                 <h2><img src="<?php bloginfo('template_directory')?>/images/contract-icon.png" alt="Ofertas Laborales Icono">Convenios</h2>
-                <p>Nunc lacus omari nisi, egestas rutrum magna est id nunc</p>
+                <p class="hide-on-mobile">Nunc lacus omari nisi, egestas rutrum magna est id nunc</p>
                 <div class="row">
                     <?php $convenios= get_posts(array('post_type' => 'convenio', 'numberposts' => 4)); ?>
                     <?php $countconvenios = 0 ?>
@@ -204,11 +204,11 @@
                             <?php }else{?>
                                 <article class="col-md-4">
                                     <div class="secundario activity-date line row">
-                                        <div class="date col-xs-3">
+                                        <div class="date col-xs-2">
                                             <span class="day"><?php echo the_time('d')?></span>
                                             <span class="month"><?php echo the_time('M')?></span>
                                         </div>
-                                        <div class="col-xs-9">
+                                        <div class="col-xs-10">
                                             <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
                                             <p><?php echo substr($convenio->post_content , 0, 64)?>...</p>
                                         </div>

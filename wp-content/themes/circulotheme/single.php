@@ -26,7 +26,7 @@
 				} ?>
 			</div>
 
-			<div class="col-md-1 col-sm-1 col-md-offset-1 col-sm-offset-1 date-single">
+			<div class="col-md-1 col-sm-1 col-md-offset-1 col-sm-offset-1 date-single col-xs-12">
 				<span class="first"><?php echo the_time('j') ?> </span><br/>
 				<span class="second"><?php echo the_time('M')?></span>
 				
@@ -39,7 +39,7 @@
 				<?php echo apply_filters('the_content' , $post->post_content)?>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 share-article">
+			<div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2 col-xs-12 share-article">
 
 			    <ul>
 			    	<p>Compartir:</p>
@@ -52,17 +52,5 @@
 		</div>
 	</div>
 </article>
-
-<aside class="news-recommend">
-	<div class="container row">
-		<?php $posts = get_posts(array('category' => 'noticias' , 'numberposts' => 3 , 'post__not_in'))?>
-           	<?php $count = 0?>
-            <?php foreach($posts as $post):?>
-            <?php $count++?>
-		<div class="col-md-4">
-			
-		</div>
-	</div>
-</aside>
 
 <?php get_footer(); ?>

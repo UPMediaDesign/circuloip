@@ -56,8 +56,26 @@
               <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'nav navbar-nav' , 'theme_location' => 'primary' ) ); ?>
               <div class="outlogged nav">
                   <span>Tienes una cuenta circulo.trabajando.com</span>
-                  <a class="acc" href="/">Ingresar</a>
-                  <p>¿Aún no te registras? <a href="/">Ingresa aquí</a></p>
+                  <a class="acc" href="http://www.ipchile.trabajando.com/index.cfm">Ingresar</a>
+                  <p>¿Aún no te registras? <a href="http://www.ipchile.trabajando.com/ingresocv.cfm">Ingresa aquí</a></p>
+              </div>
+
+              <div class="socials col-xs-12 mobile">
+                  <div>
+                      <ul>
+                          <li><a href="#"><span class="fa fa-paper-plane fa-fw"></span></a></li>
+                          <li><a href="#"><span class="fa fa-linkedin fa-fw"></span></a></li>
+                          <li><a href="#"><span class="fa fa-youtube-play fa-fw"></span></a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="searchh col-xs-12 mobile">
+                  <form method="get" id="searchform" action="<?php bloginfo('url')?>">
+                      <label class="hidden" for="s"></label>
+                      <a onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>
+                      <input type="text" placeholder="" value="" name="s" id="s">
+                  </form>
               </div>
               
             </div><!--/.nav-collapse -->

@@ -36,10 +36,10 @@
 
                     	else{
                      		$actsize = 'actilista';
-                    		$actclass = 'second col-md-6 col-sm- col-xs-12';
+                    		$actclass = 'second col-md-6 col-sm-6 col-xs-12';
                     		$actsocial = 'soc-invisible';
-                    		$actcolimg = 'heading col-md-4 col-sm-2 col-xs-5';
-                    		$actcolcaption = 'col-md-8 col-sm-10 col-xs-7';                  		
+                    		$actcolimg = 'heading col-md-4 col-sm-2 col-xs-12';
+                    		$actcolcaption = 'col-md-8 col-sm-10 col-xs-12';                  		
                     	}
 
                     ?>

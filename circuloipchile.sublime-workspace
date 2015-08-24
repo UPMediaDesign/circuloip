@@ -4,16 +4,40 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
 				"princi",
 				"principales"
 			],
 			[
 				"paddi",
 				"padding-top"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"act",
@@ -48,20 +72,12 @@
 				"get_next_posts_link"
 			],
 			[
-				"padding",
-				"padding-top"
-			],
-			[
 				"margin",
 				"margin-top"
 			],
 			[
 				"side",
 				"sidebar-news"
-			],
-			[
-				"backgr",
-				"background"
 			],
 			[
 				"pro",
@@ -144,10 +160,6 @@
 				"padding-top"
 			],
 			[
-				"back",
-				"background"
-			],
-			[
 				"text-",
 				"text-align"
 			],
@@ -194,10 +206,6 @@
 			[
 				"backgro",
 				"background-size"
-			],
-			[
-				"background",
-				"background-image"
 			],
 			[
 				"logo",
@@ -320,10 +328,6 @@
 				"background-image"
 			],
 			[
-				"backg",
-				"background-size"
-			],
-			[
 				"borde",
 				"border"
 			],
@@ -424,10 +428,6 @@
 				"font-family"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
 				"MARGIN",
 				"margin-top"
 			],
@@ -476,22 +476,6 @@
 	"buffers":
 	[
 		{
-			"file": "wp-content/themes/circulotheme/page-perfeccionamiento.php",
-			"settings":
-			{
-				"buffer_size": 2167,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/preguntas-frecuentes.php",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "wp-content/themes/circulotheme/404.php",
 			"settings":
 			{
@@ -500,10 +484,34 @@
 			}
 		},
 		{
+			"file": "wp-content/themes/circulotheme/page-preguntas-frecuentes.php",
+			"settings":
+			{
+				"buffer_size": 1865,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/searchbar.php",
+			"settings":
+			{
+				"buffer_size": 1355,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/page-perfeccionamiento.php",
+			"settings":
+			{
+				"buffer_size": 2557,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "wp-content/themes/circulotheme/style.css",
 			"settings":
 			{
-				"buffer_size": 39743,
+				"buffer_size": 43112,
 				"line_ending": "Windows"
 			}
 		},
@@ -588,6 +596,7 @@
 	},
 	"file_history":
 	[
+		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/preguntas-frecuentes.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/archive-vida-social.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/footer.php",
 		"/Users/upmedia/GitHub/circuloip/wp-content/themes/circulotheme/archive-convenio.php",
@@ -714,8 +723,7 @@
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/OAuth.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/twitteroauth.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/uservoice.html",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-servicios.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-equipo.php"
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page-servicios.php"
 	],
 	"find":
 	{
@@ -736,6 +744,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" }",
 			"proxima_nova_rgbold",
 			"proxima_nova_ltsemibold",
 			"2px",
@@ -862,8 +871,7 @@
 			"button",
 			" span.amount",
 			"#top",
-			"h1.page-title",
-			"tbag"
+			"h1.page-title"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -882,68 +890,11 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/circulotheme/page-perfeccionamiento.php",
-					"settings":
-					{
-						"buffer_size": 2167,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1211,
-								1211
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 341.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/circulotheme/preguntas-frecuentes.php",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "wp-content/themes/circulotheme/404.php",
 					"settings":
 					{
@@ -970,27 +921,118 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 7,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "wp-content/themes/circulotheme/style.css",
+					"buffer": 1,
+					"file": "wp-content/themes/circulotheme/page-preguntas-frecuentes.php",
 					"settings":
 					{
-						"buffer_size": 39743,
+						"buffer_size": 1865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								37528,
-								37528
+								1142,
+								1142
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 208.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/circulotheme/searchbar.php",
+					"settings":
+					{
+						"buffer_size": 1355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/circulotheme/page-perfeccionamiento.php",
+					"settings":
+					{
+						"buffer_size": 2557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2285,
+								2285
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 665.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/circulotheme/style.css",
+					"settings":
+					{
+						"buffer_size": 43112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42249,
+								42249
 							]
 						],
 						"settings":
@@ -1004,13 +1046,13 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 12214.0,
+						"translation.y": 13619.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "wp-content/themes/circulotheme/functions.php",
 					"settings":
 					{
@@ -1021,8 +1063,8 @@
 						"selection":
 						[
 							[
-								432,
-								439
+								431,
+								440
 							]
 						],
 						"settings":
@@ -1042,7 +1084,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "wp-content/themes/circulotheme/index.php",
 					"settings":
 					{
@@ -1074,7 +1116,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "wp-content/themes/circulotheme/js/core.js",
 					"settings":
 					{
@@ -1103,7 +1145,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "wp-content/themes/circulotheme/archive-testimonio.php",
 					"settings":
 					{
@@ -1114,26 +1156,28 @@
 						"selection":
 						[
 							[
-								373,
-								464
+								1312,
+								1418
 							]
 						],
 						"settings":
 						{
 							"auto_name": "",
 							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 204.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "wp-content/themes/circulotheme/category-noticias.php",
 					"settings":
 					{
@@ -1144,8 +1188,8 @@
 						"selection":
 						[
 							[
-								2836,
-								2836
+								1407,
+								1522
 							]
 						],
 						"settings":
@@ -1159,13 +1203,13 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 127.0,
+						"translation.y": 299.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "wp-content/themes/circulotheme/page-convenios.php",
 					"settings":
 					{
@@ -1197,7 +1241,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "wp-content/themes/circulotheme/archive-vida-social.php",
 					"settings":
 					{
@@ -1259,7 +1303,7 @@
 		"cols":
 		[
 			0.0,
-			0.492105799167,
+			0.484556869669,
 			1.0
 		],
 		"rows":

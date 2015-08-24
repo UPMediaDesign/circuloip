@@ -57,7 +57,7 @@
         <p><?php echo $postc->post_content; ?></p>
         <?php $instituciones = get_field('convenio_institucion' , 165)?>
             <?php foreach($instituciones as $institucion):?>
-                <div class="col-md-2 institucion">
+                <div class="col-md-2 col-xs-6 institucion">
                     <a href="<?php echo $institucion['link_convenio']?>">
                         <img src="<?php echo $institucion['logo_convenio']?>" alt="">
                     </a>

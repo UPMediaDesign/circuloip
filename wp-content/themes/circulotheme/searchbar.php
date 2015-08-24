@@ -1,5 +1,5 @@
                                   
-<div class="searchandsocial navbar-fixed-top">
+<div class="searchandsocial navbar-fixed-top hide-on-mobile">
 	<div class="megacontainer">
 		<div class="row">
             
@@ -16,7 +16,7 @@
                         </div>
                     </div>
 
-                    <div class="searchh col-xs-4 col-sm-6">
+                    <div class="searchh col-xs-4 col-sm-6 col-xs-6">
                         <form method="get" id="searchform" action="<?php bloginfo('url')?>">
                             <label class="hidden" for="s"></label>
                             <a onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>

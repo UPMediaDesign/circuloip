@@ -66,7 +66,7 @@
         
     	<?php endforeach?>
 
-            <div class="col-md-6">
+            <div class="col-md-6 clear">
                 <?php wp_pagenavi(); ?>
             </div>
 
@@ -90,8 +90,9 @@
 </section>
 
 <?php get_footer(); ?>
-
+        <?php $counttestimonios = 0 ?>
         <?php foreach ($testimonios as $script): ?>
+         <?php $counttestimonios++ ?>
             <script>
                 jQuery(document).ready(function($) {
                 jQuery('#modal-v-<?php echo $script->ID?> .close').on('click', function() {
