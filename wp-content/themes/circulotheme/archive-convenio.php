@@ -32,17 +32,18 @@
                         <figcaption class="convenio-element side">
                             
                             <h3>
-                            <a href="<?php the_permalink();?>" title="<?php echo $convenio->post_title ?>"  rel="nofollow"><?php echo $convenio->post_title ?></a>
+                            <a href="<?php echo get_permalink($convenio->ID);?>" title="<?php echo $convenio->post_title ?>"  rel="nofollow"><?php echo $convenio->post_title ?></a>
                             </h3>
-                            <p><?php echo substr($convenio->post_content , 0, 65)?>...</p>
-                            <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
+                            <p><?php echo substr($convenio->post_excerpt , 0, 50)?>...</p>
+                            <div></div>
+                            <a href="<?php echo get_permalink($convenio->ID);?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
                             </a>
                         </figcaption>
                     </figure>       
                     <?php endforeach?>
                 </div> 
             </div>    
-            <div class="col-md-6">
+            <div class="col-md-6 clear separator">
                 <?php wp_pagenavi(); ?>
             </div>
         </div>

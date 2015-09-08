@@ -7,7 +7,7 @@
     
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-  	<div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox">
     <?php $idds = array();?>
     <?php $count = 0;?>
     <?php foreach($posts as $post):?>
@@ -26,10 +26,10 @@
             <div class="clear"></div>
         </div>
     <?php array_push($idds , $post->ID)?>
-	<?php }?>
+    <?php }?>
     <?php endforeach;?>
     
-  	</div>
+    </div>
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -82,16 +82,16 @@
                 <div class="tip-element"> 
                     <div class="tip-element side">
                         <h3>
-                        <a href="<?php the_permalink();?>" title="<?php echo $tip->post_title ?>"  rel="nofollow"><?php echo $tip->post_title ?></a>
+                        <a href="<?php echo get_permalink($tip->ID);?>" title="<?php echo $tip->post_title ?>"  rel="nofollow"><?php echo $tip->post_title ?></a>
                         </h3>
                         <p><?php echo substr($tip->post_content , 0, 147)?>...</p>
-                        <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
+                        <a href="<?php echo get_permalink($tip->ID);?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>       
                 <?php endforeach?>
                 
-                <a class="acc" href="<?php echo get_page_link()?>">Ver Ofertas Laborales</a>
+                
 
         </div>
     </div>
@@ -112,12 +112,12 @@
                     <figure class="convenio-element col-md-6 col-sm-6 col-xs-12"> 
                         <?php echo get_the_post_thumbnail( $convenio->ID , 'convenios', array('class' => 'img-responsive')) ?>
                         <figcaption class="convenio-element side">
-                            
                             <h3>
-                            <a href="<?php the_permalink();?>" title="<?php echo $convenio->post_title ?>"  rel="nofollow"><?php echo $convenio->post_title ?></a>
+                                <a href="<?php echo get_permalink($convenio->ID);?>" title="<?php echo $convenio->post_title ?>"  rel="nofollow"><?php echo $convenio->post_title ?></a>
                             </h3>
-                            <p><?php echo substr($convenio->post_content , 0, 65)?>...</p>
-                            <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
+                            <p><?php echo substr($convenio->post_excerpt , 0, 50)?>...</p>
+                            <div></div>
+                            <a href="<?php echo get_permalink($convenio->ID);?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
                             </a>
                         </figcaption>
                     </figure>       
@@ -193,24 +193,24 @@
                             <a class="heading" href="<?php echo get_permalink($actividad->ID)?>"><?php echo get_the_post_thumbnail($actividad->ID , 'homesocial' , array('class' => 'img-responsive'))?></a>
                             <figcaption>
                                 <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
-                                <p><?php echo substr($actividad->post_content , 0, 65)?>...</p>
                                 <span>
                                     <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
                                 </span>
-                                <a href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                                <a href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                                <div class="clear"></div>
                             </figcaption>
                         </figure>
 
                             <?php }else{?>
                                 <article class="col-md-4">
                                     <div class="secundario activity-date line row">
-                                        <div class="date col-xs-2">
+                                        <div class="date col-md-3 col-sm-2 col-xs-2">
                                             <span class="day"><?php echo the_time('d')?></span>
                                             <span class="month"><?php echo the_time('M')?></span>
                                         </div>
-                                        <div class="col-xs-10">
+                                        <div class="col-md-9 col-sm-10 col-xs-10 dotted-brd">
                                             <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
-                                            <p><?php echo substr($convenio->post_content , 0, 64)?>...</p>
+                                            <p><?php echo substr($actividad->post_content , 0, 64)?>...</p>
                                         </div>
                                         <div class="clear"></div>
                                     </div>
@@ -244,7 +244,8 @@
                                 <span>
                                     <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
                                 </span>
-                                <a class="vermas" href="<?php the_permalink();?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                                <a class="vermas" href="<?php echo get_permalink($social->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                                <div class="clear"></div>
                             </figcaption>
                         </figure>
                     

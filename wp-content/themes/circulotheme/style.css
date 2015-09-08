@@ -22,9 +22,9 @@ html[xmlns] .clearfix { display: block;}
 .right, .der{float:right;}
 .clear{ clear:both}
 
-.alignleft { display: inline;	float: left; margin-right: 15px; }
+.alignleft { display: inline;   float: left; margin-right: 15px; }
 .alignright { display: inline; float: right; margin-left: 15px;}
-.aligncenter {	clear: both; display: block; margin-left: auto;	margin-right: auto; }
+.aligncenter {  clear: both; display: block; margin-left: auto; margin-right: auto; }
 
 strong , b{ font-weight:700}
 em , i{font-style:italic;}
@@ -45,8 +45,8 @@ main .container p , main .megacontainer p , .recorrido p{ font-family: 'proxima 
 
 .mobile{ display:none}
 @media screen and (max-width:767px){ 
-	.desktop{ display: none}
-	.mobile{ display: inline-block}   
+    .desktop{ display: none}
+    .mobile{ display: inline-block}   
     .hide-on-mobile{display:none;}
 }
 
@@ -67,7 +67,7 @@ blockquote li {list-style-position: inside !important;}
   opacity: 1;}
 
 .modal-dialog{ margin:150px auto 0 }  
-.modal-content{ box-shadow:none !important; border:none; padding:50px 50px 70px 50px }
+.modal-content{ box-shadow:none !important; border:none;}
 .modal h1{ text-align:center}
 .modal-header{ border-bottom:0px !important}
 .modal .close{ font-size:70px;}
@@ -94,6 +94,7 @@ h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}
 
 .galbt:hover span{ color:#000}
 
+.modal .close {font-size: 70px; position: absolute; margin-top: 15px; z-index: 1034; right: 5px; color: #ff9900; padding: 0 10px; border-radius: 50%; opacity: .9; }
 
 /*Loader Inicial*/
 #loader-wrapper {background-color:#000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000000;}
@@ -119,7 +120,7 @@ h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}
 .clr-2,.deepblue   {color:#10325c;}
 .clr-3,.titleblue  {color:#0067b1;}
 .clr-4,.highblue   {color:#1598ed;}
-.clr-5,.lowblue	   {color:#45bdff;}
+.clr-5,.lowblue    {color:#45bdff;}
 .clr-6,.ctaorange  {color:#ff9900;}
 .clr-7,
 .ctaorange:hover   {color:#b36b00;}
@@ -276,6 +277,8 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 .carousel-indicators .active {width: 12px; height: 12px; margin: 5px 14px; background-color: #ff9900;
 }
 
+.heading-single .jumbotron ul {display: none; }
+
 /* OFERTAS LABORALES */
 .offer, .tips {padding-top: 35px; }
 .offer h2{font-size:45px; font-family:'proxima nova';color:#0067b1; text-align:left; margin-bottom: 40px; text-transform: capitalize; font-weight: 700;}
@@ -316,26 +319,28 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 
 .convenio-element.side {background: #ffffff; padding: 5px 15px; margin-bottom: 25px; display: block; height: 135px; }
 .convenio-element img{float: left;}
-.convenio-element h3{padding-left: 35%;text-align: left; line-height: 1.3em; font-size: 20px; margin-top: 5px; height: 45px;}
+.convenio-element h3{padding-left: 28%;text-align: left; line-height: 1.3em; font-size: 20px; margin-top: 5px; height: 45px;}
 .convenio-element h3 a{padding-left: 0;font-weight:500;color:#1598ed; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-size: 20px;}
 .convenio-element h3 a:hover{color: #0067b1; text-decoration: none; font-size: 20px;}
-.convenio-element p{padding-left: 35%;color:#a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0;}
-.convenio-element a{padding-left: 3%;font-weight: 700;color:#ff9900; font-family: 'proxima nova'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.convenio-element p{padding-left: 28%;color:#a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0;}
+/*.convenio-element ul{display:none;}*/
+.convenio-element li {padding-left: 28%; color: #a2a2a2; text-align: left; line-height: 1.3em; font-size: 14px; margin-bottom: 0; }
+.convenio-element a{padding-left: 7%;font-weight: 700;color:#ff9900; font-family: 'proxima nova'; font-size: 14px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .convenio-element a:hover{color:#b36b00; text-decoration: none;}
 
 /* NOTICIAS */
 #noticias{background:#f6f6f6; padding-bottom: 50px; padding-top: 25px;}
 #noticias h3{color:#0067b1; font-size: 40px; text-align: left; font-family: 'proxima nova'; padding-left:15px; padding-bottom: 25px;}
-#noticias h4 a{font-weight:500;color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}
+#noticias h4 a{font-weight:500;color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px; clear:both;}
 #noticias h4 a:hover{color: #0067b1; text-decoration: none;}
 
-figure.principal.col-md-4 img{max-width:360px; height: auto; width:100%;}
+figure.principal.col-md-4 img{ height: auto; width:100%;}
 .principal a.heading{float:none;}
 .principal figcaption{background:#fff; padding: 13px 10px;}
 .principal a, .secundario a{font-weight: 700;color:#ff9900; text-align:left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: right;}
 .principal a:hover, .secundario a:hover{color: #b36b00; text-decoration: none;}
-.principal p{color:#a2a2a2; font-size: 14px; font-family: 'proxima nova';}
-.principal span{font-style: italic; color:#a2a2a2;}
+.principal p{color:#a2a2a2; font-size: 14px; font-family: 'proxima nova'; clear:both;}
+.principal span{font-style: italic; color:#a2a2a2; clear: both; float: left;}
 
 article>.secundario{ padding: 10px; margin-right: 0; margin-left: 0;}
 article .noticias{ background-color: #fff; margin-bottom:10px;}
@@ -360,7 +365,9 @@ article.secundario.activity-date{padding: 10px 0;}
 .secundario.activity-date h4 a {height: 42px; }
 .secundario.activity-date p{margin-bottom: 0; line-height: 1.2em; color:#939393; clear:both;}
 
-.date{text-align:center; color:#1598ed; font-family: 'proxima nova'; border-right:5px dotted #a2a2a2; padding-left: 0;}
+.date{text-align:center; color:#1598ed; font-family: 'proxima nova'; padding-left: 0;}
+
+.dotted-brd{border-left: 5px dotted #a2a2a2;}
 
 span.day{clear:both; display: block; font-size: 45px; line-height: 0.5em; padding-top: 15px; font-weight: 700;}
 span.month {clear: both; display: block; text-transform: uppercase; font-size: 26px; }
@@ -372,7 +379,7 @@ span.month {clear: both; display: block; text-transform: uppercase; font-size: 2
 .vidasocial figure.principal{max-height: 320px; }
 .vidasocial figure.principal a{float:none;}
 .vidasocial figure.principal figcaption{background: rgba(52, 56, 56, .8); color: #fff; position: relative; bottom: 95px; }
-.vidasocial figure.principal figcaption h4 a{line-height: 1.3em;float: right; color: #fff; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 40px; margin-bottom: 10px; font-weight:500;}
+.vidasocial figure.principal figcaption h4 a{line-height: 1.3em;float: left; color: #fff; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 40px; margin-bottom: 10px; font-weight:500;}
 .vidasocial figure.principal figcaption h4 a:hover{text-decoration:none; color:#f2f2f2;}
 .vidasocial figure.principal figcaption a.vermas{float:right;color:#ff9900; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .vidasocial figure.principal figcaption a.vermas:hover{color:#b36b00;}
@@ -509,7 +516,7 @@ figcaption.transparent {background: rgba(52, 56, 56, .8); color: #fff; position:
 .act-date .principales span.day,.act-date span.day{font-size: 28px !important; font-weight: 700; padding-top: 0;}
 .act-date .principales span.month, .act-date span.month{font-size: 12px !important; font-weight: 500;}
 /* Columna Iniciales */
-figure.principales {max-height: 440px; }
+figure.principales {max-height: 440px; z-index: 50;}
 .actividades .principales img {width: 100%; }
 .actividades .principales figcaption{background: #fff; padding: 15px 15px 20px;}
 .actividades .principales p {clear: both; }
@@ -576,7 +583,12 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
 .single-content .share-article p{float:left; padding: 15px 10px 15px 0;}
 .single-content p{color: #676767; font-size: 14px; line-height: 1.6em; font-weight: 400; padding-bottom: 6px;}
 
+.single-content li{list-style: none;}
+
 .place {position: relative; top: 50px; left: 15px; text-align: right; }
+
+.only-portrait-ab{display: none;}
+.only-portrait-ab a.acc {margin-left: 18px; display: inline-block; margin-top: 5px; margin-bottom: 0; }
 
 /*******************************************************************************************/
 /********************************** Responsive Styles **************************************/
@@ -588,10 +600,139 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
 }
 
 @media (max-width:1199px) and (min-width: 992px){
+    /* Header */
+    .navbar-nav{margin-left: 0;}
+    .navbar-brand>img {width: 62%; }
+    .nav>li>a {padding: 10px;}
+    li#menu-item-26{margin-top: 9px;}
+    .outlogged span{padding-top:5px;}
+
+    .searchandsocial.navbar-fixed-top {top: 126px;}
+
+    .socials{left:60px;}
+
+    /* Slider */
+    .carousel-inner>.item{margin-top: 120px; height: 310px;}
+    .clr-1.base{left:-35px;}
+    .inside a{font-size: 21px;}
+    .antiskw h2 {margin-top: 10px; margin-bottom: 5px; }
+    .carousel-indicators{bottom: 105px;}
+
+    /* Home */
+    .tips h2 i {font-size: 20px; color: #343838;  margin-left: 0;  margin-right: 2%; margin-top: 5px;float: left;}
+
+    /* Noticias */
+    #noticias h4 a{height:40px;}
+    span.day {font-size: 25px;}
+    span.month{font-size: 15px;}
+    .date {padding-top: 20px; padding-bottom: 20px; }
+    .secundario.activity-date h4 a {height: 20px;}
+    .secundario.activity-date p {font-size: 13px; line-height: 1.4em; }
+
+    /* Vida Social */
+    figure.principal.col-md-4 img{max-width: 100%;}
+    .vidasocial figure.principal figcaption h4 a {font-size: 15px; float: left; clear: both; }
+    .vidasocial figure.principal {max-height: 270px; }
+    .principal span {font-style: italic; color: #a2a2a2; float: left; clear: both; }
+
+    /* Single */
+    .single .navbar-nav {margin-left: 35%; padding-top: 0; }
+
+    .only-portrait-ab{display: none;}
+
 
 }
 
-@media (max-width:768px) and (min-width: 991px){
+@media (max-width:991px) and (min-width: 768px){
+    /* Header */
+    .navbar-default {padding-bottom: 40px; margin-bottom: 0;}
+    .searchandsocial.navbar-fixed-top {top: 125px;} 
+    .navbar-nav{margin-left:0;}
+    .navbar-brand>img {width: 62%; }
+    .nav>li>a {padding: 10px;}
+    li#menu-item-26{margin-top: 9px;}
+    .outlogged.nav {display: none; }
+    .outlogged span{padding-top:5px;}
+
+    .carousel-inner>.item{margin-top: 120px; height: 310px;}
+    .clr-1.base{left:-10px; top: 120px;}
+    .inside a{font-size: 21px;}
+    .inside p{padding-bottom: 10px;}
+    .antiskw h2 {margin-top: 10px; margin-bottom: 5px; padding-top: 15px;}
+    .carousel-indicators{bottom: 105px;}
+    
+    /* Home */
+    .offer h2 {font-size: 30px;} 
+    .offer h2 img {padding-right: 15px; width: 50%; max-width: 65px; }
+    .offer-element h3 a{font-size: 20px;}
+    .offer-element span{width:20px; height:20px; font-size: 0 !important; color:transparent;}
+
+    .tips h2 i {font-size: 20px; color: #343838; margin-left: 0; float: left; margin-top: 7px; margin-right: 10px; }
+
+    /* Noticias y Actividades */
+    .principal p{clear:both !important;}
+
+    figure.principal.col-md-4 img{max-width: 100%;}
+    /* Vida Social */
+    .vidasocial figure.principal {height: auto; max-height: 950px; }
+    .vidasocial figure.principal figcaption{bottom:80px;}
+    .vidasocial figure.principal figcaption h4 a {float: left; clear: both; height: auto;}
+    .principal span {font-style: italic; color: #a2a2a2; float: left; clear: both; }
+
+    /* Single */
+    .single .navbar-nav {margin-left: 35%; padding-top: 0; }
+
+    .only-portrait-ab{position:relative; display:block;}
+
+    .institucion img {margin: 0 auto; display: block; width: 45%;}
+
+    .heading-page {min-height: 285px;  margin-top: 120px;}
+
+    .date-news{margin:0 15px;}
+    .principal-news img{width:100%; max-width: 800px;}
+
+    .testimonial-content{background:#C7C7C7;}
+
+    /*Quienes Somos*/
+    .who-excerpt p {font-size: 30px; padding: 30px 0; }
+    .who-content .col-md-6 img{padding-top: 20px;}
+    .quienes p {font-size: 20px; }
+
+    /*Actividades*/
+    figure.second {height: auto; max-height: 495px; }
+
+    /* Singles */
+    p.single-excerpt{padding:0 5%;}
+    .single .navbar-nav{margin-left:10%; margin-top: 30px;}
+    .single .navbar-brand>img {display: block; width: 80px; }
+    .place {left: 0px; text-align: right; bottom: 17px; }
+
+    .single .jumbotron h2{margin-top:70px; font-size:30px; line-height:1.3em;}
+    
+    /*Convenios*/
+    .instituciones h3{padding-left: 0; text-align: center;}
+    .instituciones p{padding-left: 0; text-align: center;}
+
+    /* Perfeccionamiento */
+    .quote {padding: 0; }
+    .quote h4 {padding: 0 15px; }
+
+    .profile {padding: 0 15px; }
+
+    .nav-tabs>li {padding: 25px; }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a {padding: 0px; border:none;}
+    .nav-tabs span {font-size: 0; }
+
+    .antirow {margin-left: 0 !important; margin-right: 0 !important; }
+
+    .perf-content p {font-weight: 500;}
+
+    /* Footer */
+    li.service, #menu-second-footer li.service{border-bottom: 1px solid #fff; border-left: none;}
+    .box-soc {border-left: none; padding: 0 15px;}
+    span.credit-footer{font-size: 12px;}
+    .footer-nav, #menu-second-footer, .websoc{padding-right: 0; margin: 0; padding-left: 0;}
+
 
 }
 
@@ -603,7 +744,7 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
     .navbar-toggle.collapsed {margin-top: 30px; background: #ff9900; border-radius: 0; border: none; }
 
     .navbar-collapse{max-height:auto; }
-    .navbar-nav{margin: 0; padding-top:20px;}
+    .navbar-nav{margin: 0; padding-top:20px; }
     .navbar-nav li {float: none; }
     .searchandsocial.navbar-fixed-top {top: 105px;}
     .icon-bar{background: #fff !important;}
@@ -634,7 +775,7 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
     .inside p {color: #fff; font-size: 13px; line-height: 1.4em; padding-bottom: 15px; }
 
     /* Ofertas Laborales */
-    .offer, .tips {padding-top: 35px; padding: 10px 5px; }
+    .offer, .tips {padding-top: 35px; padding: 10px 5px; clear: both;}
     .offer h2 {font-size: 25px;} 
     .offer h2 img, .convenios h2 img {padding-right: 10px; margin-right:0;width: 100%; max-width: 50px; }
     .offer-element span {padding-top: 0; font-size: 13px; font-weight: 500; }
@@ -644,12 +785,12 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
     .offer-element h3 a {font-size: 17px;}
     .offer-element p{margin-bottom: 0; font-size: 14px;}
     .offer-element a{font-size: 15px;}
-    .offer a.acc{margin:0 auto; display:inline-block; float: none;}
+    .offer a.acc{margin:0 auto; display:inline-block; clear: both;}
 
     i.fa.fa-circle {float: left; margin-left: 0; margin-top: 5px; margin-right: 10px; }
     
     /* Tips Laborales */
-    .tips h2{font-size: 20px; margin-top: 30px;}
+    .tips h2{font-size: 20px; margin-top: 35px;}
     .tip-element h3 a{font-size: 17px;}
     
     /* Convenios */
@@ -657,20 +798,21 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
     .convenio-element h3 {padding-left: 45%; height: 35px; line-height: 1.1em;}
     .convenio-element h3 a {font-size: 15px; }
     .convenio-element p {padding-left: 45%; line-height: 1.3em; font-size: 13px;}
+    .convenio-element a {padding-left: 5%;}
     
     /* Noticias */
     #noticias h3{font-size: 23px; padding-bottom: 15px; margin-bottom: 0;}
 
     /* Actividades */
     .actividades h3{font-size: 23px; padding-bottom: 15px; margin-bottom: 0; margin-top:0;}
-    .date {border-right: 2px dotted #a2a2a2; padding-top: 15px; padding-bottom: 15px;}
+    .date { padding-top: 15px; padding-bottom: 15px;}
     span.day {font-size: 30px; }
     span.month {font-size: 17px; }
     .secundario.activity-date h4 a {height: 15px; font-size: 15px !important; padding-bottom: 35px; }
 
     /* Vida Social */
     #vidasocial h3{font-size: 23px; padding-bottom: 15px; margin-bottom: 0; margin-top:0;}
-    .vidasocial figure.principal{max-height: 260px;}
+    .vidasocial figure.principal{max-height: 295px;}
     .vidasocial figure.principal figcaption h4 a{font-size: 15px;}
 
 
@@ -743,7 +885,9 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
     .single .navbar-nav{margin-left:10%;}
     .single .navbar-brand>img {display: block; width: 80px; }
     .place {top: -15px; left: 0px; text-align: right; bottom: 17px; }
-    
+
+    .only-portrait-ab{display: none;}
+
 }
 
 

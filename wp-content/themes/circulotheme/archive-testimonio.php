@@ -34,8 +34,8 @@
 <section class="">
 	<div class="container-fluid">
         <div class="row">
-
-		<?php $testimonios = get_posts(array('post_type' => 'testimonio' , 'numberposts' => 16)); ?>
+        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+		<?php $testimonios = get_posts(array('post_type' => 'testimonio' , 'posts_per_page' => 16 , 'paged' => $paged)); ?>
 	        <?php $counttestimonios = 0 ?>
 	        <?php foreach ($testimonios as $testimonio): ?>
             <?php $counttestimonios++ ?>
@@ -51,7 +51,7 @@
             </figure>
 
             <?php endforeach;?>
-        <?php $testimonios = get_field('embed_video_testimonio' , 12)?>
+        
         <?php foreach ($testimonios as $modal):?>
             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal-v-<?php echo $modal->ID?>">
               <div class="modal-dialog modal-lg">
@@ -66,7 +66,7 @@
         
     	<?php endforeach?>
 
-            <div class="col-md-6 clear">
+            <div class="col-md-6 clear separator">
                 <?php wp_pagenavi(); ?>
             </div>
 

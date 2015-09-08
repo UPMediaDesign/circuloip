@@ -26,18 +26,22 @@
 				} ?>
 			</div>
 
-			<div class="col-md-1 col-sm-1 col-md-offset-1 col-sm-offset-1 date-single col-xs-12">
+			<div class="col-md-1 col-sm-2 col-md-offset-1  date-single col-xs-12">
 				<span class="first"><?php echo the_time('j') ?> </span><br/>
 				<span class="second"><?php echo the_time('M')?></span>
 				
 				<div class="place">
 					<p class="sede"><span class="fa fa-map-marker"></span> Sede <?php echo get_field('sede',$post->ID); ?></p>
 				</div>
+
 			</div>
 
-			<div class="col-md-8">
+			<div class="col-md-8 col-sm-9">
 				<?php echo apply_filters('the_content' , $post->post_content)?>
+				<?php echo get_field('tabla_convenio') ?>
 			</div>
+
+			<div class="clear separator"></div>
 
 			<div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2 col-xs-12 share-article">
 

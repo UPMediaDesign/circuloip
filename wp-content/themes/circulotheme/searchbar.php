@@ -13,6 +13,9 @@
                                 <li><a href="#"><span class="fa fa-linkedin fa-fw"></span></a></li>
                                 <li><a href="#"><span class="fa fa-youtube-play fa-fw"></span></a></li>
                             </ul>
+                            <div class="only-portrait-ab">
+                                 <a class="acc" href="http://www.ipchile.trabajando.com/index.cfm">Ingresar</a>
+                            </div>
                         </div>
                     </div>
 
@@ -23,6 +26,8 @@
                             <input type="text" placeholder="" value="" name="s" id="s">
                         </form>
                     </div>
+
+
 
                 </div>
 
