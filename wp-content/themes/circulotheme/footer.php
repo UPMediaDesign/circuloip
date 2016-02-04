@@ -41,7 +41,24 @@ jQuery(window).load(function() {
 })
 </script>
 
+
+
 <?php if(is_home() || is_404()){ //supersized?>
+
+<script>
+                    jQuery(document).ready(function($) {
+                    jQuery('#myModal .close').on('click', function() {
+                        //$('#popup-youtube-player').stopVideo();
+                      jQuery('#myModal .player')[0].contentWindow.postMessage('{"event":"command","func":"' +'stopVideo' + '","args":""}', '*');    
+                    });
+                    jQuery('#myModal').on('click', function() {
+                        //$('#popup-youtube-player').stopVideo();
+                      jQuery('#myModal .player')[0].contentWindow.postMessage('{"event":"command","func":"' +'stopVideo' + '","args":""}', '*');    
+                    });
+                    });
+                </script> 
+
+
 <?php $bgd = wp_get_attachment_image_src( get_field('default_background' , 'options') , 'full')?>
 <script type="text/javascript">
 

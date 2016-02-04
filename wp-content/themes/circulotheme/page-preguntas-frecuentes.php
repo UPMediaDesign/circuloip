@@ -55,6 +55,7 @@ Template Name: Preguntas Frecuentes
 				    <div id="collapse-<?php echo $countbarras?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php echo $barra['titulo_pregunta']?>">
 				      <div class="panel-body">
 				        <?php echo $barra['respuesta_pregunta']?>
+				        <img class="inside-collapse" src="<?php echo $barra['imagen_apoyo']?>" alt="" class="imag-responsive">
 				      </div>
 				    </div>
 

@@ -13,16 +13,80 @@
                 <?php $postt = get_post(6); ?>
                 <h2><?php echo $postt->post_title; ?></h2>
             </div>
+
         </div>
     </div>
 </div>
 
+<section class="selectplace">
+    <div class="container">
+        <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <h2>Búsqueda de artículos</h2>
+                    <p>Puedes buscar a través de nuestras sedes y años artículos relacionados a las actividades que Círculo de Egresados IPCHILE dispone para ti.</p>
+                </div>
+   
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <button type="button" class="btn btn-default dropdown-toggle instructor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sede <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">La Serena</a></li>
+                        <li><a href="#">República</a></li>
+                        <li><a href="#">San Joaquín</a></li>
+                        <li><a href="#">Rancagua</a></li>
+                        <li><a href="#">Temuco</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <button type="button" class="btn btn-default dropdown-toggle instructor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Año <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">2016</a></li>
+                        <li><a href="#">2015</a></li>
+                        <li><a href="#">2014</a></li>
+                        <li><a href="#">2013</a></li>
+                        <li><a href="#">2012</a></li>
+                        <li><a href="#">2011</a></li>
+                        <li><a href="#">2010</a></li>
+                        <li><a href="#">2009</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <button type="button" class="btn btn-default dropdown-toggle instructor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Mes <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Enero</a></li>
+                        <li><a href="">Febrero</a></li>
+                        <li><a href="">Marzo</a></li>
+                        <li><a href="">Abril</a></li>
+                        <li><a href="">Mayo</a></li>
+                        <li><a href="">Junio</a></li>
+                        <li><a href="">Julio</a></li>
+                        <li><a href="">Agosto</a></li>
+                        <li><a href="">Septiembre</a></li>
+                        <li><a href="">Octubre</a></li>
+                        <li><a href="">Noviembre</a></li>
+                        <li><a href="">Diciembre</a></li>
+                    </ul>
+                </div>
+
+
+        </div>
+    </div>
+</section>
+
 <section class="actividades">
     <div class="container">
         <div class="row">
-                    <?php $actividades = get_posts(array('post_type' => 'actividades', 'numberposts' => 10 , 'post__not_in')) ?>
+                    <?php $timeline = get_posts(array('post_type' => 'actividades', 'meta_query' => array(array('key' => 'sede', 'value' => $_GET['sede'], 'compare' => 'LIKE') ), ) )?>
                     <?php $countactividades = 0?>
-                    <?php foreach($actividades as $actividad):?>
+                    <?php foreach($posts as $actividad):?>
                     <?php $countactividades++?>
                     
                     <?php if($countactividades == 1 || $countactividades == 2)
@@ -63,7 +127,6 @@
                                 <div class="separator"></div>
                             </figcaption>
                         </figure>
-
                     
                     <?php endforeach?>                
                     <div class="clear separator"></div>

@@ -72,10 +72,31 @@
 
         </div>
         <div class="col-md-5 col-md-offset-1 col-sm-6 tips">
+
+            <div class="col-md-12 col-sm-6 instructor">
+                <h4>¿Tienes dudas de como registrarte a Trabajando.com?</h4>
+                <p>Revisa nuestro siguiente vídeo</p>
+                <a data-toggle="modal" data-target="#myModal">
+                    ¿Cómo ingresar?
+                </a>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-content embed-responsive embed-responsive-16by9" id="yt-player">
+                                    <iframe width="560" height="560" class="embed-responsive-item player" src="https://www.youtube.com/embed/<?php echo get_field('link_video_instructivo','options')?>?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <h2>Tips Laborales <i class="fa fa-circle"></i></h2>
 
             <!-- Ofertas Laborales -->
-            <?php $tips= get_posts(array('post_type' => 'tip-laboral', 'numberposts' => 5)); ?>
+            <?php $tips= get_posts(array('post_type' => 'tip-laboral', 'numberposts' => 4)); ?>
                 <?php $counttips = 0 ?>
                 <?php foreach ($tips as $tip): ?>
                 <?php $counttips++ ?>
@@ -225,37 +246,6 @@
     </div>
 </section>
 
-<!-- Vida Social -->
-<section id="vidasocial">
-    <div class="container">
-        <div class="row">
-            <h3>Vida Social</h3>
-            <div class="col-md-12 vidasocial">
-                <div class="row">
-                    <?php $sociales = get_posts(array('post_type' => 'vida-social', 'numberposts' => 6 )); ?>
-                    <?php $countsociales = 0?>
-                    <?php foreach($sociales as $social):?>
-                    <?php $countsociales++?>
-                    
-                        <figure class="principal col-md-4">
-                            <a href="<?php echo get_permalink($social->ID)?>"><?php echo get_the_post_thumbnail($social->ID , 'homesocial' , array('class' => 'img-responsive'))?></a>
-                            <figcaption>
-                                <h4><a href="<?php echo get_permalink($social->ID)?>" ><?php echo $social->post_title?></a></h4>
-                                <span>
-                                    <?php echo the_time('j') ?> de <?php echo the_time('F, Y')?>
-                                </span>
-                                <a class="vermas" href="<?php echo get_permalink($social->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
-                                <div class="clear"></div>
-                            </figcaption>
-                        </figure>
-                    
-                    <?php endforeach;?>                
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <?php get_footer()?>
 

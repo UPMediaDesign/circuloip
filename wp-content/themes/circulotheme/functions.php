@@ -57,9 +57,27 @@ function actividades_register() {
 		'has_archive' => true,
         'hierarchical' => false,
         'rewrite' => array( 'slug' => 'actividad'),
-        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' , 'custom-fields' )
     );
     register_post_type('actividades', $args);
+    flush_rewrite_rules();
+}
+
+add_action('init', 'campaigns_register');
+function campaigns_register() {
+    $args = array(
+        'label' => 'Campañas PET',
+        'singular_label' => 'Campaña',
+        'public' => true,
+        'menu_position' => 5, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'campana'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
+    );
+    register_post_type('campaigns', $args);
     flush_rewrite_rules();
 }
 

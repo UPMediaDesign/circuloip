@@ -40,6 +40,19 @@ Template Name: Quienes Somos
 	
 </section>
 
+<section class="video-somos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p><?php echo get_field('texto_video')?></p>
+            </div>
+            <div class="col-md-6 who-video">
+                <iframe width="505" height="309" class="embed-responsive-item player" src="https://www.youtube.com/embed/<?php echo get_field('video_quienes_somos') ?>?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php $quienes = get_field('quienes_somos')?>
     <?php foreach($quienes as $quien):?>
         <section class="bg-orange">
