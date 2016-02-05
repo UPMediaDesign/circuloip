@@ -491,7 +491,7 @@
 			"file": "wp-content/themes/circulotheme/archive-actividades.php",
 			"settings":
 			{
-				"buffer_size": 7393,
+				"buffer_size": 7190,
 				"line_ending": "Unix"
 			}
 		},
@@ -499,16 +499,8 @@
 			"file": "wp-content/themes/circulotheme/style.css",
 			"settings":
 			{
-				"buffer_size": 55821,
+				"buffer_size": 55971,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/functions.php",
-			"settings":
-			{
-				"buffer_size": 10721,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -536,8 +528,9 @@
 	},
 	"file_history":
 	[
-		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/index.php",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/functions.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/single.php",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/index.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-vida-social.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-campaigns.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-testimonio.php",
@@ -662,8 +655,7 @@
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config-sample.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/functions.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/author.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/superfish.js",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/theme_trust.js"
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/superfish.js"
 	],
 	"find":
 	{
@@ -838,26 +830,27 @@
 					"file": "wp-content/themes/circulotheme/archive-actividades.php",
 					"settings":
 					{
-						"buffer_size": 7393,
+						"buffer_size": 7190,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1932,
-								1932
+								5590,
+								5590
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 289.0,
+						"translation.y": 1467.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -873,15 +866,15 @@
 					"file": "wp-content/themes/circulotheme/style.css",
 					"settings":
 					{
-						"buffer_size": 55821,
+						"buffer_size": 55971,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23263,
-								23263
+								39548,
+								39548
 							]
 						],
 						"settings":
@@ -896,40 +889,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6239.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/circulotheme/functions.php",
-					"settings":
-					{
-						"buffer_size": 10721,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1193,
-								1193
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 10187.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -965,7 +925,7 @@
 		"cols":
 		[
 			0.0,
-			0.484556869669,
+			0.5,
 			1.0
 		],
 		"rows":
