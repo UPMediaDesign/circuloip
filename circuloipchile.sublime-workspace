@@ -502,6 +502,22 @@
 				"buffer_size": 55971,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "wp-config.php",
+			"settings":
+			{
+				"buffer_size": 3055,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/functions.php",
+			"settings":
+			{
+				"buffer_size": 10739,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -837,8 +853,8 @@
 						"selection":
 						[
 							[
-								5590,
-								5590
+								5880,
+								5880
 							]
 						],
 						"settings":
@@ -850,7 +866,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1467.0,
+						"translation.y": 1447.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -858,7 +874,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -873,8 +889,8 @@
 						"selection":
 						[
 							[
-								39548,
-								39548
+								46358,
+								46358
 							]
 						],
 						"settings":
@@ -889,7 +905,65 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10187.0,
+						"translation.y": 12796.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-config.php",
+					"settings":
+					{
+						"buffer_size": 3055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2295,
+								2295
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 322.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/circulotheme/functions.php",
+					"settings":
+					{
+						"buffer_size": 10739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7771,
+								7775
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3167.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -964,6 +1038,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 151.0,
+	"side_bar_width": 233.0,
 	"status_bar_visible": true
 }
