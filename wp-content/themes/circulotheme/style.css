@@ -279,6 +279,8 @@ li#menu-item-26 a {font-size: 0; color: transparent; padding: 0; position: relat
 
 .heading-single .jumbotron ul {display: none; }
 
+.job-zone{background:#ffffff;}
+
 /* OFERTAS LABORALES */
 .offer, .tips {padding-top: 35px; }
 .offer h2{font-size:45px; font-family:'proxima nova';color:#0067b1; text-align:left; margin-bottom: 40px; text-transform: capitalize; font-weight: 700;}
@@ -612,6 +614,9 @@ p.single-excerpt{color:#d6d6d6; font-size: 21px; font-family: 'proxima nova'; fo
 
 /* Collapse elements */
 .inside-collapse{max-width: 715px; width: 100%; height: auto;}
+
+/* Gallery Styles */
+.modal.and.carousel {position: absolute; top: 93vh; bottom: -140vh; }/* Original Styles */
 
 
 /*******************************************************************************************/

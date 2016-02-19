@@ -27,7 +27,7 @@
 			</div>
 
 			<div class="col-md-1 col-sm-2 col-md-offset-1  date-single col-xs-12">
-				<span class="first"><?php echo the_time('j')?> </span><br/>
+				<span class="first"><?php echo the_time('j') ?> </span><br/>
 				<span class="second"><?php echo the_time('M')?></span>
 				
 				<div class="place">
@@ -38,6 +38,7 @@
 
 			<div class="col-md-8 col-sm-9">
 				<?php echo apply_filters('the_content' , $post->post_content)?>
+				<?php echo get_field('tabla_convenio') ?>
 				
 				<?php $gallery = get_field('slide_gallery') ?>
 	            <?php if($gallery){?>
@@ -64,48 +65,6 @@
 			</div>
 
 			<div class="clear separator"></div>
-			
-			<!-- TEST AREA -->
-
-			<div class="container">
-
-			  <ul class="nav nav-pills nav-stacked">
-			    <li><a href="#lightbox" data-toggle="modal">Open Lightbox</a></li>
-			    <li><a href="#lightbox" data-toggle="modal" data-slide-to="1">2nd Image</a></li>
-			    <li><a href="#lightbox" data-toggle="modal" data-slide-to="2">3rd Image</a></li>
-			    <li><a href="#lightbox" data-toggle="modal" data-slide-to="15">Open non existing Image</a></li>
-			  </ul>
-			  
-			  <div class="modal fade and carousel slide" id="lightbox">
-			    <div class="modal-dialog">
-			      <div class="modal-content">
-			        <div class="modal-body">
-			          <div class="carousel-inner">
-			            <div class="item active">
-			              <img src="http://placehold.it/900x500/777/" alt="First slide">
-			            </div>
-			            <div class="item">
-			              <img src="http://placehold.it/900x500/666/" alt="Second slide">
-			            </div>
-			            <div class="item">
-			              <img src="http://placehold.it/900x500/555/" alt="Third slide">
-			              <div class="carousel-caption"><p>even with captions...</p></div>
-			            </div>
-			          </div><!-- /.carousel-inner -->
-			          <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
-			            <span class="glyphicon glyphicon-chevron-left"></span>
-			          </a>
-			          <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
-			            <span class="glyphicon glyphicon-chevron-right"></span>
-			          </a>
-			        </div><!-- /.modal-body -->
-			      </div><!-- /.modal-content -->
-			    </div><!-- /.modal-dialog -->
-			  </div><!-- /.modal -->
-
-			</div><!-- /.container -->
-
-			<!-- FIN TEST AREA -->
 
 			<div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2 col-xs-12 share-article">
 
@@ -122,3 +81,47 @@
 </article>
 
 <?php get_footer(); ?>
+
+
+<div class="container">
+				<?php $gallery = get_field('slide_gallery') ?>
+	            <?php if($gallery){?>
+	           	<?php $imgcount = 0?>
+	            <?php foreach($gallery as $image):?>
+	            <?php $imgcount++?>
+
+				  <ul class="nav nav-pills nav-stacked">
+				    <li><a data-target="#lightbox-<?php echo $imgcount?>" data-toggle="modal" data-slide-to="1"><img src="<?php echo $image['sizes']['thumbnail'] ?>" class="img-responsive" alt="..."></a></li>
+				  </ul>
+				  <?php if($imgcount % 6 == 0){echo '<div class="clear separator desktop"></div>';}?>
+		          <?php if($imgcount % 3 == 0){echo '<div class="clear separator mobile"></div>';}?>
+		          <?php endforeach?> 
+	          <?php }?>
+
+	          <?php foreach($gallery as $modal) ?>
+			  
+			  <div class="modal fade and carousel slide" id="lightbox-<?php echo $imgcount?>">
+			    <div class="modal-dialog">
+			      <div class="modal-content">
+			        <div class="modal-body">
+
+			          <div class="carousel-inner">
+			            <div class="item active">
+			              <img src="<?php echo $modal['sizes']['thumbnail'] ?>" class="img-responsive" alt="...">
+			            </div>
+
+			          </div><!-- /.carousel-inner -->
+			          <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
+			            <span class="glyphicon glyphicon-chevron-left"></span>
+			          </a>
+			          <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
+			            <span class="glyphicon glyphicon-chevron-right"></span>
+			          </a>
+			        </div><!-- /.modal-body -->
+			      </div><!-- /.modal-content -->
+			    </div><!-- /.modal-dialog -->
+			  </div><!-- /.modal -->
+
+			<?php endforeach ?>
+
+			</div><!-- /.container -->

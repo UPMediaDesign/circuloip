@@ -496,26 +496,89 @@
 			}
 		},
 		{
-			"file": "wp-content/themes/circulotheme/style.css",
 			"settings":
 			{
-				"buffer_size": 55971,
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/single-galimagenes.php",
+			"settings":
+			{
+				"buffer_size": 5207,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/single.php",
+			"settings":
+			{
+				"buffer_size": 5159,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/index.php",
+			"settings":
+			{
+				"buffer_size": 12953,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "wp-config.php",
+			"file": "wp-content/themes/circulotheme/footer.php",
 			"settings":
 			{
-				"buffer_size": 3055,
-				"line_ending": "Unix"
+				"buffer_size": 5457,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/style.css",
+			"settings":
+			{
+				"buffer_size": 56116,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "wp-content/themes/circulotheme/functions.php",
 			"settings":
 			{
-				"buffer_size": 10739,
+				"buffer_size": 10783,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/archive-testimonio.php",
+			"settings":
+			{
+				"buffer_size": 4350,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/js/core.js",
+			"settings":
+			{
+				"buffer_size": 192548,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "			<div class=\"container\">\n				<?php $gallery = get_field('slide_gallery') ?>\n	            <?php if($gallery){?>\n	           	<?php $imgcount = 0?>\n	            <?php foreach($gallery as $image):?>\n	            <?php $imgcount++?>\n\n				  <ul class=\"nav nav-pills nav-stacked\">\n				    <li><a data-target=\"#lightbox-<?php echo $imgcount?>\" data-toggle=\"modal\" data-slide-to=\"1\"><img src=\"<?php echo $image['sizes']['thumbnail'] ?>\" class=\"img-responsive\" alt=\"...\"></a></li>\n				  </ul>\n				  <?php if($imgcount % 6 == 0){echo '<div class=\"clear separator desktop\"></div>';}?>\n		          <?php if($imgcount % 3 == 0){echo '<div class=\"clear separator mobile\"></div>';}?>\n		          <?php endforeach?> \n	          <?php }?>\n\n	          <?php foreach($gallery as $modal) ?>\n			  \n			  <div class=\"modal fade and carousel slide\" id=\"lightbox-<?php echo $imgcount?>\">\n			    <div class=\"modal-dialog\">\n			      <div class=\"modal-content\">\n			        <div class=\"modal-body\">\n\n			          <div class=\"carousel-inner\">\n			            <div class=\"item active\">\n			              <img src=\"<?php echo $modal['sizes']['thumbnail'] ?>\" class=\"img-responsive\" alt=\"...\">\n			            </div>\n\n			          </div><!-- /.carousel-inner -->\n			          <a class=\"left carousel-control\" href=\"#lightbox\" role=\"button\" data-slide=\"prev\">\n			            <span class=\"glyphicon glyphicon-chevron-left\"></span>\n			          </a>\n			          <a class=\"right carousel-control\" href=\"#lightbox\" role=\"button\" data-slide=\"next\">\n			            <span class=\"glyphicon glyphicon-chevron-right\"></span>\n			          </a>\n			        </div><!-- /.modal-body -->\n			      </div><!-- /.modal-content -->\n			    </div><!-- /.modal-dialog -->\n			  </div><!-- /.modal -->\n\n			<?php endforeach ?>\n\n			</div><!-- /.container -->",
+			"settings":
+			{
+				"buffer_size": 1797,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "			<div class=\"container\">\n\n			  <ul class=\"nav nav-pills nav-stacked\">\n			    <li><a href=\"#lightbox\" data-toggle=\"modal\">Open Lightbox</a></li>\n			    <li><a href=\"#lightbox\" data-toggle=\"modal\" data-slide-to=\"1\">2nd Image</a></li>\n			    <li><a href=\"#lightbox\" data-toggle=\"modal\" data-slide-to=\"2\">3rd Image</a></li>\n			    <li><a href=\"#lightbox\" data-toggle=\"modal\" data-slide-to=\"15\">Open non existing Image</a></li>\n			  </ul>\n			  \n			  <div class=\"modal fade and carousel slide\" id=\"lightbox\">\n			    <div class=\"modal-dialog\">\n			      <div class=\"modal-content\">\n			        <div class=\"modal-body\">\n\n			          <div class=\"carousel-inner\">\n			            <div class=\"item active\">\n			              <img src=\"http://placehold.it/900x500/777/\" alt=\"First slide\">\n			            </div>\n			            <div class=\"item\">\n			              <img src=\"http://placehold.it/900x500/666/\" alt=\"Second slide\">\n			            </div>\n			            <div class=\"item\">\n			              <img src=\"http://placehold.it/900x500/555/\" alt=\"Third slide\">\n			              <div class=\"carousel-caption\"><p>even with captions...</p></div>\n			            </div>\n			          </div><!-- /.carousel-inner -->\n			          <a class=\"left carousel-control\" href=\"#lightbox\" role=\"button\" data-slide=\"prev\">\n			            <span class=\"glyphicon glyphicon-chevron-left\"></span>\n			          </a>\n			          <a class=\"right carousel-control\" href=\"#lightbox\" role=\"button\" data-slide=\"next\">\n			            <span class=\"glyphicon glyphicon-chevron-right\"></span>\n			          </a>\n			        </div><!-- /.modal-body -->\n			      </div><!-- /.modal-content -->\n			    </div><!-- /.modal-dialog -->\n			  </div><!-- /.modal -->\n\n			</div><!-- /.container -->",
+			"settings":
+			{
+				"buffer_size": 1742,
 				"line_ending": "Unix"
 			}
 		}
@@ -544,6 +607,7 @@
 	},
 	"file_history":
 	[
+		"/Users/FrontUpmedia/Github/circuloip/wp-config.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/functions.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/single.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/index.php",
@@ -670,8 +734,7 @@
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config-sample.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/functions.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/author.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/superfish.js"
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/author.php"
 	],
 	"find":
 	{
@@ -838,7 +901,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -853,8 +916,8 @@
 						"selection":
 						[
 							[
-								5880,
-								5880
+								834,
+								834
 							]
 						],
 						"settings":
@@ -866,7 +929,149 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1447.0,
+						"translation.y": 1493.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/circulotheme/single-galimagenes.php",
+					"settings":
+					{
+						"buffer_size": 5207,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4132,
+								4132
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1794.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/circulotheme/single.php",
+					"settings":
+					{
+						"buffer_size": 5159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 267.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/circulotheme/index.php",
+					"settings":
+					{
+						"buffer_size": 12953,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2659,
+								2659
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3155.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/circulotheme/footer.php",
+					"settings":
+					{
+						"buffer_size": 5457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4909,
+								4909
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -874,23 +1079,23 @@
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 6,
 					"file": "wp-content/themes/circulotheme/style.css",
 					"settings":
 					{
-						"buffer_size": 55971,
+						"buffer_size": 56116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								46358,
-								46358
+								0,
+								0
 							]
 						],
 						"settings":
@@ -905,53 +1110,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 12796.0,
+						"translation.y": 11919.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "wp-config.php",
-					"settings":
-					{
-						"buffer_size": 3055,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2295,
-								2295
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 322.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
+					"buffer": 7,
 					"file": "wp-content/themes/circulotheme/functions.php",
 					"settings":
 					{
-						"buffer_size": 10739,
+						"buffer_size": 10783,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7771,
-								7775
+								692,
+								692
 							]
 						],
 						"settings":
@@ -963,7 +1140,118 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3167.0,
+						"translation.y": 3880.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/circulotheme/archive-testimonio.php",
+					"settings":
+					{
+						"buffer_size": 4350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								555,
+								555
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wp-content/themes/circulotheme/js/core.js",
+					"settings":
+					{
+						"buffer_size": 192548,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192548,
+								192548
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"settings":
+					{
+						"buffer_size": 1797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								724,
+								724
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"settings":
+					{
+						"buffer_size": 1742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1742,
+								1742
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1038,6 +1326,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 233.0,
+	"side_bar_width": 136.0,
 	"status_bar_visible": true
 }

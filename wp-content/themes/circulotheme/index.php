@@ -41,79 +41,81 @@
 </section>
 
 <!-- Ofertas Laborales -->
-<section class="container">
-    <div class="row">
-        <div class="col-md-6 col-sm-6 offer">
-            <h2><img src="<?php bloginfo('template_directory')?>/images/laboraloffer.png" alt="Ofertas Laborales Icono">Ofertas Laborales</h2>
-            
-            <!-- Ofertas Laborales -->
-            <?php $ofertas= get_posts(array('post_type' => 'oferta-laboral', 'numberposts' => 5 , 'trabajos' => 'destacado')); ?>
-                <?php $countofertas = 0 ?>
-                <?php foreach ($ofertas as $oferta): ?>
-                <?php $countofertas++ ?>
-                <div class="offer-element">    
-                    <span>
-                        <strong><?php echo the_time('d') ?></strong>
-                        <?php echo the_time('M') ?>
-                    </span>
-                    <div class="offer-element side">
-                        <h3>
-                        <a href="<?php echo get_field('link_oferta', $oferta->ID); ?>" title="<?php echo $oferta->post_title ?>" target="_blank" rel="blog"><?php echo $oferta->post_title ?></a>
-                        </h3>
-                        <p><?php echo get_field('area_oferta',$oferta->ID)?></p>
-                        <a href="<?php echo get_field('link_oferta', $oferta->ID); ?>" title="Ver oferta" target="_blank" rel="nofollow">Ver Oferta <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div> 
-                <div class="clear separator hide-on-mobile"></div>                        
-                <?php endforeach?>
+<section class="job-zone">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 offer">
+                <h2><img src="<?php bloginfo('template_directory')?>/images/laboraloffer.png" alt="Ofertas Laborales Icono">Ofertas Laborales</h2>
                 
-                <a class="acc" href="http://www.ipchile.trabajando.com/index.cfm">Ver Ofertas Laborales</a>
-
-        </div>
-        <div class="col-md-5 col-md-offset-1 col-sm-6 tips">
-
-            <div class="col-md-12 col-sm-6 instructor">
-                <h4>¿Tienes dudas de como registrarte a Trabajando.com?</h4>
-                <p>Revisa nuestro siguiente vídeo</p>
-                <a data-toggle="modal" data-target="#myModal">
-                    ¿Cómo ingresar?
-                </a>
-
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                                <div class="modal-content embed-responsive embed-responsive-16by9" id="yt-player">
-                                    <iframe width="560" height="560" class="embed-responsive-item player" src="https://www.youtube.com/embed/<?php echo get_field('link_video_instructivo','options')?>?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                <!-- Ofertas Laborales -->
+                <?php $ofertas= get_posts(array('post_type' => 'oferta-laboral', 'numberposts' => 5 , 'trabajos' => 'destacado')); ?>
+                    <?php $countofertas = 0 ?>
+                    <?php foreach ($ofertas as $oferta): ?>
+                    <?php $countofertas++ ?>
+                    <div class="offer-element">    
+                        <span>
+                            <strong><?php echo the_time('d') ?></strong>
+                            <?php echo the_time('M') ?>
+                        </span>
+                        <div class="offer-element side">
+                            <h3>
+                            <a href="<?php echo get_field('link_oferta', $oferta->ID); ?>" title="<?php echo $oferta->post_title ?>" target="_blank" rel="blog"><?php echo $oferta->post_title ?></a>
+                            </h3>
+                            <p><?php echo get_field('area_oferta',$oferta->ID)?></p>
+                            <a href="<?php echo get_field('link_oferta', $oferta->ID); ?>" title="Ver oferta" target="_blank" rel="nofollow">Ver Oferta <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+                    <div class="clear separator hide-on-mobile"></div>                        
+                    <?php endforeach?>
+                    
+                    <a class="acc" href="http://www.ipchile.trabajando.com/index.cfm">Ver Ofertas Laborales</a>
 
             </div>
+            <div class="col-md-5 col-md-offset-1 col-sm-6 tips">
 
-            <h2>Tips Laborales <i class="fa fa-circle"></i></h2>
+                <div class="col-md-12 col-sm-6 instructor">
+                    <h4>¿Tienes dudas de como registrarte a Trabajando.com?</h4>
+                    <p>Revisa nuestro siguiente vídeo</p>
+                    <a data-toggle="modal" data-target="#myModal">
+                        ¿Cómo ingresar?
+                    </a>
 
-            <!-- Ofertas Laborales -->
-            <?php $tips= get_posts(array('post_type' => 'tip-laboral', 'numberposts' => 4)); ?>
-                <?php $counttips = 0 ?>
-                <?php foreach ($tips as $tip): ?>
-                <?php $counttips++ ?>
-                <div class="tip-element"> 
-                    <div class="tip-element side">
-                        <h3>
-                        <a href="<?php echo get_permalink($tip->ID);?>" title="<?php echo $tip->post_title ?>"  rel="nofollow"><?php echo $tip->post_title ?></a>
-                        </h3>
-                        <p><?php echo substr($tip->post_content , 0, 147)?>...</p>
-                        <a href="<?php echo get_permalink($tip->ID);?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
-                        </a>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-content embed-responsive embed-responsive-16by9" id="yt-player">
+                                        <iframe width="560" height="560" class="embed-responsive-item player" src="https://www.youtube.com/embed/<?php echo get_field('link_video_instructivo','options')?>?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
-                </div>       
-                <?php endforeach?>
-                
-                
 
+                </div>
+
+                <h2>Tips Laborales <i class="fa fa-circle"></i></h2>
+
+                <!-- Ofertas Laborales -->
+                <?php $tips= get_posts(array('post_type' => 'tip-laboral', 'numberposts' => 4)); ?>
+                    <?php $counttips = 0 ?>
+                    <?php foreach ($tips as $tip): ?>
+                    <?php $counttips++ ?>
+                    <div class="tip-element"> 
+                        <div class="tip-element side">
+                            <h3>
+                            <a href="<?php echo get_permalink($tip->ID);?>" title="<?php echo $tip->post_title ?>"  rel="nofollow"><?php echo $tip->post_title ?></a>
+                            </h3>
+                            <p><?php echo substr($tip->post_content , 0, 147)?>...</p>
+                            <a href="<?php echo get_permalink($tip->ID);?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>       
+                    <?php endforeach?>
+                    
+                    
+
+            </div>
         </div>
     </div>
 </section>

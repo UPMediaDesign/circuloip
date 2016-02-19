@@ -230,6 +230,7 @@ function get_type_for_attachment($post_id) {
   $type = get_post_mime_type($post_id);
   switch ($type) {
     case 'image/jpeg':
+    case 'image/jpg':
     case 'image/png':
     case 'image/gif':
       return 'img'; break;
@@ -263,6 +264,7 @@ function get_icon_for_attachment($post_id) {
   $type = get_post_mime_type($post_id);
   switch ($type) {
     case 'image/jpeg':
+    case 'image/jpg':
     case 'image/png':
     case 'image/gif':
       return 'fa-file-image-o'; break;
