@@ -4,8 +4,24 @@
 		"selected_items":
 		[
 			[
+				"modal",
+				"modalcount"
+			],
+			[
+				"caro",
+				"carousel"
+			],
+			[
 				"padding",
-				"padding-left"
+				"padding-bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"low",
+				"low-list"
 			],
 			[
 				"paddin",
@@ -24,10 +40,6 @@
 				"padding-left"
 			],
 			[
-				"caro",
-				"carousel-indicators"
-			],
-			[
 				"border",
 				"border-left"
 			],
@@ -38,10 +50,6 @@
 			[
 				"panel",
 				"panel-title"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"mar",
@@ -488,65 +496,34 @@
 	"buffers":
 	[
 		{
-			"file": "wp-content/themes/circulotheme/archive-actividades.php",
+			"file": "wp-content/themes/circulotheme/index.php",
 			"settings":
 			{
-				"buffer_size": 7190,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/single-galimagenes.php",
-			"settings":
-			{
-				"buffer_size": 5207,
-				"line_ending": "Unix"
+				"buffer_size": 12987,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "wp-content/themes/circulotheme/single.php",
 			"settings":
 			{
-				"buffer_size": 5159,
+				"buffer_size": 6082,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/index.php",
-			"settings":
-			{
-				"buffer_size": 12953,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "wp-content/themes/circulotheme/footer.php",
 			"settings":
 			{
-				"buffer_size": 5457,
+				"buffer_size": 5462,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "wp-content/themes/circulotheme/style.css",
+			"file": "wp-content/themes/circulotheme/archive-actividades.php",
 			"settings":
 			{
-				"buffer_size": 56116,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/circulotheme/functions.php",
-			"settings":
-			{
-				"buffer_size": 10783,
+				"buffer_size": 7192,
 				"line_ending": "Unix"
 			}
 		},
@@ -554,31 +531,31 @@
 			"file": "wp-content/themes/circulotheme/archive-testimonio.php",
 			"settings":
 			{
-				"buffer_size": 4350,
+				"buffer_size": 4362,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/circulotheme/js/core.js",
+			"file": "wp-content/themes/circulotheme/style.css",
 			"settings":
 			{
-				"buffer_size": 192548,
+				"buffer_size": 57348,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/circulotheme/functions.php",
+			"settings":
+			{
+				"buffer_size": 10824,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "			<div class=\"container\">\n				<?php $gallery = get_field('slide_gallery') ?>\n	            <?php if($gallery){?>\n	           	<?php $imgcount = 0?>\n	            <?php foreach($gallery as $image):?>\n	            <?php $imgcount++?>\n\n				  <ul class=\"nav nav-pills nav-stacked\">\n				    <li><a data-target=\"#lightbox-<?php echo $imgcount?>\" data-toggle=\"modal\" data-slide-to=\"1\"><img src=\"<?php echo $image['sizes']['thumbnail'] ?>\" class=\"img-responsive\" alt=\"...\"></a></li>\n				  </ul>\n				  <?php if($imgcount % 6 == 0){echo '<div class=\"clear separator desktop\"></div>';}?>\n		          <?php if($imgcount % 3 == 0){echo '<div class=\"clear separator mobile\"></div>';}?>\n		          <?php endforeach?> \n	          <?php }?>\n\n	          <?php foreach($gallery as $modal) ?>\n			  \n			  <div class=\"modal fade and carousel slide\" id=\"lightbox-<?php echo $imgcount?>\">\n			    <div class=\"modal-dialog\">\n			      <div class=\"modal-content\">\n			        <div class=\"modal-body\">\n\n			          <div class=\"carousel-inner\">\n			            <div class=\"item active\">\n			              <img src=\"<?php echo $modal['sizes']['thumbnail'] ?>\" class=\"img-responsive\" alt=\"...\">\n			            </div>\n\n			          </div><!-- /.carousel-inner -->\n			          <a class=\"left carousel-control\" href=\"#lightbox\" role=\"button\" data-slide=\"prev\">\n			            <span class=\"glyphicon glyphicon-chevron-left\"></span>\n			          </a>\n			          <a class=\"right carousel-control\" href=\"#lightbox\" role=\"button\" data-slide=\"next\">\n			            <span class=\"glyphicon glyphicon-chevron-right\"></span>\n			          </a>\n			        </div><!-- /.modal-body -->\n			      </div><!-- /.modal-content -->\n			    </div><!-- /.modal-dialog -->\n			  </div><!-- /.modal -->\n\n			<?php endforeach ?>\n\n			</div><!-- /.container -->",
+			"file": "wp-content/themes/circulotheme/archive-convenio.php",
 			"settings":
 			{
-				"buffer_size": 1797,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "			<div class=\"container\">\n\n			  <ul class=\"nav nav-pills nav-stacked\">\n			    <li><a href=\"#lightbox\" data-toggle=\"modal\">Open Lightbox</a></li>\n			    <li><a href=\"#lightbox\" data-toggle=\"modal\" data-slide-to=\"1\">2nd Image</a></li>\n			    <li><a href=\"#lightbox\" data-toggle=\"modal\" data-slide-to=\"2\">3rd Image</a></li>\n			    <li><a href=\"#lightbox\" data-toggle=\"modal\" data-slide-to=\"15\">Open non existing Image</a></li>\n			  </ul>\n			  \n			  <div class=\"modal fade and carousel slide\" id=\"lightbox\">\n			    <div class=\"modal-dialog\">\n			      <div class=\"modal-content\">\n			        <div class=\"modal-body\">\n\n			          <div class=\"carousel-inner\">\n			            <div class=\"item active\">\n			              <img src=\"http://placehold.it/900x500/777/\" alt=\"First slide\">\n			            </div>\n			            <div class=\"item\">\n			              <img src=\"http://placehold.it/900x500/666/\" alt=\"Second slide\">\n			            </div>\n			            <div class=\"item\">\n			              <img src=\"http://placehold.it/900x500/555/\" alt=\"Third slide\">\n			              <div class=\"carousel-caption\"><p>even with captions...</p></div>\n			            </div>\n			          </div><!-- /.carousel-inner -->\n			          <a class=\"left carousel-control\" href=\"#lightbox\" role=\"button\" data-slide=\"prev\">\n			            <span class=\"glyphicon glyphicon-chevron-left\"></span>\n			          </a>\n			          <a class=\"right carousel-control\" href=\"#lightbox\" role=\"button\" data-slide=\"next\">\n			            <span class=\"glyphicon glyphicon-chevron-right\"></span>\n			          </a>\n			        </div><!-- /.modal-body -->\n			      </div><!-- /.modal-content -->\n			    </div><!-- /.modal-dialog -->\n			  </div><!-- /.modal -->\n\n			</div><!-- /.container -->",
-			"settings":
-			{
-				"buffer_size": 1742,
+				"buffer_size": 2823,
 				"line_ending": "Unix"
 			}
 		}
@@ -607,17 +584,20 @@
 	},
 	"file_history":
 	[
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/js/core.js",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-testimonio.php",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-actividades.php",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive.php",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/single-galimagenes.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-config.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/functions.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/single.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/index.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-vida-social.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-campaigns.php",
-		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-testimonio.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/sidebar-noticias_view.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/page-noticias.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-convenio.php",
-		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-actividades.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/page-perfeccionamiento.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/footer.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/header.php",
@@ -731,10 +711,7 @@
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/footer.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/header.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/search.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config-sample.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/functions.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/author.php"
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config.php"
 	],
 	"find":
 	{
@@ -755,6 +732,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#slider",
 			";}",
 			" }",
 			"proxima_nova_rgbold",
@@ -881,8 +859,7 @@
 			"panel-group",
 			"col-md-6",
 			"button",
-			" span.amount",
-			"#top"
+			" span.amount"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -901,23 +878,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/circulotheme/archive-actividades.php",
+					"file": "wp-content/themes/circulotheme/index.php",
 					"settings":
 					{
-						"buffer_size": 7190,
+						"buffer_size": 12987,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								834,
-								834
+								4657,
+								4657
 							]
 						],
 						"settings":
@@ -929,30 +906,33 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1493.0,
+						"translation.y": 1042.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "wp-content/themes/circulotheme/single.php",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 6082,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								581,
+								581
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -962,116 +942,86 @@
 				},
 				{
 					"buffer": 2,
-					"file": "wp-content/themes/circulotheme/single-galimagenes.php",
+					"file": "wp-content/themes/circulotheme/footer.php",
 					"settings":
 					{
-						"buffer_size": 5207,
+						"buffer_size": 5462,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4132,
-								4132
+								4699,
+								4699
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1794.0,
+						"translation.y": 1556.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "wp-content/themes/circulotheme/single.php",
+					"file": "wp-content/themes/circulotheme/archive-actividades.php",
 					"settings":
 					{
-						"buffer_size": 5159,
+						"buffer_size": 7192,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								6563,
+								6563
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 267.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/circulotheme/index.php",
-					"settings":
-					{
-						"buffer_size": 12953,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2659,
-								2659
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3155.0,
+						"translation.y": 1486.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "wp-content/themes/circulotheme/footer.php",
+					"buffer": 4,
+					"file": "wp-content/themes/circulotheme/archive-testimonio.php",
 					"settings":
 					{
-						"buffer_size": 5457,
+						"buffer_size": 4362,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4909,
-								4909
+								1521,
+								1521
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 417.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1079,23 +1029,23 @@
 			]
 		},
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "wp-content/themes/circulotheme/style.css",
 					"settings":
 					{
-						"buffer_size": 56116,
+						"buffer_size": 57348,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								19689,
+								19689
 							]
 						],
 						"settings":
@@ -1110,148 +1060,66 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 11919.0,
+						"translation.y": 5602.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/circulotheme/functions.php",
+					"settings":
+					{
+						"buffer_size": 10824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								407,
+								407
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "wp-content/themes/circulotheme/functions.php",
+					"file": "wp-content/themes/circulotheme/archive-convenio.php",
 					"settings":
 					{
-						"buffer_size": 10783,
+						"buffer_size": 2823,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								692,
-								692
+								1827,
+								1827
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3880.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "wp-content/themes/circulotheme/archive-testimonio.php",
-					"settings":
-					{
-						"buffer_size": 4350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								555,
-								555
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "wp-content/themes/circulotheme/js/core.js",
-					"settings":
-					{
-						"buffer_size": 192548,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								192548,
-								192548
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"settings":
-					{
-						"buffer_size": 1797,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								724,
-								724
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"settings":
-					{
-						"buffer_size": 1742,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1742,
-								1742
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 35.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

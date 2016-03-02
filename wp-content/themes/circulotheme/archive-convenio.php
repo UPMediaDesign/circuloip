@@ -20,7 +20,7 @@
 
 <!-- Convenios -->
 <section class="page">
-    <div class="container convenios ">
+    <div class="container convenios">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
@@ -28,9 +28,8 @@
                     <?php foreach ($posts as $convenio): ?>
                     <?php $countconvenios++ ?>
                     <figure class="convenio-element col-md-6 col-sm-6 col-xs-12"> 
-                        <?php echo get_the_post_thumbnail( $convenio->ID , 'convenios', array('class' => 'img-responsive')) ?>
-                        <figcaption class="convenio-element side">
-                            
+                        <?php echo get_the_post_thumbnail( $convenio->ID , 'convenios', array('class' => 'img-responsive col-xs-4 col-esp')) ?>
+                        <figcaption class="convenio-element side col-xs-8 col-esp">
                             <h3>
                             <a href="<?php echo get_permalink($convenio->ID);?>" title="<?php echo $convenio->post_title ?>"  rel="nofollow"><?php echo $convenio->post_title ?></a>
                             </h3>
@@ -39,7 +38,9 @@
                             <a href="<?php echo get_permalink($convenio->ID);?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i>
                             </a>
                         </figcaption>
-                    </figure>       
+                        <div class="clear miniseparator"></div> 
+                    </figure>    
+
                     <?php endforeach?>
                 </div> 
             </div>    

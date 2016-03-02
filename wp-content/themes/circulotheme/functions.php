@@ -6,13 +6,14 @@ add_image_size('encabportadilla', 1200, 440, true);
 add_image_size('actidestacado', 491, 241, true);
 add_image_size('actilista', 200, 180, true);
 add_image_size('testimonio', 300, 300, true);
-add_image_size('convenios', 124, 135, true);
+add_image_size('convenios', 124, 124, true);
 add_image_size('perftab', 325, 221, true);
 add_image_size('singleautor', 96, 96, true);
 add_image_size('singleenc', 1200, 510, true);
 add_image_size('singleimg', 660, 390, true);
 add_image_size('singledestacado', 320, 171, true);
 add_image_size('noticiasenc', 588, 185,true );
+add_image_size('modal', 570, 440,true );
 }
 /* 
 add_filter('image_size_names_choose', 'my_image_sizes');

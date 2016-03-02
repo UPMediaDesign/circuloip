@@ -83,7 +83,7 @@
 <?php get_footer(); ?>
 
 
-<div class="container">
+			<div class="container">
 				<?php $gallery = get_field('slide_gallery') ?>
 	            <?php if($gallery){?>
 	           	<?php $imgcount = 0?>

@@ -66,7 +66,7 @@
         
     	<?php endforeach?>
 
-            <div class="col-md-6 clear separator">
+            <div class="col-md-6 clear separator pager-space">
                 <?php wp_pagenavi(); ?>
             </div>
 

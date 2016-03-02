@@ -67,7 +67,7 @@ jQuery(document).ready(function() {
 });
 
 			jQuery(function($){
-				$.supersized({
+				jQuery.supersized({
 					slideshow               :   1,		//Slideshow on/off
 					autoplay				:	1,		//Slideshow starts playing automatically
 					start_slide             :   1,		//Start slide (0 is random)

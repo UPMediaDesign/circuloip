@@ -37,75 +37,56 @@
 			</div>
 
 			<div class="col-md-8 col-sm-9">
-				<?php echo apply_filters('the_content' , $post->post_content)?>
 				
+				<?php echo apply_filters('the_content' , $post->post_content)?>
+
+				<ul class="nav nav-pills nav-stacked row">
+
 				<?php $gallery = get_field('slide_gallery') ?>
-	            <?php if($gallery){?>
-	            <section class="galery">
-	                <div class="clear separator"></div>
-	                <div class="row">
-	                    <?php $imgcount = 0?>
-	                    <?php foreach($gallery as $image):?>
-	                    <?php $imgcount++?>
-	                        <div class="col-md-2 col-xs-4">
-	                            <a href="<?php echo $image['url'] ?>" rel="Shadowbox['gal']">
-	                              <img src="<?php echo $image['sizes']['thumbnail'] ?>" class="img-responsive" alt="...">
-	                            </a>
-	                        </div>
-	                    <?php if($imgcount % 6 == 0){echo '<div class="clear separator desktop"></div>';}?>
-	                    <?php if($imgcount % 3 == 0){echo '<div class="clear separator mobile"></div>';}?>
-	                    <?php endforeach?>       
-	                </div>
-	                    
-	                <div class="clear separator"></div>
-	            </section>
-	            <?php }?>
+	           	<?php $imgcount = 0?>
+	            <?php foreach($gallery as $image):?>
+	            	<?php $imgcount++?>
+					<li class="col-md-3 col-xs-3"><a data-target="#lightbox" data-toggle="modal" data-slide-to="<?php echo $imgcount?>"><img src="<?php echo $image['sizes']['thumbnail'] ?>" class="img-responsive" alt="..."></a></li>
 
+		       	<?php endforeach;?> 
+
+		       	
+			  	<div class="modal fade and carousel slide" id="lightbox">
+				    <div class="modal-dialog">
+				      <div class="modal-content">
+				      	<div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					    </div>
+				        <div class="modal-body">
+
+				          <div class="carousel-inner">
+				          	<?php $modalcount = 0 ?>
+				          	<?php foreach($gallery as $modal):?>
+							<?php $modalcount++?>
+				            <div class="item <?php if($modalcount == 1){echo 'active';}?>">
+
+				              <img src="<?php echo $modal['sizes']['modal']?>" class="img-responsive" alt="<?php echo $modal['alt'];?>">
+				            </div>
+				           	<?php endforeach;?> 
+				          </div><!-- /.carousel-inner -->
+
+			          	  <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
+				            <span class="glyphicon glyphicon-chevron-left"></span>
+				          </a>
+
+				          <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
+				            <span class="glyphicon glyphicon-chevron-right"></span>
+				          </a>
+
+				         </div><!-- /.modal-body -->
+				      </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				  </div><!-- /.modal --> 
+
+
+
+			   </ul>
 			</div>
-
-			<div class="clear separator"></div>
-			
-			<!-- TEST AREA -->
-
-			<div class="container">
-
-			  <ul class="nav nav-pills nav-stacked">
-			    <li><a href="#lightbox" data-toggle="modal">Open Lightbox</a></li>
-			    <li><a href="#lightbox" data-toggle="modal" data-slide-to="1">2nd Image</a></li>
-			    <li><a href="#lightbox" data-toggle="modal" data-slide-to="2">3rd Image</a></li>
-			    <li><a href="#lightbox" data-toggle="modal" data-slide-to="15">Open non existing Image</a></li>
-			  </ul>
-			  
-			  <div class="modal fade and carousel slide" id="lightbox">
-			    <div class="modal-dialog">
-			      <div class="modal-content">
-			        <div class="modal-body">
-			          <div class="carousel-inner">
-			            <div class="item active">
-			              <img src="http://placehold.it/900x500/777/" alt="First slide">
-			            </div>
-			            <div class="item">
-			              <img src="http://placehold.it/900x500/666/" alt="Second slide">
-			            </div>
-			            <div class="item">
-			              <img src="http://placehold.it/900x500/555/" alt="Third slide">
-			              <div class="carousel-caption"><p>even with captions...</p></div>
-			            </div>
-			          </div><!-- /.carousel-inner -->
-			          <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
-			            <span class="glyphicon glyphicon-chevron-left"></span>
-			          </a>
-			          <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
-			            <span class="glyphicon glyphicon-chevron-right"></span>
-			          </a>
-			        </div><!-- /.modal-body -->
-			      </div><!-- /.modal-content -->
-			    </div><!-- /.modal-dialog -->
-			  </div><!-- /.modal -->
-
-			</div><!-- /.container -->
-
-			<!-- FIN TEST AREA -->
 
 			<div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2 col-xs-12 share-article">
 
@@ -117,8 +98,44 @@
 			    </ul>
 			</div>
 
+			<div class="clear separator"></div>
+
 		</div>
 	</div>
 </article>
+
+<!-- Calendario Actividades -->
+<section class="actividades low-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            		<h4 class="titled">Artículos Relacionados</h4>
+
+                     <?php $actividades = get_posts(array('post_type' => 'actividades', 'numberposts' => 4 , 'post__not_in')) ?>
+                    <?php $countactividades = 0?>
+                    <?php foreach($actividades as $actividad):?>
+                    <?php $countactividades++?>
+
+                    <figure class="second col-md-6 col-sm-6 col-xs-12">
+                            <div class="act-date">
+                                <span class="day"><?php echo the_time('d')?></span>
+                                <span class="month"><?php echo the_time('M')?></span>
+                            </div>
+                            <a class="heading col-md-4 col-sm-4 col-xs-12" href="<?php echo get_permalink($actividad->ID)?>"><?php echo get_the_post_thumbnail($actividad->ID , 'actilista' , array('class' => 'img-responsive'))?></a>
+                            <figcaption class="second col-md-8 col-sm-8 col-xs-12">
+                                <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
+                                <p><?php echo substr($actividad->post_content , 0, 65)?>...</p>
+                                <section class="asignment">
+                                    <a class="vermas" href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                                </section>
+                                <div class="separator"></div>
+                            </figcaption>
+                    </figure>
+                    <?php endforeach;?>                
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>

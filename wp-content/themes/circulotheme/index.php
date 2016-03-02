@@ -133,8 +133,8 @@
                     <?php foreach ($convenios as $convenio): ?>
                     <?php $countconvenios++ ?>
                     <figure class="convenio-element col-md-6 col-sm-6 col-xs-12"> 
-                        <?php echo get_the_post_thumbnail( $convenio->ID , 'convenios', array('class' => 'img-responsive')) ?>
-                        <figcaption class="convenio-element side">
+                        <?php echo get_the_post_thumbnail( $convenio->ID , 'convenios', array('class' => 'img-responsive col-md-4 col-esp')) ?>
+                        <figcaption class="convenio-element side col-md-8 col-esp">
                             <h3>
                                 <a href="<?php echo get_permalink($convenio->ID);?>" title="<?php echo $convenio->post_title ?>"  rel="nofollow"><?php echo $convenio->post_title ?></a>
                             </h3>

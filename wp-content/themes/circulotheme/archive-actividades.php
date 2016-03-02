@@ -27,7 +27,7 @@
                     <p>Puedes buscar a través de nuestras sedes y años artículos relacionados a las actividades que Círculo de Egresados IPCHILE dispone para ti.</p>
                 </div>
    
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <button type="button" class="btn btn-default dropdown-toggle instructor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sede <span class="caret"></span>
                     </button>
