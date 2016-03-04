@@ -42,7 +42,7 @@ Template Name: Noticias
                         	<header class="content-data">
                         		<h4><a href="<?php echo get_permalink($post->ID)?>"><?php echo $post->post_title?></a></h4>
                         		<?php echo get_avatar('singleautor'); ?>
-                        		<p class="author">Por: <a class="author" href="<?php echo get_the_author()?>"><?php echo get_the_author()?></a></p>
+                        		<p class="author">Por: <a class="author" href="<?php echo get_the_author()?>"><?php echo get_the_author()?>fgh</a></p>
                         		<div class="clear"></div>
                         	</header>
                             <a class="heading" href="<?php echo get_permalink($post->ID)?>"><?php echo get_the_post_thumbnail($post->ID , 'noticiasenc' , array('class' => 'img-responsive'))?></a>

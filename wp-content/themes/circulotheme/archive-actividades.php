@@ -70,7 +70,7 @@
                             $actsize = 'actilista';
                             $actclass = 'second col-md-6 col-sm-6 col-xs-12';
                             $actsocial = 'soc-invisible';
-                            $actcolimg = 'heading col-md-4 col-sm-12 col-xs-12';
+                            $actcolimg = 'heading col-md-4 col-sm-4 col-xs-12';
                             $actcolcaption = 'col-md-8 col-sm-12 col-xs-12';                        
                         }
 
@@ -121,10 +121,9 @@
 
                     
                     <?php endforeach?>                
-                    <div class="clear separator"></div>
-                    <div class="clear separator"></div>
-                    <div class="clear separator"></div>
-                    <div class="col-md-6">
+                   
+
+                    <div class="col-md-12">
                         <?php wp_pagenavi(); ?>
                     </div>            
         </div>

@@ -44,7 +44,7 @@
                     <?php endforeach?>
                 </div> 
             </div>    
-            <div class="col-md-6 clear separator">
+            <div class="col-md-6 clear separator pager-xs">
                 <?php wp_pagenavi(); ?>
             </div>
         </div>

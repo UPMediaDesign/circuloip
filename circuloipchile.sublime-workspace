@@ -4,16 +4,28 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"conveno",
+				"convenio-element"
+			],
+			[
 				"modal",
 				"modalcount"
 			],
 			[
 				"caro",
 				"carousel"
-			],
-			[
-				"padding",
-				"padding-bottom"
 			],
 			[
 				"font",
@@ -30,10 +42,6 @@
 			[
 				"margin",
 				"margin-left"
-			],
-			[
-				"padd",
-				"padding-left"
 			],
 			[
 				"padi",
@@ -388,10 +396,6 @@
 				"figcaption"
 			],
 			[
-				"pad",
-				"padding-top"
-			],
-			[
 				"fo",
 				"form	Tag"
 			],
@@ -520,6 +524,14 @@
 			}
 		},
 		{
+			"file": "wp-content/themes/circulotheme/category-noticias.php",
+			"settings":
+			{
+				"buffer_size": 3808,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "wp-content/themes/circulotheme/archive-actividades.php",
 			"settings":
 			{
@@ -528,10 +540,10 @@
 			}
 		},
 		{
-			"file": "wp-content/themes/circulotheme/archive-testimonio.php",
+			"file": "wp-content/themes/circulotheme/sidebar-noticias_view.php",
 			"settings":
 			{
-				"buffer_size": 4362,
+				"buffer_size": 4515,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,8 +551,18 @@
 			"file": "wp-content/themes/circulotheme/style.css",
 			"settings":
 			{
-				"buffer_size": 57348,
+				"buffer_size": 60260,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 8 files for \".separator\"\n\n/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/style.css:\n   31  small{font-size:10px;}\n   32  \n   33: .separator{padding:15px 0;}\n   34  .miniseparator{ padding-bottom:10px;}\n   35  .microseparator{padding-bottom:5px;}\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 296,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
@@ -552,10 +574,10 @@
 			}
 		},
 		{
-			"file": "wp-content/themes/circulotheme/archive-convenio.php",
+			"file": "wp-content/themes/circulotheme/archive.php",
 			"settings":
 			{
-				"buffer_size": 2823,
+				"buffer_size": 3263,
 				"line_ending": "Unix"
 			}
 		}
@@ -584,8 +606,10 @@
 	},
 	"file_history":
 	[
-		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/js/core.js",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-testimonio.php",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-convenio.php",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/page-noticias.php",
+		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/js/core.js",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-actividades.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/single-galimagenes.php",
@@ -596,8 +620,6 @@
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-vida-social.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-campaigns.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/sidebar-noticias_view.php",
-		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/page-noticias.php",
-		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/archive-convenio.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/page-perfeccionamiento.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/footer.php",
 		"/Users/FrontUpmedia/Github/circuloip/wp-content/themes/circulotheme/header.php",
@@ -719,7 +741,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"<open files>",
@@ -732,6 +754,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".principal",
+			"principal",
+			"xs",
+			".separator",
 			"#slider",
 			";}",
 			" }",
@@ -855,11 +881,7 @@
 			".panel-default>.panel-heading",
 			".panel-heading",
 			".panel-default>.panel-heading",
-			".panel-body",
-			"panel-group",
-			"col-md-6",
-			"button",
-			" span.amount"
+			".panel-body"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -878,7 +900,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -893,8 +915,8 @@
 						"selection":
 						[
 							[
-								4657,
-								4657
+								4688,
+								4688
 							]
 						],
 						"settings":
@@ -970,6 +992,35 @@
 				},
 				{
 					"buffer": 3,
+					"file": "wp-content/themes/circulotheme/category-noticias.php",
+					"settings":
+					{
+						"buffer_size": 3808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2699,
+								2699
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 475.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "wp-content/themes/circulotheme/archive-actividades.php",
 					"settings":
 					{
@@ -980,8 +1031,8 @@
 						"selection":
 						[
 							[
-								6563,
-								6563
+								5676,
+								5676
 							]
 						],
 						"settings":
@@ -992,25 +1043,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1486.0,
+						"translation.y": 1377.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "wp-content/themes/circulotheme/archive-testimonio.php",
+					"buffer": 5,
+					"file": "wp-content/themes/circulotheme/sidebar-noticias_view.php",
 					"settings":
 					{
-						"buffer_size": 4362,
+						"buffer_size": 4515,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1521,
-								1521
+								2660,
+								2660
 							]
 						],
 						"settings":
@@ -1021,7 +1072,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 417.0,
+						"translation.y": 739.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1033,19 +1084,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "wp-content/themes/circulotheme/style.css",
 					"settings":
 					{
-						"buffer_size": 57348,
+						"buffer_size": 60260,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19689,
-								19689
+								59612,
+								59612
 							]
 						],
 						"settings":
@@ -1060,13 +1111,56 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5602.0,
+						"translation.y": 17778.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
+					"settings":
+					{
+						"buffer_size": 296,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										160,
+										170
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "wp-content/themes/circulotheme/functions.php",
 					"settings":
 					{
@@ -1096,19 +1190,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "wp-content/themes/circulotheme/archive-convenio.php",
+					"buffer": 9,
+					"file": "wp-content/themes/circulotheme/archive.php",
 					"settings":
 					{
-						"buffer_size": 2823,
+						"buffer_size": 3263,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1827,
-								1827
+								2286,
+								2286
 							]
 						],
 						"settings":
@@ -1119,7 +1213,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 35.0,
+						"translation.y": 256.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1194,6 +1288,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 136.0,
+	"side_bar_width": 197.0,
 	"status_bar_visible": true
 }

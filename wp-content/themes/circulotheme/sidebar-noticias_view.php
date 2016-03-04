@@ -16,7 +16,7 @@
                     </span>
                     <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
                     <p class="sede"><span class="fa fa-map-marker"></span> Sede <?php echo get_field('sede',$post->ID); ?></p>
-                    <a href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
+                    <a class="vermas" href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver más <i class="fa fa-arrow-right"></i></a>
                     <div class="clear"></div>
                 </figcaption>
             </figure>
@@ -29,7 +29,7 @@
                     </span>
                     <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
                     <p class="sede"><span class="fa fa-map-marker"></span> Sede <?php echo get_field('sede',$post->ID); ?></p>
-                    <a href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver info <i class="fa fa-arrow-right"></i></a>
+                    <a class="vermas" href="<?php echo get_permalink($actividad->ID)?>" title="Ver más" rel="blog">Ver info <i class="fa fa-arrow-right"></i></a>
                     <div class="clear"></div>
                 </figcaption>
             </figure>
@@ -61,7 +61,7 @@
         <?php $countsociales++?>
               
         <?php if($countsociales == 1){?>            
-            <figure class="principal col-md-12 col-sm-12">
+            <figure class="principal social col-md-12 col-sm-12">
                 <a class="heading" href="<?php echo get_permalink($social->ID)?>"><?php echo get_the_post_thumbnail($social->ID , 'homesocial' , array('class' => 'img-responsive'))?></a>
                 <figcaption class="transparent">
                     <h4><a href="<?php echo get_permalink($social->ID)?>" ><?php echo $social->post_title?></a></h4>
@@ -74,7 +74,7 @@
             </figure>
 
             <?php }else{?>
-            <figure class="principal col-md-12 col-sm-12">
+            <figure class="second col-md-12 col-sm-12">
                 <figcaption class="transparent">
                     <h4><a href="<?php echo get_permalink($actividad->ID)?>" ><?php echo $actividad->post_title?></a></h4>
                     <span>

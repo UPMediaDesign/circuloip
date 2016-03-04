@@ -352,6 +352,14 @@ figure.principal.col-md-4 img{ height: auto; width:100%;}
 .principal p{color:#a2a2a2; font-size: 14px; font-family: 'proxima nova'; clear:both;}
 .principal span{font-style: italic; color:#a2a2a2; clear: both; float: left;}
 
+figure.second.col-md-4 img{ height: auto; width:100%;}
+.second a.heading{float:none;}
+.second figcaption.transparent{background: rgba(52, 56, 56, .8); padding: 13px 10px;}
+.second a, .secundario a{font-weight: 700;color:#ff9900; text-align:left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: right;}
+.second a:hover, .secundario a:hover{color: #b36b00; text-decoration: none;}
+.second p{color:#a2a2a2; font-size: 14px; font-family: 'proxima nova'; clear:both;}
+.second span{font-style: italic; color:#a2a2a2; clear: both; float: left;}
+
 article>.secundario{ padding: 10px; margin-right: 0; margin-left: 0;}
 article .noticias{ background-color: #fff; margin-bottom:10px;}
 .secundario h4 a{color:#1598ed; font-size: 16px !important; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 3px;}
@@ -368,10 +376,13 @@ span.sede {float: left; color:#ff9900; margin-bottom: 0; font-weight:500;}
 .selectplace h2 {color: #1798EE; text-align: center; text-transform: none; }
 .selectplace p{text-align: center; }
 
-.actividades{background: #ececec; padding-bottom: 60px; }
+.actividades{background: #ececec; padding-top: 30px;}
 .actividades h3{font-size: 45px; color:#0067b1;text-transform: capitalize; font-family: 'proxima nova'; text-align:left; line-height:1em; margin-top:40px; padding-left: 15px; padding-bottom: 25px;}
 .actividades h4 a{font-weight:500;color:#1598ed; font-size: 18px; text-align: left; font-family: 'proxima nova'; line-height: 1.3em; height: 44px; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; float: left; margin-bottom: 5px;}
 .actividades h4 a:hover{color: #0067b1; text-decoration: none;}
+
+.actividades .second h4 a{padding-top: 15px; height: 60px; padding-bottom: 5px;}
+.second .sede span{margin-right:5px;}
 
 .line{border-bottom:1px solid #a2a2a2;}
 
@@ -530,26 +541,33 @@ a.nextpostslink:hover, a.previouspostslink:hover{color: #0067b1; text-decoration
 .sidebar-news .principal a{padding-top: 5px;}
 
 /* Sidebar Vida Social */
-figcaption.transparent {background: rgba(52, 56, 56, .8); color: #fff; position: relative; bottom: 95px; }
+.principal.social{max-height: 275px;}
+.principal figcaption.transparent {background: rgba(52, 56, 56, .8); color: #fff; position: relative; bottom: 100px; }
 .transparent h4 a, .transparent span{color:#fff !important;}
 
 /* ACTIVIDADES + VIDA SOCIAL */
-.act-date{background: rgba(23,152,238,1); background: -moz-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(23,152,238,1)), color-stop(50%, rgba(23,152,238,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(23,152,238,1)), color-stop(51%, rgba(28,154,238,0)), color-stop(100%, rgba(255,255,255,0))); background: -webkit-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -o-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -ms-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: linear-gradient(135deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1798ee', endColorstr='#ffffff', GradientType=1 );  position: relative;
-    padding: 20px 60px 45px 10px; text-align: center; z-index: 3; width: 80px; height: 80px; top: 80px; bottom: 0; clear: both; color:#fff;}
-.act-date .principales span.day,.act-date span.day{font-size: 28px !important; font-weight: 700; padding-top: 0;}
-.act-date .principales span.month, .act-date span.month{font-size: 12px !important; font-weight: 500;}
+.act-date{background: rgba(23,152,238,1); background: -moz-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(23,152,238,1)), color-stop(50%, rgba(23,152,238,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(23,152,238,1)), color-stop(51%, rgba(28,154,238,0)), color-stop(100%, rgba(255,255,255,0))); background: -webkit-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -o-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: -ms-linear-gradient(-45deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); background: linear-gradient(135deg, rgba(23,152,238,1) 0%, rgba(23,152,238,1) 50%, rgba(255,255,255,1) 50%, rgba(23,152,238,1) 50%, rgba(28,154,238,0) 51%, rgba(255,255,255,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1798ee', endColorstr='#ffffff', GradientType=1 );  position: absolute;
+    padding: 20px 60px 45px 10px; text-align: center; z-index: 3; width: 80px; height: 80px; top: 0px; bottom: 0; clear: both; color:#fff;}
+.act-date .principales span.day,.act-date span.day{font-size: 28px !important; font-weight: 700; padding-top: 0; color: #fff; font-style: normal;}
+.act-date .principales span.month, .act-date span.month{font-size: 12px !important; font-weight: 500; color: #fff; font-style: normal;}
 /* Columna Iniciales */
 figure.principales {max-height: 440px; z-index: 50; margin-bottom: 20px;}
 .actividades .principales img {width: 100%; }
 .actividades .principales figcaption{background: #fff; padding: 15px 15px 20px;}
 .actividades .principales p {clear: both; }
+.actividades .second p{padding-top: 0;}
+.actividades p.sede{float:right; padding-top: 0;}
+.actividades a.vermas{float:none;}
+
 
 .principales a.heading, .second a.heading {padding: 0; }
-.principales a.vermas {font-weight: 700; color: #ff9900; text-align: left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; margin-top: 10px; clear: both; float: left; }
+.principales a.vermas {font-weight: 700; color: #ff9900; text-align: left; webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; margin-top: 10px; clear: both; }
 .principales a.vermas:hover{color:#b36b00; text-decoration: none;}
 
+
+.actividades .soc-visible{float:left;}
 .soc-visible{display:block; float:right; margin-bottom: 0; margin-top: 10px;}
-.soc-visible li {float: left; padding: 0 5px; list-style: none; }
+.soc-visible li {float: left; padding: 0 10px 0 0; list-style: none; }
 
 .asignment .principales a.vermas {}
 .asignment .second a.vermas {z-index: 100; position: relative; float: left;}
@@ -557,9 +575,8 @@ figure.principales {max-height: 440px; z-index: 50; margin-bottom: 20px;}
 
 /* Columna Secundarios */
 .second figcaption {background: #fff; }
-.second a img {width: 100%; }
+.second a img {width: 100%; max-width:180px; float:left;}
 .second p {clear: both; line-height: 1.4em; padding-top: 20px; }
-.second h4 a {padding-top: 20px; }
 figure.second {margin-top: 15px; max-height: 175px;  z-index: 99;}
 
 .soc-invisible{display:none; visibility: hidden;}
@@ -843,33 +860,66 @@ h4.titled{font-size:30px; text-align: left; font-weight: bold; color:rgb(23, 152
     .tip-element h3 a{font-size: 17px;}
     
     /* Convenios */
+    .page .convenios{padding-top: 30px;}
+
     .convenios h2{font-size: 25px; line-height: 1.6em; padding-bottom: 10px;}
-    .convenio-element h3 {padding-left: 45%; height: 35px; line-height: 1.1em;}
+    .convenio-element{line-height: 1.2em; font-size: 15px; margin-top: 0;}
+    .convenio-element.side{padding: 0; margin-bottom: 10px;}
+    .convenio-element h3 {height: 25px; line-height: 1.1em; font-size: 16px; margin-top: 0;} 
     .convenio-element h3 a {font-size: 15px; }
-    .convenio-element p {padding-left: 45%; line-height: 1.3em; font-size: 13px;}
-    .convenio-element a {padding-left: 5%;}
+    .convenio-element p {line-height: 1.3em; font-size: 13px;}
+    .convenio-element a {}
+
+    .container.instituciones {padding-bottom: 50px; }
     
     /* Noticias */
     #noticias h3{font-size: 23px; padding-bottom: 15px; margin-bottom: 0;}
 
+    .sidebar-news .principal p.sede {clear: both; float: left; }
+    .sidebar-news .principal a {padding-top: 0; }
+
+    .sede span {margin-right: 5px; }
+
+    .principal-news a.morelink {margin-top: 3px;}
+    .principal-news p.sede {float: right; clear: none; color: #ff9900; margin-top: 0; padding: 0; }
+
+    .content-data h4 a {font-size: 17px !important;}
+
     /* Actividades */
+    figure.principales{clear: both; position: relative; bottom: 0; top: 0; margin-bottom: 10px;}
     .actividades h3{font-size: 23px; padding-bottom: 15px; margin-bottom: 0; margin-top:0;}
     .date { padding-top: 15px; padding-bottom: 15px;}
     span.day {font-size: 30px; }
     span.month {font-size: 17px; }
     .secundario.activity-date h4 a {height: 15px; font-size: 15px !important; padding-bottom: 35px; }
 
+    .actividades .soc-visible {float: left; }
+    .actividades .soc-visible li{padding:0 10px 0 0;}
+    .actividades .principales a.vermas{margin-top:0;}
+   /* .actividades .principales p {clear: none;  }*/
+    .actividades .second a img {display: none; }
+    .actividades .second figcaption {padding-left: 30%; padding-top: 10px;}
+    .actividades .second h4 a {height: auto; min-height: 25px; margin-bottom: 0; padding-top: 0;}
+    .actividades .second .act-date{position: relative; margin-bottom: -130px; z-index: 999; float: left;}
+    .actividades .wp-pagenavi{padding-top: 0;}
+    .actividades .second a.vermas {padding: 20px 0 10px;}
+    .actividades .principales figcaption{margin-bottom:20px;}
+
     /* Vida Social */
     #vidasocial h3{font-size: 23px; padding-bottom: 15px; margin-bottom: 0; margin-top:0;}
+
     .vidasocial figure.principal{max-height: 295px;}
     .vidasocial figure.principal figcaption h4 a{font-size: 15px;}
 
-
     /* Footer */
-    li.service, #menu-second-footer li.service{border-bottom: 1px solid #fff; border-left: none;}
+    .logo-footer img {margin: 20px auto 0px; max-width: 100px;}
+
+    li.service, #menu-second-footer li.service{border-bottom: 1px solid #fff; border-left: none; border-top: 1px solid transparent !important;}
     .box-soc {border-left: none; padding: 0 15px;}
     span.credit-footer{font-size: 12px;}
     .footer-nav, #menu-second-footer, .websoc{padding-right: 0; margin: 0; padding-left: 0;}
+
+    .websoc{border-top:1px solid transparent;}
 
     /* INTERIORES */
     .container-fluid .jumbotron h2 {font-size: 30px; }
@@ -886,12 +936,24 @@ h4.titled{font-size:30px; text-align: left; font-weight: bold; color:rgb(23, 152
     .message p strong{line-height:1.5em;}
 
     /* Convenios */
+    .page .convenios {padding-top: 30px; }
+
+    .convenio-element img {float: left; max-width: 85px; width: 100%; margin-right: 3%; }
+
     .instituciones h3 {font-size: 22px; font-weight: 500; text-align: center; padding: 0 15px;}
     .instituciones p {margin: 10px auto; text-align: center; font-size: 17px; padding: 0 15px; }
     .institucion img {margin: 0 auto; display: block; width: 90%;}
 
+    .pager-xs{padding: 5px 15px;}
+    .pager-xs .wp-pagenavi{padding-top: 0;}
+
+    .pager-space {padding-left: 10px; padding-top: 10px; padding-bottom: 10px; }
+    .pager-space .wp-pagenavi {padding-top: 0; margin-bottom:15px;}
+
+    .container.instituciones{padding-bottom: 50px;}
+
     /* Testimonios */
-    .testimonial-excerpt p {font-size: 20px; margin-top: 30px; margin-bottom: 30px; }
+    .testimonial-excerpt p {font-size: 15px; margin-top: 30px; margin-bottom: 30px; }
 
     figcaption.testimonio-element h4{font-size: 17px;}
     figcaption.testimonio-element p{font-size: 13px; margin-bottom: 15px;}
@@ -905,19 +967,29 @@ h4.titled{font-size:30px; text-align: left; font-weight: bold; color:rgb(23, 152
 
     /* Noticias */
     .share-article ul {float: left; }
+
+    .content-data img {max-width: 35px !important;}
     
     .date-news {margin-left: 15px; margin-right: 15px; padding-bottom: 45px;}
 
     span.first {float: left; line-height: 1.7em; }
-    span.second {float: left; font-size: 23px; padding-bottom: 0px; }
-    .second h4 a {padding-top: 10px; font-size: 15px; clear: both;}
+    span.second {float: left; font-size: 23px; padding-bottom: 0px; margin-left: 5px;}
+    .second h4 a { font-size: 15px; clear: both;}
     .second a.vermas {padding: 30px 0 10px; float: left; clear: both;}
     .second p{display: none;}
-    figure.second {max-height: 300px; margin-top: 0; clear: both; float: none; }
+    figure.second {min-height: 100px; margin-top: 0; clear: both; float: none; bottom: 0; top: 0; position: static;}
+
+    figcaption.transparent{bottom:0 !important; margin-bottom: 10px;}
+    .principal figcaption{bottom:95px !important;}
+    .principal.social {max-height: 260px; margin-bottom: 0; position: relative; top: 20px; bottom: 0px; }
+
+    #noticias .wp-pagenavi {padding-top: 0; margin: 0; }
 
     /* Perfeccionamiento */
+    .perf-intro h2 {color: #0067b1; font-family: 'proxima nova'; font-weight: 300; text-align: center; margin: 35px auto 25px; text-transform: none; }
+    
     .quote {padding: 0; }
-    .quote h4 {padding: 0 15px; }
+    .quote h4 {padding: 0 15px; font-size: 25px; padding-top: 15px;}
 
     .profile {padding: 0 15px; }
 
